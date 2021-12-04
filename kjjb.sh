@@ -261,10 +261,12 @@ start_menu(){
 		25)
 		vps_ip
 		;;
-    26）
-    rm_ss
-    27)
-    vps_lmt
+    		26）
+   		rm_ss
+		;;
+   		27)
+    		vps_lmt
+		;;
 		0)
 		exit 0
 		;;
