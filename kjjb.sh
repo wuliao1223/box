@@ -143,7 +143,7 @@ start_menu(){
 	green "=========================================================="
          blue " 本脚本支持：CentOS7+ / Debian9+ / Ubuntu16.04+"
 	 blue " 网站：https://m.233hhh.top "
-	 blue "脚本："
+	 blue "脚本：wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/kjjb/main/kjjb.sh && bash kjjb.sh"
 
          blue " 此脚本源于网络，仅仅只是汇聚脚本功能，方便大家使用而已！"
 	green "=========================================================="
@@ -211,7 +211,7 @@ start_menu(){
 		vps_ss
 		;;
 		9)
-		vps_v2-ui
+		vps_x-ui
 		;;
 		10)
 		vps_trojan
@@ -241,7 +241,7 @@ start_menu(){
 		vps_nf
 		;;
 		19)
-	        vps_root
+		vps_root
 		;;
 		20)
 		vps_frps
@@ -261,11 +261,11 @@ start_menu(){
 		25)
 		vps_ip
 		;;
-    		26）
-   		rm_ss
+		26)
+		rm_ss
 		;;
-   		27)
-    		vps_lmt
+		27)
+		vps_lmt
 		;;
 		0)
 		exit 0
