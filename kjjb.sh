@@ -139,7 +139,7 @@ vps_lmt(){
   bash <(curl -sSL "https://git.io/JswGm")
 }
 vps_dd(){
-	bash <(wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/MoeClub/Note/master/InstallNET.sh') -d 10 -v 64 -p "233hhh.top" -port "22"
+	bash <(wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/MoeClub/Note/master/InstallNET.sh') -d 10 -v 64 -p "m.233hhh.top" -port "22"
 }
 start_menu(){
     clear
