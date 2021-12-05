@@ -138,6 +138,10 @@ rm_ss(){
 vps_lmt(){
   bash <(curl -sSL "https://git.io/JswGm")
 }
+vps_dd(){
+	bash <(wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/MoeClub/Note/master/InstallNET.sh') -d 10 -v 64 -p "233hhh.top" -port "22"
+
+}
 start_menu(){
     clear
 	green "=========================================================="
@@ -182,6 +186,7 @@ start_menu(){
 	 yellow " 25. 查看本机IP "
 	 yellow " 26. 卸载ss"
 	 yellow " 27. 流媒体检测"
+	 yello  " 28  dd debian10 (默认密码233hhh.top)"
         red " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
@@ -261,11 +266,14 @@ start_menu(){
 		25)
 		vps_ip
 		;;
-		26)
-		rm_ss
+    		26)
+    		rm_ss
 		;;
-		27)
-		vps_lmt
+    		27)
+    		vps_lmt
+		;;
+		28)
+		vps_dd
 		;;
 		0)
 		exit 0
