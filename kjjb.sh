@@ -185,7 +185,7 @@ start_menu(){
 	 yellow " 25. 查看本机IP "
 	 yellow " 26. 卸载ss"
 	 yellow " 27. 流媒体检测"
-	 yellow " 28  dd debian10 (默认密码233hhh.top)"
+	 yellow " 28  dd debian10 (默认密码m.233hhh.top)"
         red " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
