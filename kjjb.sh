@@ -146,7 +146,7 @@ start_menu(){
 	green "=========================================================="
          blue " 本脚本支持：CentOS7+ / Debian9+ / Ubuntu16.04+"
 	 blue " 网站：https://m.233hhh.top "
-	 blue "脚本：bash <(curl -sL https://git.io/JMddS)"
+	 blue "脚本：bash <(curl -sL https://git.io/JMddS) "
 
          blue " 此脚本源于网络，仅仅只是汇聚脚本功能，方便大家使用而已！"
 	green "=========================================================="
@@ -173,19 +173,19 @@ start_menu(){
 	 yellow " 15. BBR一键加速（稳定版）"
 	 yellow " 16. BBR一键加速（最新版）"
 	 yellow " 17. openvz BBR一键加速 "
-	green "====================解锁Netflix检测======================="
+	green "====================流媒体检测======================="
 	 yellow " 18. 启动Netflix检测脚本 "
+	 yellow " 19. 全面流媒体检测 "
 	green "===== ====其他工具（KVM架构VPS通用）=========="
-	 yellow " 19. 甲骨文一键设置root密码 "
-	 yellow " 20. frp内网穿透一键安装 "
-	 yellow " 21. NPS内网穿透一键安装 "
-	 yellow " 22. Cloudflare WARP 一键配置脚本 "
-	 yellow " 23. gost隧道一键中转 "
-	 yellow " 24. Ehco隧道一键中转 "
-	 yellow " 25. 查看本机IP "
-	 yellow " 26. 卸载ss"
-	 yellow " 27. 流媒体检测"
-	 yellow " 28  dd debian10 (默认密码m.233hhh.top)"
+	 yellow " 20. 甲骨文一键设置root密码 "
+	 yellow " 21. frp内网穿透一键安装 "
+	 yellow " 22. NPS内网穿透一键安装 "
+	 yellow " 23. Cloudflare WARP 一键配置脚本 "
+	 yellow " 24. gost隧道一键中转 "
+	 yellow " 25. Ehco隧道一键中转 "
+	 yellow " 26. 查看本机IP "
+	 yellow " 27. 卸载shadowsocks"
+	 yellow " 28. dd debian10 (默认密码m.233hhh.top)"
         red " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
@@ -245,31 +245,31 @@ start_menu(){
 		vps_nf
 		;;
 		19)
-		vps_root
+		vps_lmt
 		;;
 		20)
-		vps_frps
+		vps_root
 		;;
 		21)
-		vps_nps
+		vps_frps
 		;;
 		22)
-		vps_warp
+		vps_nps
 		;;
 		23)
-		vps_gost
+		vps_warp
 		;;
 		24)
-		vps_ehco
+		vps_gost
 		;;
 		25)
+		vps_ehco
+		;;
+		26)
 		vps_ip
 		;;
-    		26)
-    		rm_ss
-		;;
-    		27)
-    		vps_lmt
+		27)
+		rm_ss
 		;;
 		28)
 		vps_dd
