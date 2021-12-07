@@ -139,16 +139,17 @@ vps_lmt(){
   bash <(curl -sSL "https://git.io/JswGm")
 }
 vps_dd(){
-	bash <(wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/MoeClub/Note/master/InstallNET.sh') -d 10 -v 64 -p "m.233hhh.top" -port "22"
+	bash <(wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/MoeClub/Note/master/InstallNET.sh') -d 10 -v 64 
 }
 start_menu(){
     clear
 	green "=========================================================="
          blue " 本脚本支持：CentOS7+ / Debian9+ / Ubuntu16.04+"
 	 blue " 网站：https://m.233hhh.top "
-	 blue "脚本：bash <(curl -sL https://git.io/JMddS) "
+	 blue " 脚本：bash <(curl -sL https://git.io/JMddS) "
+	 bule " 或者: wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/kjjb/main/kjjb.sh && bash kjjb.sh "
 
-         blue " 此脚本源于网络，仅仅只是汇聚脚本功能，方便大家使用而已！"
+     blue " 此脚本源于网络，仅仅只是汇聚脚本功能，方便大家使用而已！"
 	green "=========================================================="
       red " 脚本测速会大量消耗 VPS 流量，请悉知！"
     green "==========VPS测速========================================="
@@ -185,7 +186,7 @@ start_menu(){
 	 yellow " 25. Ehco隧道一键中转 "
 	 yellow " 26. 查看本机IP "
 	 yellow " 27. 卸载shadowsocks"
-	 yellow " 28. dd debian10 (默认密码m.233hhh.top)"
+	 yellow " 28. dd debian10 (默认密码MoeClub.org)"
         red " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
