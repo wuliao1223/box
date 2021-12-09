@@ -139,7 +139,7 @@ vps_lmt(){
   bash <(curl -sSL "https://git.io/JswGm")
 }
 vps_dd(){
-	bash <(wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/MoeClub/Note/master/InstallNET.sh') -d 10 -v 64 -a
+	  bash <(curl -sL https://git.io/JDLe5)
 }
 start_menu(){
     clear
@@ -186,7 +186,7 @@ start_menu(){
 	 yellow " 25. Ehco隧道一键中转 "
 	 yellow " 26. 查看本机IP "
 	 yellow " 27. 卸载shadowsocks"
-	 yellow " 28. dd debian10 (默认密码MoeClub.org)"
+	 yellow " 28. dd Linux 系统)"
         red " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
