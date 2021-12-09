@@ -141,6 +141,12 @@ vps_lmt(){
 vps_dd(){
 	  bash <(curl -sL https://git.io/JDLe5)
 }
+docker(){
+	curl -fsSL https://get.docker.com -o get-docker.sh && sh get-docker.sh && sudo systemctl start docker
+}
+speedtestx(){
+	docker pull badapple9/speedtest-x && docker run -d -p 9001:80 -it badapple9/speedtest-x
+}
 start_menu(){
     clear
 	green "=========================================================="
@@ -187,6 +193,8 @@ start_menu(){
 	 yellow " 26. 查看本机IP "
 	 yellow " 27. 卸载shadowsocks"
 	 yellow " 28. dd Linux 系统 "
+	 yellow " 29 安装docker "
+	 yellow " 30 安装speedtestx"
         red " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
@@ -274,6 +282,12 @@ start_menu(){
 		;;
 		28)
 		vps_dd
+		;;
+		29)
+		docker
+		;;
+		30)
+		speedtestx
 		;;
 		0)
 		exit 0
