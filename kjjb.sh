@@ -186,7 +186,7 @@ start_menu(){
 	 yellow " 25. Ehco隧道一键中转 "
 	 yellow " 26. 查看本机IP "
 	 yellow " 27. 卸载shadowsocks"
-	 yellow " 28. dd Linux 系统)"
+	 yellow " 28. dd Linux 系统 "
         red " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
