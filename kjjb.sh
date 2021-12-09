@@ -193,8 +193,8 @@ start_menu(){
 	 yellow " 26. 查看本机IP "
 	 yellow " 27. 卸载shadowsocks"
 	 yellow " 28. dd Linux 系统 "
-	 yellow " 29 安装docker "
-	 yellow " 30 安装speedtestx"
+	 yellow " 29. 安装docker "
+	 yellow " 30. 安装speedtestx"
         red " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
