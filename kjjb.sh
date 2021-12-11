@@ -147,6 +147,9 @@ docker(){
 speedtestx(){
 	docker pull badapple9/speedtest-x && docker run -d -p 9001:80 -it badapple9/speedtest-x
 }
+vps_233(){
+	bash <(curl -s -L https://git.io/v2ray.sh)
+}
 start_menu(){
     clear
 	green "=========================================================="
@@ -195,6 +198,7 @@ start_menu(){
 	 yellow " 28. dd Linux 系统 "
 	 yellow " 29. 安装docker "
 	 yellow " 30. 安装speedtestx"
+	 yellow " 31. 233v2脚本 "
         red " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
@@ -288,6 +292,9 @@ start_menu(){
 		;;
 		30)
 		speedtestx
+		;;
+		31)
+		vps_233
 		;;
 		0)
 		exit 0
