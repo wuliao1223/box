@@ -145,7 +145,8 @@ docker(){
 	curl -fsSL https://get.docker.com -o get-docker.sh && sh get-docker.sh && sudo systemctl start docker
 }
 speedtestx(){
-	docker pull badapple9/speedtest-x && docker run -d -p 9001:80 -it badapple9/speedtest-x
+	docker pull badapple9/speedtest-x 
+	docker run -d -p 9001:80 -it badapple9/speedtest-x
 }
 vps_233(){
 	bash <(curl -s -L https://git.io/v2ray.sh)
