@@ -144,10 +144,7 @@ vps_dd(){
 docker(){
 	curl -fsSL https://get.docker.com -o get-docker.sh && sh get-docker.sh && sudo systemctl start docker
 }
-speedtestx(){
-	docker pull badapple9/speedtest-x 
-	docker run -d -p 9001:80 -it badapple9/speedtest-x
-}
+
 vps_233(){
 	bash <(curl -s -L https://git.io/v2ray.sh)
 }
@@ -198,8 +195,7 @@ start_menu(){
 	 yellow " 27. 卸载shadowsocks"
 	 yellow " 28. dd Linux 系统 "
 	 yellow " 29. 安装docker "
-	 yellow " 30. 安装speedtestx"
-	 yellow " 31. 233v2脚本 "
+	 yellow " 30. 233v2脚本 "
         red " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
@@ -292,9 +288,6 @@ start_menu(){
 		docker
 		;;
 		30)
-		speedtestx
-		;;
-		31)
 		vps_233
 		;;
 		0)
