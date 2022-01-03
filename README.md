@@ -13,7 +13,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/kjjb
 感谢[wxfyes](https://github.com/wxfyes/bt)
 
 
-
+预计下次更新： 参考[MisakaLinuxToolbox](https://github.com/Misaka-blog/MisakaLinuxToolbox) 脚本页面设计 pages ,优点：更改一部分内容不需要全部调整顺序（+1或-1）
 
 更新日志：
 2022/1/3  增加宝塔开心版
