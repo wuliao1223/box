@@ -92,6 +92,7 @@ vps_bt3(){
 vps_bt4(){
    curl http://v7.hostcli.com/install/update6.sh|bash
 }
+
 vps_bbr1(){
    wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 }
@@ -123,8 +124,8 @@ vps_warp(){
 vps_gost(){
   wget --no-check-certificate -O gost.sh https://raw.githubusercontent.com/KANIKIG/Multi-EasyGost/master/gost.sh && chmod +x gost.sh && ./gost.sh
 }
-vps_ehco(){
-  bash <(curl -fsSL https://git.io/ehco.sh)
+bt_kx(){
+  bash <(curl -sL https://git.io/JDng7)
 }
 vps_ip(){
   curl ip.p3terx.com
@@ -170,32 +171,31 @@ start_menu(){
 	 yellow " 7. v2ray四合一脚本 "
 	 yellow " 8. shadowsocks一键安装脚本 "
 	 yellow " 9. x-ui面板一键安装 "
-	 yellow " 10. Trojan一键安装（atrandys版）"
+	 yellow " 10. 233v2脚本
 	green "===================宝塔面板官方脚本======================="
 	 yellow " 11. centos系统一键安装 "
 	 yellow " 12. debian系统一键安装 "
 	 yellow " 13. ubuntu系统一键安装 "
-	green "========宝塔面板破解，需先安装官方版再运行此脚本============"
-	 yellow " 14. 宝塔破解企业版 一键破解 "
+	green "========宝塔面板破解============"
+	 yellow " 14. 宝塔破解企业版 一键破解（需先安装官方版再运行此脚本）"
+	 yellow " 15. 宝塔开心版
 	green "===================BBR加速==============================="
-	 yellow " 15. BBR一键加速（稳定版）"
-	 yellow " 16. BBR一键加速（最新版）"
-	 yellow " 17. openvz BBR一键加速 "
+	 yellow " 16. BBR一键加速（稳定版）"
+	 yellow " 17. BBR一键加速（最新版）"
+	 yellow " 18. openvz BBR一键加速 "
 	green "====================流媒体检测======================="
-	 yellow " 18. 启动Netflix检测脚本 "
-	 yellow " 19. 全面流媒体检测 "
+	 yellow " 19. 启动Netflix检测脚本 "
+	 yellow " 20. 全面流媒体检测 "
 	green "===== ====其他工具（KVM架构VPS通用）=========="
-	 yellow " 20. 甲骨文一键设置root密码 "
-	 yellow " 21. frp内网穿透一键安装 "
-	 yellow " 22. NPS内网穿透一键安装 "
-	 yellow " 23. Cloudflare WARP 一键配置脚本 "
-	 yellow " 24. gost隧道一键中转 "
-	 yellow " 25. Ehco隧道一键中转 "
+	 yellow " 21. 甲骨文一键设置root密码 "
+	 yellow " 22. frp内网穿透一键安装 "
+	 yellow " 23. NPS内网穿透一键安装 "
+	 yellow " 24. Cloudflare WARP 一键配置脚本 "
+	 yellow " 25. gost隧道一键中转 "
 	 yellow " 26. 查看本机IP "
 	 yellow " 27. 卸载shadowsocks"
 	 yellow " 28. dd Linux 系统 "
 	 yellow " 29. 安装docker "
-	 yellow " 30. 233v2脚本 "
         red " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
@@ -228,7 +228,7 @@ start_menu(){
 		vps_x-ui
 		;;
 		10)
-		vps_trojan
+		vps_233
 		;;
 		11)
 		vps_bt1
@@ -243,37 +243,37 @@ start_menu(){
 		vps_bt4
 		;;
 		15)
-		vps_bbr1
+		bt_kx
 		;;
 		16)
-		vps_bbr2
+		vps_bbr1
 		;;
 		17)
-		vps_openvz
+		vps_bbr2
 		;;
 		18)
-		vps_nf
+		vps_openvz
 		;;
 		19)
-		vps_lmt
+		vps_nf
 		;;
 		20)
-		vps_root
+		vps_lmt
 		;;
 		21)
-		vps_frps
+		vps_root
 		;;
 		22)
-		vps_nps
+		vps_frps
 		;;
 		23)
-		vps_warp
+		vps_nps
 		;;
 		24)
-		vps_gost
+		vps_warp
 		;;
 		25)
-		vps_ehco
+		vps_gost
 		;;
 		26)
 		vps_ip
@@ -287,9 +287,7 @@ start_menu(){
 		29)
 		docker
 		;;
-		30)
-		vps_233
-		;;
+
 		0)
 		exit 0
 		;;
