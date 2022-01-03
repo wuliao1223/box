@@ -171,14 +171,14 @@ start_menu(){
 	 yellow " 7. v2ray四合一脚本 "
 	 yellow " 8. shadowsocks一键安装脚本 "
 	 yellow " 9. x-ui面板一键安装 "
-	 yellow " 10. 233v2脚本
+	 yellow " 10. 233v2脚本 "
 	green "===================宝塔面板官方脚本======================="
 	 yellow " 11. centos系统一键安装 "
 	 yellow " 12. debian系统一键安装 "
 	 yellow " 13. ubuntu系统一键安装 "
 	green "========宝塔面板破解============"
 	 yellow " 14. 宝塔破解企业版 一键破解（需先安装官方版再运行此脚本）"
-	 yellow " 15. 宝塔开心版
+	 yellow " 15. 宝塔开心版 "
 	green "===================BBR加速==============================="
 	 yellow " 16. BBR一键加速（稳定版）"
 	 yellow " 17. BBR一键加速（最新版）"
