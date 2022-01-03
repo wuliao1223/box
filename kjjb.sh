@@ -200,94 +200,35 @@ start_menu(){
     echo
     read -p "请输入数字:" num
     case "$num" in
-    		1)
-		vps_superspeed
-		;;
-		2)
-		vps_zbench
-		;;
-		3)
-		vps_testrace
-		;;
-		4)
-		vps_LemonBenchIntl
-		;;
-		5)
-		vps_Cn2GIA
-		;;
-		6)
-		vps_make-a
-		;;
-		7)
-		vps_siheyi
-		;;
-		8)
-		vps_ss
-		;;
-		9)
-		vps_x-ui
-		;;
-		10)
-		vps_233
-		;;
-		11)
-		vps_bt1
-		;;
-		12)
-		vps_bt2
-		;;
-		13)
-		vps_bt3
-		;;
-		14)
-		vps_bt4
-		;;
-		15)
-		bt_kx
-		;;
-		16)
-		vps_bbr1
-		;;
-		17)
-		vps_bbr2
-		;;
-		18)
-		vps_openvz
-		;;
-		19)
-		vps_nf
-		;;
-		20)
-		vps_lmt
-		;;
-		21)
-		vps_root
-		;;
-		22)
-		vps_frps
-		;;
-		23)
-		vps_nps
-		;;
-		24)
-		vps_warp
-		;;
-		25)
-		vps_gost
-		;;
-		26)
-		vps_ip
-		;;
-		27)
-		rm_ss
-		;;
-		28)
-		vps_dd
-		;;
-		29)
-		docker
-		;;
-
+    		1) vps_superspeed ;;
+		2) vps_zbench;;
+		3) vps_testrace ;;
+		4) vps_LemonBenchIntl ;;
+		5) vps_Cn2GIA ;;
+		6) vps_make-a ;;
+		7) vps_siheyi ;;
+		8) vps_ss ;;
+		9) vps_x-ui ;;
+		10) vps_233 ;;
+		11) vps_bt1 ;;
+		12) vps_bt2 ;;
+		13) vps_bt3 ;;
+		14) vps_bt4 ;;
+		15) bt_kx ;;
+		16) vps_bbr1 ;;
+		17) vps_bbr2 ;;
+		18) vps_openvz ;;
+		19) vps_nf ;;
+		20) vps_lmt ;;
+		21) vps_root ;;
+		22) vps_frps ;;
+		23) vps_nps ;;
+		24) vps_warp ;;
+		25) vps_gost ;;
+		26) vps_ip ;;
+		27) rm_ss ;;
+		28) vps_dd ;;
+		29) docker ;;
 		0)
 		exit 0
 		;;
