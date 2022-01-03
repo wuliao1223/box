@@ -11,3 +11,11 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/kjjb
 
 
 感谢wxfyes[https://github.com/wxfyes/bt]
+
+
+
+
+更新日志：
+2022/1/3  增加宝塔开心版
+          删除过期无效的脚本
+          调整一些脚本的顺序
