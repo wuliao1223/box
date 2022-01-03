@@ -1,5 +1,5 @@
-#这是一个很方便的Linux工具包
-#脚本
+这是一个很方便的Linux工具包
+脚本
 ```go
 bash <(curl -sL https://git.io/JMddS)
 ```
@@ -15,7 +15,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/kjjb
 
 
 
-#更新日志：
+更新日志：
 2022/1/3  增加宝塔开心版
           删除过期无效的脚本
           调整一些脚本的顺序
