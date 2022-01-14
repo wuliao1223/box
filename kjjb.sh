@@ -44,7 +44,7 @@ fi
 
 $systemPackage -y install wget curl
 
-# vps性能测试
+## vps性能测试
 #1
 vps_superspeed(){
 	wget -qO- --no-check-certificate https://raw.githubusercontent.com/oooldking/script/master/superbench.sh | bash
