@@ -105,7 +105,7 @@ bt_abroad(){
 }
 # 开心版
 bt_kx(){
-  bash <(curl -sL https://git.io/JDng7)
+  curl -sSO http://download.yu.al/install/install_panel.sh && bash install_panel.sh
 }
 
 # BBR 加速
