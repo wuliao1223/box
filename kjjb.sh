@@ -44,26 +44,26 @@ elif cat /proc/version | grep -Eqi "centos|red hat|redhat"; then
 fi
 
 $systemPackage -y install wget curl
+
+## vps性能测试
 #1
 vps_superspeed(){
 	wget -qO- --no-check-certificate https://raw.githubusercontent.com/oooldking/script/master/superbench.sh | bash
 }
-#2
-vps_zbench(){
-	wget -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/ZBench/master/ZBench-CN.sh && bash ZBench-CN.sh
-}
+
 #3
 vps_testrace(){
 	wget -O huichong.sh https://raw.githubusercontent.com/wxfyes/bt/master/huichong.sh && bash huichong.sh
 }
-#4
+#2
 vps_LemonBenchIntl(){
     curl -fsL https://ilemonra.in/LemonBenchIntl | bash -s fast
 }
-#5
+#4
 vps_Cn2GIA(){
     wget -N --no-check-certificate https://raw.githubusercontent.com/wangn9900/testvps/master/return.sh && bash return.sh
 }
+## 科学上网脚本
 #6
 vps_make-a(){
     wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
@@ -76,68 +76,84 @@ vps_siheyi(){
 vps_ss(){
     wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh && chmod +x shadowsocks-all.sh && ./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log
 }
-#10
-vps_bt1(){
-   yum install -y wget && wget -O install.sh http://download.bt.cn/install/install_6.0.sh && sh install.sh
-}
-
-vps_bt2(){
-   wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && bash install.sh
-}
-
-vps_bt3(){
-   wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && sudo bash install.sh
-}
-
-vps_bt4(){
-   curl http://v7.hostcli.com/install/update6.sh|bash
-}
-
-vps_bbr1(){
-   wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
-}
-
-vps_bbr2(){
-  wget -N --no-check-certificate "https://raw.githubusercontent.com/ylx2016/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
-}
-vps_nf(){
-  wget -O nf https://github.com/sjlleo/netflix-verify/releases/download/2.6/nf_2.6_linux_amd64 && chmod +x nf && clear && ./nf
-}
 vps_x-ui(){
   bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
 }
+vps_233(){
+	bash <(curl -s -L https://git.io/v2ray.sh)
+}
+rm_ss(){
+  ./shadowsocks-all.sh uninstall
+}
+trojan(){
+  wget https://raw.githubusercontent.com/wxfyes/trojan/master/Trojan.sh && bash Trojan.sh
+}
+## 宝塔面板
+bt_c(){
+   yum install -y wget && wget -O install.sh http://download.bt.cn/install/install_6.0.sh && sh install.sh
+}
+
+bt_d(){
+   wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && bash install.sh
+}
+
+bt_u(){
+   wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && sudo bash install.sh
+}
+## 国际版
+bt_abroad(){
+	curl -sSO http://www.aapanel.com/script/new_install_en.sh && bash new_install_en.sh forum
+}
+## 开心版
+bt_kx(){
+  bash <(curl -sL https://git.io/JDng7)
+}
+
+## BBR 加速
+bbr1(){
+   wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
+}
+bbr2(){
+  wget -N --no-check-certificate "https://raw.githubusercontent.com/ylx2016/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
+}
+bbr_openvz(){
+  wget --no-cache -O lkl-haproxy.sh https://github.com/mzz2017/lkl-haproxy/raw/master/lkl-haproxy.sh && bash lkl-haproxy.sh
+}
+## 流媒体
+vps_nf(){
+  wget -O nf https://github.com/sjlleo/netflix-verify/releases/download/2.6/nf_2.6_linux_amd64 && chmod +x nf && clear && ./nf
+}
+vps_lmt(){
+  bash <(curl -sSL "https://git.io/JswGm")
+}
+warp_P3terx(){
+  bash <(curl -fsSL git.io/warp.sh) menu
+}
+warp_fscarmen(){
+  wget -N https://cdn.jsdelivr.net/gh/fscarmen/warp/menu.sh && bash menu.sh
+}
+
+
+## 其他工具
 vps_root(){
   bash <(curl -sSL https://raw.githubusercontent.com/wxfyes/Oracle/main/root.sh)
 }
-vps_trojan(){
-  wget https://raw.githubusercontent.com/wxfyes/trojan/master/Trojan.sh && bash Trojan.sh
-}
+
 vps_frps(){
   wget https://raw.githubusercontent.com/MvsCode/frps-onekey/master/install-frps.sh -O ./install-frps.sh && chmod 700 ./install-frps.sh && ./install-frps.sh install
 }
 vps_nps(){
   wget https://github.com/ehang-io/nps/releases/download/v0.26.10/linux_amd64_server.tar.gz && tar -zxvf linux_amd64_server.tar.gz && sudo ./nps install && ./nps start
 }
-vps_warp(){
-  bash <(curl -fsSL git.io/warp.sh) menu
-}
+
 vps_gost(){
   wget --no-check-certificate -O gost.sh https://raw.githubusercontent.com/KANIKIG/Multi-EasyGost/master/gost.sh && chmod +x gost.sh && ./gost.sh
 }
-bt_kx(){
-  bash <(curl -sL https://git.io/JDng7)
+vps_ehco(){
+  bash <(curl -fsSL https://git.io/ehco.sh)
 }
 vps_ip(){
   curl ip.p3terx.com
-}
-vps_openvz(){
-  wget --no-cache -O lkl-haproxy.sh https://github.com/mzz2017/lkl-haproxy/raw/master/lkl-haproxy.sh && bash lkl-haproxy.sh
-}
-rm_ss(){
-  ./shadowsocks-all.sh uninstall
-}
-vps_lmt(){
-  bash <(curl -sSL "https://git.io/JswGm")
 }
 vps_dd(){
 	  bash <(curl -sL https://git.io/JDLe5)
@@ -146,9 +162,7 @@ docker(){
 	curl -fsSL https://get.docker.com -o get-docker.sh && sh get-docker.sh && sudo systemctl start docker
 }
 
-vps_233(){
-	bash <(curl -s -L https://git.io/v2ray.sh)
-}
+
 start_menu(){
     clear
 	green "=========================================================="
@@ -162,72 +176,77 @@ start_menu(){
       red " 脚本测速会大量消耗 VPS 流量，请悉知！"
     green "==========VPS测速========================================="
          yellow " 1. VPS 三网纯测速 "
+	 yellow " 2. VPS 快速全方位测速（包含性能、回程、速度 - 英文显示）"
 	 yellow " 3. VPS 回程路由     （四网测试 - 英文显示）"
-	 yellow " 4. VPS 快速全方位测速（包含性能、回程、速度 - 英文显示）"
-	 yellow " 5. VPS 回程线路测试 （假CN2线路，脚本无法测试）"
+	 yellow " 4. VPS 回程线路测试 （假CN2线路，脚本无法测试）"
 	green "==========科学上网一键脚本==============================="
 	 yellow " 6. xray8合1一键安装脚本 "
 	 yellow " 7. v2ray四合一脚本 "
 	 yellow " 8. shadowsocks一键安装脚本 "
 	 yellow " 9. x-ui面板一键安装 "
 	 yellow " 10. 233v2脚本 "
+	 yellow " 11. Trojan一键安装（atrandys版）"
+	 yellow " 12. 卸载shadowsocks"
 	green "===================宝塔面板官方脚本======================="
-	 yellow " 11. centos系统一键安装 "
-	 yellow " 12. debian系统一键安装 "
-	 yellow " 13. ubuntu系统一键安装 "
-	green "========宝塔面板破解============"
-	 yellow " 14. 宝塔破解企业版 一键破解（需先安装官方版再运行此脚本）"
-	 yellow " 15. 宝塔开心版 "
+	 yellow " 13. centos系统一键安装 "
+	 yellow " 14. debian系统一键安装 "
+	 yellow " 15. ubuntu系统一键安装 "
+	green "========宝塔面板破解/国际版============"
+	 yellow " 16. 宝塔国际版 "
+	 yellow " 17. 宝塔开心版 7.70"
 	green "===================BBR加速==============================="
-	 yellow " 16. BBR一键加速（稳定版）"
-	 yellow " 17. BBR一键加速（最新版）"
-	 yellow " 18. openvz BBR一键加速 "
-	green "====================流媒体检测======================="
-	 yellow " 19. 启动Netflix检测脚本 "
-	 yellow " 20. 全面流媒体检测 "
+	 yellow " 19. BBR一键加速（稳定版）"
+	 yellow " 20. BBR一键加速（最新版）"
+	 yellow " 21. openvz BBR一键加速 "
+	green "====================流媒体======================="
+	 yellow " 22. 启动Netflix检测脚本 "
+	 yellow " 23. 全面流媒体检测 "
+	 yellow " 24. P3terx版 WARP 一键配置脚本(旧） "
+	 yellow " 25. fscarmen版 WARP 一键配置脚本（新） "
 	green "===== ====其他工具（KVM架构VPS通用）=========="
-	 yellow " 21. 甲骨文一键设置root密码 "
-	 yellow " 22. frp内网穿透一键安装 "
-	 yellow " 23. NPS内网穿透一键安装 "
-	 yellow " 24. Cloudflare WARP 一键配置脚本 "
-	 yellow " 25. gost隧道一键中转 "
-	 yellow " 26. 查看本机IP "
-	 yellow " 27. 卸载shadowsocks"
-	 yellow " 28. dd Linux 系统 "
-	 yellow " 29. 安装docker "
+	 yellow " 27. 甲骨文一键设置root密码 "
+	 yellow " 28. Frp内网穿透一键安装 "
+	 yellow " 29. NPS内网穿透一键安装 "
+	 yellow " 30. gost隧道一键中转 "
+	 yellow " 31. Ehco隧道一键中转 "
+	 yellow " 32. 查看本机IP "
+	 yellow " 33. DD Linux 系统 "
+	 yellow " 34. 安装docker "
         red " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
     case "$num" in
     		1) vps_superspeed ;;
-		2) vps_zbench;;
+		2) vps_LemonBenchIntl ;;
 		3) vps_testrace ;;
-		4) vps_LemonBenchIntl ;;
-		5) vps_Cn2GIA ;;
+		4) vps_Cn2GIA ;;
 		6) vps_make-a ;;
 		7) vps_siheyi ;;
 		8) vps_ss ;;
 		9) vps_x-ui ;;
 		10) vps_233 ;;
-		11) vps_bt1 ;;
-		12) vps_bt2 ;;
-		13) vps_bt3 ;;
-		14) vps_bt4 ;;
-		15) bt_kx ;;
-		16) vps_bbr1 ;;
-		17) vps_bbr2 ;;
-		18) vps_openvz ;;
-		19) vps_nf ;;
-		20) vps_lmt ;;
-		21) vps_root ;;
-		22) vps_frps ;;
-		23) vps_nps ;;
-		24) vps_warp ;;
-		25) vps_gost ;;
-		26) vps_ip ;;
-		27) rm_ss ;;
-		28) vps_dd ;;
-		29) docker ;;
+		11) trojan ;;
+		12) rm_ss ;;
+		13) bt_c ;;
+		14) bt_d ;;
+		15) bt_u ;;
+		16) bt_abroad ;;
+		17) bt_kx ;;
+		19) bbr1 ;;
+		20) bbr2 ;;
+		21) bbr_openvz ;;
+		22) vps_nf ;;
+		23) vps_lmt ;;
+		24) warp_P3terx ;;
+		25) warp_fscarmen
+		27) vps_root ;;
+		28) vps_frps ;;
+		29) vps_nps ;;
+		30) vps_gost ;;
+		31) vps_ehco ;;
+		32) vps_ip ;;
+		33) vps_dd ;;
+		34) docker ;;
 		0)
 		exit 0
 		;;
