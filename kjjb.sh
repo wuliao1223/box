@@ -179,7 +179,7 @@ start_menu(){
 	 yellow " 3. VPS 回程路由     （四网测试 - 英文显示）"
 	 yellow " 4. VPS 回程线路测试 （假CN2线路，脚本无法测试）"
 	green "==========科学上网一键脚本==============================="
-	 yellow " 6. xray8合1一键安装脚本 "
+	 yellow " 6. make-a 八合1一键安装脚本 "
 	 yellow " 7. v2ray四合一脚本 "
 	 yellow " 8. shadowsocks一键安装脚本 "
 	 yellow " 9. x-ui面板一键安装 "
