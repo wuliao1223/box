@@ -1,5 +1,4 @@
 #!/bin/bash
-
 blue(){
     echo -e "\033[34m\033[01m$1\033[0m"
 }
@@ -45,7 +44,7 @@ fi
 
 $systemPackage -y install wget curl
 
-## vps性能测试
+# vps性能测试
 #1
 vps_superspeed(){
 	wget -qO- --no-check-certificate https://raw.githubusercontent.com/oooldking/script/master/superbench.sh | bash
@@ -63,7 +62,7 @@ vps_LemonBenchIntl(){
 vps_Cn2GIA(){
     wget -N --no-check-certificate https://raw.githubusercontent.com/wangn9900/testvps/master/return.sh && bash return.sh
 }
-## 科学上网脚本
+# 科学上网脚本
 #6
 vps_make-a(){
     wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
@@ -88,7 +87,7 @@ rm_ss(){
 trojan(){
   wget https://raw.githubusercontent.com/wxfyes/trojan/master/Trojan.sh && bash Trojan.sh
 }
-## 宝塔面板
+# 宝塔面板
 bt_c(){
    yum install -y wget && wget -O install.sh http://download.bt.cn/install/install_6.0.sh && sh install.sh
 }
@@ -100,16 +99,16 @@ bt_d(){
 bt_u(){
    wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && sudo bash install.sh
 }
-## 国际版
+# 国际版
 bt_abroad(){
 	curl -sSO http://www.aapanel.com/script/new_install_en.sh && bash new_install_en.sh forum
 }
-## 开心版
+# 开心版
 bt_kx(){
   bash <(curl -sL https://git.io/JDng7)
 }
 
-## BBR 加速
+# BBR 加速
 bbr1(){
    wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 }
@@ -119,7 +118,7 @@ bbr2(){
 bbr_openvz(){
   wget --no-cache -O lkl-haproxy.sh https://github.com/mzz2017/lkl-haproxy/raw/master/lkl-haproxy.sh && bash lkl-haproxy.sh
 }
-## 流媒体
+# 流媒体
 vps_nf(){
   wget -O nf https://github.com/sjlleo/netflix-verify/releases/download/2.6/nf_2.6_linux_amd64 && chmod +x nf && clear && ./nf
 }
@@ -134,8 +133,8 @@ warp_fscarmen(){
 }
 
 
-## 其他工具
-vps_root(){
+# 其他工具
+vps_oracle(){
   bash <(curl -sSL https://raw.githubusercontent.com/wxfyes/Oracle/main/root.sh)
 }
 
@@ -238,8 +237,8 @@ start_menu(){
 		22) vps_nf ;;
 		23) vps_lmt ;;
 		24) warp_P3terx ;;
-		25) warp_fscarmen
-		27) vps_root ;;
+		25) warp_fscarmen ;;
+		27) vps_oracle ;;
 		28) vps_frps ;;
 		29) vps_nps ;;
 		30) vps_gost ;;
