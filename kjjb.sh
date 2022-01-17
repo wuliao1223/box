@@ -163,6 +163,9 @@ docker(){
 firewall(){
 	systemctl stop firewalld.service  &&  systemctl disable firewalld.service 
 }
+update(){
+	wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/kjjb/main/kjjb.sh && chmod -R 777 kjjb.sh && bash kjjb.sh
+ }
 start_menu(){
     clear
 	green "=========================================================="
@@ -212,6 +215,7 @@ start_menu(){
 	 yellow " 33. DD Linux 系统 "
 	 yellow " 34. 安装docker "
 	 yellow " 35. 关闭Centos7防火墙 "
+	 yellow " 36. 更新脚本 "
         red " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
@@ -248,6 +252,7 @@ start_menu(){
 		33) vps_dd ;;
 		34) docker ;;
 		35) firewall ;;
+		66) update ;;
 		0)
 		exit 0
 		;;
