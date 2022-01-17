@@ -215,7 +215,7 @@ start_menu(){
 	 yellow " 33. DD Linux 系统 "
 	 yellow " 34. 安装docker "
 	 yellow " 35. 关闭Centos7防火墙 "
-	 yellow " 36. 更新脚本 "
+	 yellow " 66. 更新脚本 "
         red " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
