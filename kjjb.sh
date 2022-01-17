@@ -160,8 +160,9 @@ vps_dd(){
 docker(){
 	curl -fsSL https://get.docker.com -o get-docker.sh && sh get-docker.sh && sudo systemctl start docker
 }
-
-
+firewall(){
+	systemctl stop firewalld.service  &&  systemctl disable firewalld.service 
+}
 start_menu(){
     clear
 	green "=========================================================="
@@ -210,6 +211,7 @@ start_menu(){
 	 yellow " 32. 查看本机IP "
 	 yellow " 33. DD Linux 系统 "
 	 yellow " 34. 安装docker "
+	 yellow " 35. 关闭Centos7防火墙 "
         red " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
@@ -245,6 +247,7 @@ start_menu(){
 		32) vps_ip ;;
 		33) vps_dd ;;
 		34) docker ;;
+		35) firewall ;;
 		0)
 		exit 0
 		;;
