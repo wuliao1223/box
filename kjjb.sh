@@ -203,7 +203,7 @@ start_menu(){
 	 yellow " 19. BBR一键加速（稳定版）"
 	 yellow " 20. BBR一键加速（最新版）"
 	 yellow " 21. openvz BBR一键加速 "
-	green "====================流媒体======================="
+	green "===============流媒体warp解锁失效了======================="
 	 yellow " 22. 启动Netflix检测脚本 "
 	 yellow " 23. 全面流媒体检测 "
 	 yellow " 24. P3terx版 WARP 一键配置脚本(旧） "
