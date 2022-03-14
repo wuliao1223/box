@@ -166,6 +166,9 @@ firewall(){
 update(){
 	wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/kjjb/main/kjjb.sh && chmod -R 777 kjjb.sh && bash kjjb.sh
  }
+swap(){
+	wget https://www.moerats.com/usr/shell/swap.sh && bash swap.sh
+}
 start_menu(){
     clear
 	green "=========================================================="
@@ -215,6 +218,7 @@ start_menu(){
 	 yellow " 33. DD Linux 系统 "
 	 yellow " 34. 安装docker "
 	 yellow " 35. 关闭Centos7防火墙 "
+	 yellow " 36. 一键添加/删除Swap虚拟内存 "
 	 yellow " 66. 更新脚本 "
         red " 0. 退出脚本 "
     echo
@@ -252,6 +256,7 @@ start_menu(){
 		33) vps_dd ;;
 		34) docker ;;
 		35) firewall ;;
+		36) swap ;;
 		66) update ;;
 		0)
 		exit 0
