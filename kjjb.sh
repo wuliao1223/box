@@ -18,11 +18,11 @@ if [[ -f /etc/redhat-release ]]; then
     systempwd="/usr/lib/systemd/system/"
 elif cat /etc/issue | grep -Eqi "debian"; then
     release="debian"
-    systemPackage="apt-get"
+    systemPackage="apt"
     systempwd="/lib/systemd/system/"
 elif cat /etc/issue | grep -Eqi "ubuntu"; then
     release="ubuntu"
-    systemPackage="apt-get"
+    systemPackage="apt"
     systempwd="/lib/systemd/system/"
 elif cat /etc/issue | grep -Eqi "centos|red hat|redhat"; then
     release="centos"
@@ -30,11 +30,11 @@ elif cat /etc/issue | grep -Eqi "centos|red hat|redhat"; then
     systempwd="/usr/lib/systemd/system/"
 elif cat /proc/version | grep -Eqi "debian"; then
     release="debian"
-    systemPackage="apt-get"
+    systemPackage="apt"
     systempwd="/lib/systemd/system/"
 elif cat /proc/version | grep -Eqi "ubuntu"; then
     release="ubuntu"
-    systemPackage="apt-get"
+    systemPackage="apt"
     systempwd="/lib/systemd/system/"
 elif cat /proc/version | grep -Eqi "centos|red hat|redhat"; then
     release="centos"
