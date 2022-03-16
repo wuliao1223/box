@@ -16,6 +16,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/kjjb
 
 # 更新日志
 2022/3/16 删除warp解锁，删除宝塔开心版，增加mtp+tls 和mtp白名单
+
 2022/1/14 更改了排版，增加一些功能，删除不需要的功能
 # 感谢列表
 感谢他们的贡献，让脚本得到进一步完善
