@@ -142,7 +142,6 @@ start_menu(){
 	green "=========================================================="
          blue " 本脚本支持：CentOS7+ / Debian9+ / Ubuntu16.04+"
 	 blue " 网站：https://m.233hhh.top "
-	 blue " 脚本: wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/kjjb/main/kjjb.sh && bash kjjb.sh "
      blue " 此脚本源于网络，仅仅只是汇聚脚本功能，方便大家使用而已！"
 	green "=========================================================="
       red " 脚本测速会大量消耗 VPS 流量，请悉知！"
