@@ -137,6 +137,9 @@ update(){
 swap(){
 	wget https://www.moerats.com/usr/shell/swap.sh && bash swap.sh
 }
+newdd(){
+	wget -N --no-check-certificate  https://raw.githubusercontent.com/wuliao1223/newdd/main/newdd.sh && bash newdd.sh
+}
 start_menu(){
     clear
 	green "=========================================================="
@@ -181,6 +184,7 @@ start_menu(){
 	 yellow " 34. 安装docker "
 	 yellow " 35. 关闭Centos7防火墙 "
 	 yellow " 36. 一键添加/删除Swap虚拟内存 "
+	 yellow " 37. DD linux 魔改版 "
 	 yellow " 66. 更新脚本 "
         red " 0. 退出脚本 "
     echo
@@ -216,6 +220,7 @@ start_menu(){
 		34) docker ;;
 		35) firewall ;;
 		36) swap ;;
+		37) newdd ;;
 		66) update ;;
 		0)
 		exit 0
