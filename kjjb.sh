@@ -186,6 +186,7 @@ start_menu(){
 	 yellow " 36. 一键添加/删除Swap虚拟内存 "
 	 yellow " 37. DD linux 魔改版 "
 	 yellow " 66. 更新脚本 "
+	 yellow " 88. 安装依赖 "
         red " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
@@ -222,6 +223,7 @@ start_menu(){
 		36) swap ;;
 		37) newdd ;;
 		66) update ;;
+		88) installDependent ;;
 		0)
 		exit 0
 		;;
