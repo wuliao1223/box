@@ -11,9 +11,9 @@ yellow(){
 red(){
     echo -e "\033[31m\033[01m$1\033[0m"
 }
-installcurl(){
-	yum install curl -y
-	apt install curl -y
+installyl(){
+	yum update -y && yum install curl wget -y
+	apt update -y apt install curl wget -y
 }
 # vps性能测试
 #1
@@ -223,7 +223,7 @@ start_menu(){
 		36) swap ;;
 		37) newdd ;;
 		66) update ;;
-		88) installcurl ;;
+		88) installyl ;;
 		0) exit 0 ;;
 		*)
 	clear
