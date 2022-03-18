@@ -11,9 +11,9 @@ yellow(){
 red(){
     echo -e "\033[31m\033[01m$1\033[0m"
 }
-installDependent(){
-	yum install  wget curl -y
-	apt install wget curl -y
+installcurl(){
+	yum install curl -y
+	apt install curl -y
 }
 # vps性能测试
 #1
@@ -223,10 +223,8 @@ start_menu(){
 		36) swap ;;
 		37) newdd ;;
 		66) update ;;
-		88) installDependent ;;
-		0)
-		exit 0
-		;;
+		88) installcurl ;;
+		0) exit 0 ;;
 		*)
 	clear
 	echo "请输入正确数字"
