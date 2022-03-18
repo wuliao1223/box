@@ -11,10 +11,10 @@ yellow(){
 red(){
     echo -e "\033[31m\033[01m$1\033[0m"
 }
-
-yum update -y && yum install wget curl -y
-apt update -y &&  apt install wget curl -y
-
+installDependent(){
+	yum install  wget curl -y
+	apt install wget curl -y
+}
 # vps性能测试
 #1
 vps_superspeed(){
