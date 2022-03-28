@@ -33,6 +33,10 @@ vps_LemonBenchIntl(){
 vps_Cn2GIA(){
     wget -N --no-check-certificate https://raw.githubusercontent.com/wangn9900/testvps/master/return.sh && bash return.sh
 }
+#5
+Bench.sh（）{
+	wget -qO- bench.sh | bash
+}
 # 科学上网脚本
 #6
 vps_make-a(){
@@ -153,6 +157,7 @@ start_menu(){
 	 yellow " 2. VPS 快速全方位测速（包含性能、回程、速度 - 英文显示）"
 	 yellow " 3. VPS 回程路由     （四网测试 - 英文显示）"
 	 yellow " 4. VPS 回程线路测试 （假CN2线路，脚本无法测试）"
+	 yellow " 5. 秋水Bench.sh脚本 "
 	green "==========科学上网一键脚本==============================="
 	 yellow " 6. make-a 八合1一键安装脚本 "
 	 yellow " 7. v2ray四合一脚本 "
@@ -195,6 +200,7 @@ start_menu(){
 		2) vps_LemonBenchIntl ;;
 		3) vps_testrace ;;
 		4) vps_Cn2GIA ;;
+		5) Bench.sh ;;
 		6) vps_make-a ;;
 		7) vps_siheyi ;;
 		8) vps_ss ;;
