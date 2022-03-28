@@ -34,7 +34,7 @@ vps_Cn2GIA(){
     wget -N --no-check-certificate https://raw.githubusercontent.com/wangn9900/testvps/master/return.sh && bash return.sh
 }
 #5
-Bench.sh（）{
+Bench.sh(){
 	wget -qO- bench.sh | bash
 }
 # 科学上网脚本
