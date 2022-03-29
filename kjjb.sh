@@ -20,15 +20,15 @@ installyl(){
 vps_superspeed(){
 	wget -qO- --no-check-certificate https://raw.githubusercontent.com/oooldking/script/master/superbench.sh | bash
 }
-
+#2
+swspeed(){
+	bash <(curl -Lso- https://git.io/Jlkmw)
+}
 #3
 vps_testrace(){
 	wget -O huichong.sh https://raw.githubusercontent.com/wxfyes/bt/master/huichong.sh && bash huichong.sh
 }
 #2
-vps_LemonBenchIntl(){
-    curl -fsL https://ilemonra.in/LemonBenchIntl | bash -s fast
-}
 #4
 vps_Cn2GIA(){
     wget -N --no-check-certificate https://raw.githubusercontent.com/wangn9900/testvps/master/return.sh && bash return.sh
@@ -154,7 +154,7 @@ start_menu(){
       red " 脚本测速会大量消耗 VPS 流量，请悉知！"
     green "==========VPS测速========================================="
          yellow " 1. VPS 三网纯测速 "
-	 yellow " 2. VPS 快速全方位测速（包含性能、回程、速度 - 英文显示）"
+	 yellow " 2. 三网测速 "
 	 yellow " 3. VPS 回程路由     （四网测试 - 英文显示）"
 	 yellow " 4. VPS 回程线路测试 （假CN2线路，脚本无法测试）"
 	 yellow " 5. 秋水Bench.sh脚本 "
@@ -197,7 +197,7 @@ start_menu(){
     read -p "请输入数字:" num
     case "$num" in
     		1) vps_superspeed ;;
-		2) vps_LemonBenchIntl ;;
+		2) swspeed ;;
 		3) vps_testrace ;;
 		4) vps_Cn2GIA ;;
 		5) Bench ;;
