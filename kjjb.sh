@@ -38,13 +38,9 @@ Bench(){
 	wget -qO- bench.sh | bash
 }
 # 科学上网脚本
-#6
+#7
 vps_make-a(){
     wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
-}
-#7
-vps_siheyi(){
-    bash <(curl -sL https://s.hijk.art/v2ray.sh)
 }
 #8
 vps_ss(){
@@ -159,8 +155,7 @@ start_menu(){
 	 yellow " 4. VPS 回程线路测试 （假CN2线路，脚本无法测试）"
 	 yellow " 5. 秋水Bench.sh脚本 "
 	green "==========科学上网一键脚本==============================="
-	 yellow " 6. make-a 八合1一键安装脚本 "
-	 yellow " 7. v2ray四合一脚本 "
+	 yellow " 7. make-a 八合1一键安装脚本 "
 	 yellow " 8. shadowsocks一键安装脚本 "
 	 yellow " 9. x-ui面板一键安装 "
 	 yellow " 10. 233v2脚本 "
@@ -201,8 +196,7 @@ start_menu(){
 		3) vps_testrace ;;
 		4) vps_Cn2GIA ;;
 		5) Bench ;;
-		6) vps_make-a ;;
-		7) vps_siheyi ;;
+		7) vps_make-a ;;
 		8) vps_ss ;;
 		9) vps_x-ui ;;
 		10) vps_233 ;;
