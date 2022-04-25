@@ -37,6 +37,10 @@ vps_Cn2GIA(){
 Bench(){
 	wget -qO- bench.sh | bash
 }
+#6
+LemonBenchIntl(){
+	curl -fsL https://ilemonra.in/LemonBenchIntl | bash -s fast
+}
 # 科学上网脚本
 #7
 vps_make-a(){
@@ -154,6 +158,7 @@ start_menu(){
 	 yellow " 3. VPS 回程路由     （四网测试 - 英文显示）"
 	 yellow " 4. VPS 回程线路测试 （假CN2线路，脚本无法测试）"
 	 yellow " 5. 秋水Bench.sh脚本 "
+	 yellow " 6. 全面测速 "
 	green "==========科学上网一键脚本==============================="
 	 yellow " 7. make-a 八合1一键安装脚本 "
 	 yellow " 8. shadowsocks一键安装脚本 "
@@ -196,6 +201,7 @@ start_menu(){
 		3) vps_testrace ;;
 		4) vps_Cn2GIA ;;
 		5) Bench ;;
+		6) LemonBenchIntl ;;
 		7) vps_make-a ;;
 		8) vps_ss ;;
 		9) vps_x-ui ;;
