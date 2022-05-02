@@ -12,25 +12,6 @@ red(){
     echo -e "\033[31m\033[01m$1\033[0m"
 }
 
-if [[ -f /etc/redhat-release ]]; then
-    release="Centos"
-elif cat /etc/issue | grep -q -E -i "debian"; then
-    release="Debian"
-elif cat /etc/issue | grep -q -E -i "ubuntu"; then
-    release="Ubuntu"
-elif cat /etc/issue | grep -q -E -i "centos|red hat|redhat"; then
-    release="Centos"
-elif cat /proc/version | grep -q -E -i "debian"; then
-    release="Debian"
-elif cat /proc/version | grep -q -E -i "ubuntu"; then
-    release="Ubuntu"
-elif cat /proc/version | grep -q -E -i "centos|red hat|redhat"; then
-    release="Centos"
-else 
-    red "不支持你当前系统，请使用Ubuntu、Debian、Centos的主流系统"
-    rm -f MisakaToolbox.sh
-    exit 1
-fi
 
 
 # vps性能测试
