@@ -11,10 +11,7 @@ yellow(){
 red(){
     echo -e "\033[31m\033[01m$1\033[0m"
 }
-installyl(){
-	yum update -y && yum install curl wget -y
-	apt update -y apt install curl wget -y
-}
+
 # vps性能测试
 #1
 vps_superspeed(){
@@ -156,7 +153,7 @@ start_menu(){
          yellow " 1. VPS 三网纯测速 "
 	 yellow " 2. 三网测速 "
 	 yellow " 3. VPS 回程路由     （四网测试 - 英文显示）"
-	 yellow " 4. VPS 回程线路测试 （假CN2线路，脚本无法测试）"
+	 yellow " 4. VPS 回程线路测试 （不太准）"
 	 yellow " 5. 秋水Bench.sh脚本 "
 	 yellow " 6. 全面测速 "
 	green "==========科学上网一键脚本==============================="
@@ -178,6 +175,7 @@ start_menu(){
 	green "===============流媒体检测======================="
 	 yellow " 22. 启动Netflix检测脚本 "
 	 yellow " 23. 全面流媒体检测 "
+	 yellow " 24. warp_fscarmen(美国可用） "
 	green "===== ====其他工具（KVM架构VPS通用）=========="
 	 yellow " 27. 甲骨文一键设置root密码 "
 	 yellow " 28. Frp内网穿透一键安装 "
@@ -191,7 +189,6 @@ start_menu(){
 	 yellow " 36. 一键添加/删除Swap虚拟内存 "
 	 yellow " 37. DD linux 魔改版 "
 	 yellow " 66. 更新脚本 "
-	 yellow " 88. 安装依赖 "
         red " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
@@ -217,6 +214,7 @@ start_menu(){
 		21) bbr_openvz ;;
 		22) vps_nf ;;
 		23) vps_lmt ;;
+		24) warp_fscarmen
 		27) vps_oracle ;;
 		28) vps_frps ;;
 		29) vps_nps ;;
@@ -229,7 +227,6 @@ start_menu(){
 		36) swap ;;
 		37) newdd ;;
 		66) update ;;
-		88) installyl ;;
 		0) exit 0 ;;
 		*)
 	clear
