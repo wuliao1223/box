@@ -32,38 +32,6 @@ else
     exit 1
 fi
 
-if ! type curl >/dev/null 2>&1; then 
-    yellow "curl未安装，安装中"
-    if [ $release = "Centos" ]; then
-        yum -y update && yum install curl -y
-    else
-        apt-get update -y && apt-get install curl -y
-    fi	   
-else
-    green "curl已安装"
-fi
-
-if ! type wget >/dev/null 2>&1; then 
-    yellow "wget未安装，安装中"
-    if [ $release = "Centos" ]; then
-        yum -y update && yum install wget -y
-    else
-        apt-get update -y && apt-get install wget -y
-    fi	   
-else
-    green "wget已安装"
-fi
-
-if ! type sudo >/dev/null 2>&1; then 
-    yellow "sudo未安装，安装中"
-    if [ $release = "Centos" ]; then
-        yum -y update && yum install sudo -y
-    else
-        apt-get update -y && apt-get install sudo -y
-    fi	   
-else
-    green "sudo已安装"
-fi
 
 # vps性能测试
 #1
