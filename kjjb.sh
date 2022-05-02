@@ -177,7 +177,7 @@ start_menu(){
 	green "===============流媒体检测======================="
 	 yellow " 22. 启动Netflix检测脚本 "
 	 yellow " 23. 全面流媒体检测 "
-	 yellow " 24. warp_fscarmen(美国可用） "
+	 yellow " 24. warp_fscarmen (美国可用) "
 	green "===== ====其他工具（KVM架构VPS通用）=========="
 	 yellow " 27. 甲骨文一键设置root密码 "
 	 yellow " 28. Frp内网穿透一键安装 "
