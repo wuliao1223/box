@@ -155,7 +155,6 @@ start_menu(){
          yellow " 1. VPS 三网纯测速 "
 	 yellow " 2. 三网测速 "
 	 yellow " 3. VPS 回程路由     （四网测试 - 英文显示）"
-	 yellow " 4. VPS 回程线路测试 （不太准）"
 	 yellow " 5. 秋水Bench.sh脚本 "
 	 yellow " 6. 全面测速 "
 	green "==========科学上网一键脚本==============================="
@@ -198,7 +197,6 @@ start_menu(){
     		1) vps_superspeed ;;
 		2) swspeed ;;
 		3) vps_testrace ;;
-		4) vps_Cn2GIA ;;
 		5) Bench ;;
 		6) LemonBenchIntl ;;
 		7) vps_make-a ;;
