@@ -182,7 +182,6 @@ start_menu(){
 	 yellow " 28. Frp内网穿透一键安装 "
 	 yellow " 29. NPS内网穿透一键安装 "
 	 yellow " 30. gost隧道一键中转 "
-	 yellow " 31. Ehco隧道一键中转 "
 	 yellow " 32. 查看本机IP "
 	 yellow " 33. DD Linux 系统 "
 	 yellow " 34. 安装docker "
@@ -219,7 +218,6 @@ start_menu(){
 		28) vps_frps ;;
 		29) vps_nps ;;
 		30) vps_gost ;;
-		31) vps_ehco ;;
 		32) vps_ip ;;
 		33) vps_dd ;;
 		34) docker ;;
