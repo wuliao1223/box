@@ -184,10 +184,11 @@ start_menu(){
 	 yellow " 30. gost隧道一键中转 "
 	 yellow " 32. 查看本机IP "
 	 yellow " 33. DD Linux 系统 "
-	 yellow " 34. 安装docker "
-	 yellow " 35. 关闭Centos7防火墙 "
-	 yellow " 36. 一键添加/删除Swap虚拟内存 "
-	 yellow " 37. DD linux 魔改版 "
+	 yellow " 34. DD linux 魔改版 "
+	 yellow " 35. 安装docker "
+	 yellow " 36. 关闭Centos7防火墙 "
+	 yellow " 37. 一键添加/删除Swap虚拟内存 "
+	 
 	 yellow " 66. 更新脚本 "
         red " 0. 退出脚本 "
     echo
@@ -220,10 +221,10 @@ start_menu(){
 		30) vps_gost ;;
 		32) vps_ip ;;
 		33) vps_dd ;;
-		34) docker ;;
-		35) firewall ;;
-		36) swap ;;
-		37) newdd ;;
+		34) newdd ;;
+		35) docker ;;
+		36) firewall ;;
+		37) swap ;;
 		66) update ;;
 		0) exit 0 ;;
 		*)
