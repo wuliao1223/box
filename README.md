@@ -6,6 +6,12 @@
 
 # 使用方法
 ```go
+apt update && apt install curl nano sudo -y
+```
+```go
+yum update -y && yum install wget nano sudo -y
+```
+```go
 bash <(curl -sL https://git.io/JMddS)
 ```
 或者
