@@ -18,6 +18,9 @@ bash <(curl -sL https://git.io/JMddS)
 ```go
 wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/kjjb/main/kjjb.sh  && chmod 777 kjjb.sh && bash kjjb.sh
 ```
+```go
+wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/kjjb/main/bb  && chmod 777 bb && bash bb
+```
 # 赞助我
 
 # 更新日志
@@ -28,6 +31,8 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/kjjb
 感谢他们的贡献，让脚本得到进一步完善
 
 [wxfyes](https://github.com/wxfyes/bt)
+
+
 
 
 
