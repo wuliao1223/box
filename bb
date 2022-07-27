@@ -59,7 +59,7 @@ rm_ss(){
   ./shadowsocks-all.sh uninstall
 }
 trojan(){
-  wget https://raw.githubusercontent.com/wxfyes/trojan/master/Trojan.sh && bash Trojan.sh
+  source <(curl -sL https://git.io/trojan-install)
 }
 # 宝塔面板
 bt_c(){
@@ -162,7 +162,7 @@ start_menu(){
 	 yellow " 8. shadowsocks一键安装脚本 "
 	 yellow " 9. x-ui面板一键安装 "
 	 yellow " 10. 233v2脚本 "
-	 yellow " 11. Trojan一键安装（atrandys版）"
+	 yellow " 11. Trojan（Jrohy版）"
 	 yellow " 12. 卸载shadowsocks"
 	green "===================宝塔面板官方脚本======================="
 	 yellow " 13. centos系统一键安装 "
