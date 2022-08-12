@@ -94,7 +94,7 @@ vps_nf(){
   wget -O nf https://github.com/sjlleo/netflix-verify/releases/download/2.6/nf_2.6_linux_amd64 && chmod +x nf && clear && ./nf
 }
 vps_lmt(){
-  bash <(curl -sSL "https://git.io/JswGm")
+  bash <(curl -L -s https://raw.githubusercontent.com/lmc999/RegionRestrictionCheck/main/check.sh)
 }
 warp_P3terx(){
   bash <(curl -fsSL git.io/warp.sh) menu
