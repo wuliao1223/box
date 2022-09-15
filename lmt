@@ -1,0 +1,81 @@
+#!/bin/bash
+blue(){
+    echo -e "\033[34m\033[01m$1\033[0m"
+}
+green(){
+    echo -e "\033[32m\033[01m$1\033[0m"
+}
+yellow(){
+    echo -e "\033[33m\033[01m$1\033[0m"
+}
+red(){
+    echo -e "\033[31m\033[01m$1\033[0m"
+}
+
+
+
+lmt_tw(){
+	bash <(curl -sSL "https://git.io/JswGm")  tw
+}
+lmt_hk(){
+	bash <(curl -sSL "https://git.io/JswGm")  hk
+}
+lmt_jp(){
+	bash <(curl -sSL "https://git.io/JswGm")  jp
+}
+lmt_us(){
+	bash <(curl -sSL "https://git.io/JswGm")  us
+}
+lmt_eu(){
+	bash <(curl -sSL "https://git.io/JswGm")  eu
+}
+lmt_kr(){
+	bash <(curl -sSL "https://git.io/JswGm")  kr
+}
+lmt_global(){
+	bash <(curl -sSL "https://git.io/JswGm")  global
+}
+lmt_all(){
+	bash <(curl -sSL "https://git.io/JswGm")
+}
+
+update(){
+	wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/kjjb/main/kjjb.sh && chmod -R 777 kjjb.sh && bash kjjb.sh
+ }
+start_menu(){
+    clear
+
+	green "===============流媒体检测======================="
+	 yellow " 1. 测试台湾 "
+	 yellow " 2. 测试香港 "
+	 yellow " 3. 测试日本 "
+	 yellow " 4. 测试美国 "
+	 yellow " 5. 测试欧洲 "
+	 yellow " 6. 测试韩国 "
+	 yellow " 7. 仅测试国外 "
+	 yellow " 8. 完全测试 "
+	 yellow " 66. 更新脚本 "
+        red " 0. 退出脚本 "
+    echo
+    read -p "请输入数字:" num
+    case "$num" in
+    		1) lmt_tw ;;
+		2) lmt_hk ;;
+		3) lmt_jp ;;
+		5) lmt_us ;;
+		5) lmt_eu ;;
+		5) lmt_kr ;;
+		5) lmt_global ;;
+		5) lmt_all ;;
+		66) update ;;
+		0) exit 0 ;;
+		*)
+	clear
+	echo "请输入正确数字"
+	sleep 2s
+	start_menu
+	;;
+    esac
+} 
+
+start_menu
