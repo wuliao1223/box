@@ -96,6 +96,9 @@ vps_nf(){
 vps_lmt(){
   bash <(curl -L -s https://raw.githubusercontent.com/lmc999/RegionRestrictionCheck/main/check.sh)
 }
+lmt(){
+	wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/kjjb/main/lmt  && chmod 777 lmt && bash lmt
+}
 warp_P3terx(){
   bash <(curl -fsSL git.io/warp.sh) menu
 }
@@ -175,8 +178,9 @@ start_menu(){
 	 yellow " 21. openvz BBR一键加速 "
 	green "===============流媒体检测======================="
 	 yellow " 22. 启动Netflix检测脚本 "
-	 yellow " 23. 全面流媒体检测 "
-	 yellow " 24. warp_fscarmen (美国可用) "
+	 yellow " 23. 流媒体检测脚本一 "
+	 yellow " 24. 流媒体检测脚本二 "
+	 yellow " 25. warp_fscarmen (美国可用) "
 	green "===== ====其他工具（KVM架构VPS通用）=========="
 	 yellow " 27. 甲骨文一键设置root密码 "
 	 yellow " 28. Frp内网穿透一键安装 "
@@ -214,7 +218,8 @@ start_menu(){
 		21) bbr_openvz ;;
 		22) vps_nf ;;
 		23) vps_lmt ;;
-		24) warp_fscarmen ;;
+		24） lmt ;;
+		25) warp_fscarmen ;;
 		27) vps_oracle ;;
 		28) vps_frps ;;
 		29) vps_nps ;;
