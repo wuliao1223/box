@@ -218,7 +218,7 @@ start_menu(){
 		21) bbr_openvz ;;
 		22) vps_nf ;;
 		23) vps_lmt ;;
-		24） lmt ;;
+		24) lmt ;;
 		25) warp_fscarmen ;;
 		27) vps_oracle ;;
 		28) vps_frps ;;
