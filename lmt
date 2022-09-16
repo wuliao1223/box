@@ -62,11 +62,11 @@ start_menu(){
     		1) lmt_tw ;;
 		2) lmt_hk ;;
 		3) lmt_jp ;;
-		5) lmt_us ;;
+		4) lmt_us ;;
 		5) lmt_eu ;;
-		5) lmt_kr ;;
-		5) lmt_global ;;
-		5) lmt_all ;;
+		6) lmt_kr ;;
+		7) lmt_global ;;
+		8) lmt_all ;;
 		66) update ;;
 		0) exit 0 ;;
 		*)
