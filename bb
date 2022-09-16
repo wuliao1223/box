@@ -138,7 +138,7 @@ firewall(){
 	systemctl stop firewalld.service  &&  systemctl disable firewalld.service 
 }
 update(){
-	wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/kjjb/main/kjjb.sh && chmod -R 777 kjjb.sh && bash kjjb.sh
+	wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/box/main/bb && chmod -R 777 bb && bash bb
  }
 swap(){
 	wget https://www.moerats.com/usr/shell/swap.sh && bash swap.sh
