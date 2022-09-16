@@ -12,10 +12,7 @@ apt update && apt install curl nano sudo -y
 yum update -y && yum install wget nano sudo -y
 ```
 主命令
-```go
-bash <(curl -sL https://git.io/JMddS)
-```
-或者
+
 
 ```go
 wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/kjjb/main/bb  && chmod 777 bb && bash bb
