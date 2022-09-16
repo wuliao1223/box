@@ -97,7 +97,7 @@ vps_lmt(){
   bash <(curl -L -s https://raw.githubusercontent.com/lmc999/RegionRestrictionCheck/main/check.sh)
 }
 lmt(){
-	wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/kjjb/main/lmt  && chmod 777 lmt && bash lmt
+	wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/box/main/lmt  && chmod 777 lmt && bash lmt
 }
 warp_P3terx(){
   bash <(curl -fsSL git.io/warp.sh) menu
