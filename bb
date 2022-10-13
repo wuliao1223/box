@@ -165,11 +165,9 @@ start_menu(){
 	 yellow " 6. 全面测速 "
 	green "==========科学上网一键脚本==============================="
 	 yellow " 7. make-a 八合1一键安装脚本 "
-	 yellow " 8. shadowsocks一键安装脚本 "
-	 yellow " 9. x-ui面板一键安装 "
-	 yellow " 10. 233v2脚本 "
-	 yellow " 11. Trojan（Jrohy版）"
-	 yellow " 12. 卸载shadowsocks"
+	 yellow " 8. x-ui面板一键安装 "
+	 yellow " 9. 233v2脚本 "
+	 yellow " 10. Trojan（Jrohy版）"
 	green "===================宝塔面板官方脚本======================="
 	 yellow " 13. centos系统一键安装 "
 	 yellow " 14. debian系统一键安装 "
@@ -208,11 +206,9 @@ start_menu(){
 		5) Bench ;;
 		6) LemonBenchIntl ;;
 		7) vps_make-a ;;
-		8) vps_ss ;;
-		9) vps_x-ui ;;
-		10) vps_233 ;;
-		11) trojan ;;
-		12) rm_ss ;;
+		8) vps_x-ui ;;
+		9) vps_233 ;;
+		10) trojan ;;
 		13) bt_c ;;
 		14) bt_d ;;
 		15) bt_u ;;
