@@ -146,6 +146,9 @@ swap(){
 newdd(){
 	wget -N --no-check-certificate  https://raw.githubusercontent.com/wuliao1223/newdd/main/newdd.sh && bash newdd.sh
 }
+ChangeMirrors(){
+	bash <(curl -sSL https://gitee.com/SuperManito/LinuxMirrors/raw/main/ChangeMirrors.sh)
+}
 start_menu(){
     clear
 	green "=========================================================="
@@ -192,6 +195,7 @@ start_menu(){
 	 yellow " 35. 安装docker "
 	 yellow " 36. 关闭Centos7防火墙 "
 	 yellow " 37. 一键添加/删除Swap虚拟内存 "
+	 yellow " 38. 一键换国内源 "
 	 
 	 yellow " 66. 更新脚本 "
         red " 0. 退出脚本 "
@@ -230,6 +234,7 @@ start_menu(){
 		35) docker ;;
 		36) firewall ;;
 		37) swap ;;
+		38）ChangeMirrors ;;
 		66) update ;;
 		0) exit 0 ;;
 		*)
