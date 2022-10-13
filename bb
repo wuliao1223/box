@@ -77,6 +77,9 @@ bt_u(){
 bt_abroad(){
 	curl -sSO http://www.aapanel.com/script/new_install_en.sh && bash new_install_en.sh forum
 }
+bt_uninstall(){
+	wget http://download.bt.cn/install/bt-uninstall.sh && sh bt-uninstall.sh
+}
 
 
 # BBR 加速
@@ -173,6 +176,7 @@ start_menu(){
 	 yellow " 14. debian系统一键安装 "
 	 yellow " 15. ubuntu系统一键安装 "
 	 yellow " 16. 宝塔国际版一键安装 "
+	 yellow " 17. 一键卸载宝塔面板 "
 	green "===================BBR加速==============================="
 	 yellow " 19. BBR一键加速（稳定版）"
 	 yellow " 20. BBR一键加速（最新版）"
@@ -213,6 +217,7 @@ start_menu(){
 		14) bt_d ;;
 		15) bt_u ;;
 		16) bt_abroad ;;
+		17) bt_uninstall ;;
 		19) bbr1 ;;
 		20) bbr2 ;;
 		21) bbr_openvz ;;
