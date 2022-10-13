@@ -235,7 +235,7 @@ start_menu(){
 		35) docker ;;
 		36) firewall ;;
 		37) swap ;;
-		38) ChangeMirrors ;;
+		38)ChangeMirrors ;;
 		66) update ;;
 		0) exit 0 ;;
 		*)
