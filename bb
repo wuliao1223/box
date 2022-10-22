@@ -93,11 +93,9 @@ bbr_openvz(){
   wget --no-cache -O lkl-haproxy.sh https://github.com/mzz2017/lkl-haproxy/raw/master/lkl-haproxy.sh && bash lkl-haproxy.sh
 }
 # 流媒体
-vps_nf(){
-  wget -O nf https://github.com/sjlleo/netflix-verify/releases/download/2.6/nf_2.6_linux_amd64 && chmod +x nf && clear && ./nf
-}
+
 vps_lmt(){
-  bash <(curl -L -s https://raw.githubusercontent.com/lmc999/RegionRestrictionCheck/main/check.sh)
+  bash <(curl -Ls unlock.moe)
 }
 lmt(){
 	wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/box/main/lmt  && chmod 777 lmt && bash lmt
@@ -182,8 +180,7 @@ start_menu(){
 	 yellow " 20. BBR一键加速（最新版）"
 	 yellow " 21. openvz BBR一键加速 "
 	green "===============流媒体检测======================="
-	 yellow " 22. 启动Netflix检测脚本 "
-	 yellow " 23. 流媒体检测脚本一 "
+	 yellow " 23. 流媒体检测脚本一 (飞速） "
 	 yellow " 24. 流媒体检测脚本二 "
 	 yellow " 25. warp_fscarmen (美国可用) "
 	green "===== ====其他工具（KVM架构VPS通用）=========="
@@ -221,7 +218,7 @@ start_menu(){
 		19) bbr1 ;;
 		20) bbr2 ;;
 		21) bbr_openvz ;;
-		22) vps_nf ;;
+		
 		23) vps_lmt ;;
 		24) lmt ;;
 		25) warp_fscarmen ;;
