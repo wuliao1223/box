@@ -80,7 +80,9 @@ bt_abroad(){
 bt_uninstall(){
 	wget http://download.bt.cn/install/bt-uninstall.sh && sh bt-uninstall.sh
 }
-
+bt_kx(){
+	bash <(curl -sL https://git.io/JDng7)
+}
 
 # BBR 加速
 bbr1(){
@@ -169,12 +171,13 @@ start_menu(){
 	 yellow " 8. x-ui面板一键安装 "
 	 yellow " 9. 233v2脚本 （不建议使用） "
 	 yellow " 10. Trojan（Jrohy版）"
-	green "===================宝塔面板官方脚本======================="
-	 yellow " 13. centos系统一键安装 "
-	 yellow " 14. debian系统一键安装 "
-	 yellow " 15. ubuntu系统一键安装 "
-	 yellow " 16. 宝塔国际版一键安装 "
-	 yellow " 17. 一键卸载宝塔面板 "
+	green "===================宝塔面板======================="
+	 yellow " 13. Centos  (官方版本) "
+	 yellow " 14. Debian  (官方版本) "
+	 yellow " 15. Ubuntu  (官方版本) "
+	 yellow " 16. 宝塔国际版 "
+	 yellow " 17. 宝塔开心版 "
+	 yellow " 18. 一键卸载宝塔面板 "
 	green "===================BBR加速==============================="
 	 yellow " 19. BBR一键加速（稳定版）"
 	 yellow " 20. BBR一键加速（最新版）"
@@ -214,7 +217,8 @@ start_menu(){
 		14) bt_d ;;
 		15) bt_u ;;
 		16) bt_abroad ;;
-		17) bt_uninstall ;;
+		17) bt_kx
+		18) bt_uninstall ;;
 		19) bbr1 ;;
 		20) bbr2 ;;
 		21) bbr_openvz ;;
