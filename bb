@@ -158,8 +158,6 @@ start_menu(){
          blue " 本脚本支持：CentOS7+ / Debian9+ / Ubuntu16.04+"
 	 blue " 网站：https://www.233hhh.top "
      blue " 此脚本源于网络，仅仅只是汇聚脚本功能，方便大家使用而已！"
-	green "=========================================================="
-      red " 脚本测速会大量消耗 VPS 流量，请悉知！"
     green "==========VPS测速========================================="
          yellow " 1. VPS 三网纯测速 "
 	 yellow " 2. 三网测速 "
@@ -197,8 +195,7 @@ start_menu(){
 	 yellow " 35. 安装docker "
 	 yellow " 36. 关闭Centos7防火墙 "
 	 yellow " 37. 一键添加/删除Swap虚拟内存 "
-	 yellow " 38. 一键换国内源 "
-	 
+	 yellow " 38. 一键换国内源 "	 
 	 yellow " 66. 更新脚本 "
         red " 0. 退出脚本 "
     echo
@@ -217,7 +214,7 @@ start_menu(){
 		14) bt_d ;;
 		15) bt_u ;;
 		16) bt_abroad ;;
-		17) bt_kx
+		17) bt_kx ;;
 		18) bt_uninstall ;;
 		19) bbr1 ;;
 		20) bbr2 ;;
