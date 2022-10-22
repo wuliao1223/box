@@ -27,6 +27,9 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/box/
 2022/8/20 完善了一些功能
 
 2022/10/17 完善了一些功能
+
+2022/10/22 使用更快的流媒体检测脚本
+
 # 感谢列表
 感谢他们的贡献，让脚本得到进一步完善
 
