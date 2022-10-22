@@ -176,7 +176,7 @@ start_menu(){
 	 yellow " 14. Debian  (官方版本) "
 	 yellow " 15. Ubuntu  (官方版本) "
 	 yellow " 16. 宝塔国际版 "
-	 yellow " 17. 宝塔开心版 "
+	 yellow " 17. 宝塔开心版 7.7 "
 	 yellow " 18. 一键卸载宝塔面板 "
 	green "===================BBR加速==============================="
 	 yellow " 19. BBR一键加速（稳定版）"
