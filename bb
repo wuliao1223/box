@@ -61,7 +61,7 @@ rm_ss(){
 trojan(){
   source <(curl -sL https://git.io/trojan-install)
 }
-Naïve(){
+Naive(){
 	curl   https://raw.githubusercontent.com/imajeason/nas_tools/main/NaiveProxy/do.sh | bash
 }
 # 宝塔面板
@@ -214,7 +214,7 @@ start_menu(){
 		8) vps_x-ui ;;
 		9) vps_233 ;;
 		10) trojan ;;
-		11) Naïve ;;
+		11) Naive ;;
 		13) bt_c ;;
 		14) bt_d ;;
 		15) bt_u ;;
