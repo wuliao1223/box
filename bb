@@ -61,6 +61,9 @@ rm_ss(){
 trojan(){
   source <(curl -sL https://git.io/trojan-install)
 }
+Naïve(){
+	curl   https://raw.githubusercontent.com/imajeason/nas_tools/main/NaiveProxy/do.sh | bash
+}
 # 宝塔面板
 bt_c(){
    yum install -y wget && wget -O install.sh http://download.bt.cn/install/install_6.0.sh && sh install.sh
@@ -169,6 +172,7 @@ start_menu(){
 	 yellow " 8. x-ui面板一键安装 "
 	 yellow " 9. 233v2脚本 （不建议使用） "
 	 yellow " 10. Trojan（Jrohy版）"
+	 yellow " 11. Naïve "
 	green "===================宝塔面板======================="
 	 yellow " 13. Centos  (官方版本) "
 	 yellow " 14. Debian  (官方版本) "
@@ -210,6 +214,7 @@ start_menu(){
 		8) vps_x-ui ;;
 		9) vps_233 ;;
 		10) trojan ;;
+		11) Naïve ;;
 		13) bt_c ;;
 		14) bt_d ;;
 		15) bt_u ;;
