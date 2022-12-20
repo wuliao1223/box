@@ -65,17 +65,10 @@ Naive(){
 	curl   https://raw.githubusercontent.com/imajeason/nas_tools/main/NaiveProxy/do.sh | bash
 }
 # 宝塔面板
-bt_c(){
-   yum install -y wget && wget -O install.sh http://download.bt.cn/install/install_6.0.sh && sh install.sh
+bt_all(){
+   if [ -f /usr/bin/curl ];then curl -sSO https://download.bt.cn/install/install_panel.sh;else wget -O install_panel.sh https://download.bt.cn/install/install_panel.sh;fi;bash install_panel.sh ed8484bec
 }
 
-bt_d(){
-   wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && bash install.sh
-}
-
-bt_u(){
-   wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && sudo bash install.sh
-}
 # 国际版
 bt_abroad(){
 	curl -sSO http://www.aapanel.com/script/new_install_en.sh && bash new_install_en.sh forum
@@ -176,9 +169,7 @@ start_menu(){
 	 yellow " 10. Trojan（Jrohy版）"
 	 yellow " 11. Naïve "
 	green "===================Linux面板======================="
-	 yellow " 13. 宝塔Centos  (官方版本) "
-	 yellow " 14. 宝塔Debian  (官方版本) "
-	 yellow " 15. 宝塔Ubuntu  (官方版本) "
+	 yellow " 13. 宝塔国内版 "
 	 yellow " 16. 宝塔国际版 "
 	 yellow " 17. 宝塔开心版 7.7 "
 	 yellow " 18. 一键卸载宝塔面板 "
@@ -218,9 +209,7 @@ start_menu(){
 		9) vps_233 ;;
 		10) trojan ;;
 		11) Naive ;;
-		13) bt_c ;;
-		14) bt_d ;;
-		15) bt_u ;;
+		13) bt_all ;;
 		16) bt_abroad ;;
 		17) bt_kx ;;
 		18) bt_uninstall ;;
