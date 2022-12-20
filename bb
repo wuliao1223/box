@@ -86,7 +86,9 @@ bt_uninstall(){
 bt_kx(){
 	bash <(curl -sL https://git.io/JDng7)
 }
-
+xpmb(){
+	wget -O install.sh https://notdocker.xp.cn/install.sh && sudo bash install.sh
+}
 # BBR 加速
 bbr1(){
    wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
@@ -173,17 +175,18 @@ start_menu(){
 	 yellow " 9. 233v2脚本 （不建议使用） "
 	 yellow " 10. Trojan（Jrohy版）"
 	 yellow " 11. Naïve "
-	green "===================宝塔面板======================="
-	 yellow " 13. Centos  (官方版本) "
-	 yellow " 14. Debian  (官方版本) "
-	 yellow " 15. Ubuntu  (官方版本) "
+	green "===================Linux面板======================="
+	 yellow " 13. 宝塔Centos  (官方版本) "
+	 yellow " 14. 宝塔Debian  (官方版本) "
+	 yellow " 15. 宝塔Ubuntu  (官方版本) "
 	 yellow " 16. 宝塔国际版 "
 	 yellow " 17. 宝塔开心版 7.7 "
 	 yellow " 18. 一键卸载宝塔面板 "
+	 yellow " 19. 安装小皮面板 "
 	green "===================BBR加速==============================="
-	 yellow " 19. BBR一键加速（稳定版）"
-	 yellow " 20. BBR一键加速（最新版）"
-	 yellow " 21. openvz BBR一键加速 "
+	 yellow " 20. BBR一键加速（稳定版）"
+	 yellow " 21. BBR一键加速（最新版）"
+	 yellow " 22. openvz BBR一键加速 "
 	green "===============流媒体检测======================="
 	 yellow " 23. 流媒体检测脚本一 (飞速） "
 	 yellow " 24. 流媒体检测脚本二 "
@@ -221,10 +224,10 @@ start_menu(){
 		16) bt_abroad ;;
 		17) bt_kx ;;
 		18) bt_uninstall ;;
-		19) bbr1 ;;
-		20) bbr2 ;;
-		21) bbr_openvz ;;
-		
+		19) xpmb ;;
+		20) bbr1 ;;
+		21) bbr2 ;;
+		22) bbr_openvz ;;
 		23) vps_lmt ;;
 		24) lmt ;;
 		25) warp_fscarmen ;;
