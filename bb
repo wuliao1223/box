@@ -170,10 +170,10 @@ start_menu(){
 	 yellow " 11. Naïve "
 	green "===================Linux面板======================="
 	 yellow " 13. 宝塔国内版 "
-	 yellow " 16. 宝塔国际版 "
-	 yellow " 17. 宝塔开心版 7.7 "
-	 yellow " 18. 一键卸载宝塔面板 "
-	 yellow " 19. 安装小皮面板 "
+	 yellow " 14. 宝塔国际版 "
+	 yellow " 15. 宝塔开心版 7.7 "
+	 yellow " 16. 一键卸载宝塔面板 "
+	 yellow " 17. 安装小皮面板 "
 	green "===================BBR加速==============================="
 	 yellow " 20. BBR一键加速（稳定版）"
 	 yellow " 21. BBR一键加速（最新版）"
@@ -210,10 +210,10 @@ start_menu(){
 		10) trojan ;;
 		11) Naive ;;
 		13) bt_all ;;
-		16) bt_abroad ;;
-		17) bt_kx ;;
-		18) bt_uninstall ;;
-		19) xpmb ;;
+		14) bt_abroad ;;
+		15) bt_kx ;;
+		16) bt_uninstall ;;
+		17) xpmb ;;
 		20) bbr1 ;;
 		21) bbr2 ;;
 		22) bbr_openvz ;;
