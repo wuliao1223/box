@@ -58,9 +58,7 @@ vps_233(){
 rm_ss(){
   ./shadowsocks-all.sh uninstall
 }
-trojan(){
-  source <(curl -sL https://git.io/trojan-install)
-}
+
 Naive(){
 	curl   https://raw.githubusercontent.com/imajeason/nas_tools/main/NaiveProxy/do.sh | bash
 }
@@ -163,14 +161,12 @@ start_menu(){
          yellow " 1. VPS 三网纯测速 "
 	 yellow " 2. 三网测速 "
 	 yellow " 3. VPS 回程路由 （四网测试 - 英文显示）"
-	 yellow " 5. 秋水Bench.sh脚本 "
-	 yellow " 6. 全面测速 (时间较长） "
+	 yellow " 4. 秋水Bench.sh脚本 "
 	green "==========科学上网一键脚本==============================="
 	 yellow " 7. make-a 八合1一键安装脚本 "
 	 yellow " 8. x-ui面板一键安装 "
 	 yellow " 9. 233v2脚本 （不建议使用） "
-	 yellow " 10. Trojan（Jrohy版）"
-	 yellow " 11. Naïve "
+	 yellow " 10. Naïve "
 	green "===================Linux面板======================="
 	 yellow " 13. 宝塔国内版 "
 	 yellow " 14. 宝塔国际版 "
@@ -188,7 +184,6 @@ start_menu(){
 	green "===== ====其他工具（KVM架构VPS通用）=========="
 	 yellow " 27. 甲骨文一键设置root密码 "
 	 yellow " 28. Frp内网穿透一键安装 "
-	 yellow " 29. NPS内网穿透一键安装 "
 	 yellow " 30. gost隧道一键中转 "
 	 yellow " 31. 极光面板（docker）"
 	 yellow " 32. 查看本机IP "
@@ -206,13 +201,11 @@ start_menu(){
     		1) vps_superspeed ;;
 		2) swspeed ;;
 		3) vps_testrace ;;
-		5) Bench ;;
-		6) LemonBenchIntl ;;
+		4) Bench ;;
 		7) vps_make-a ;;
 		8) vps_x-ui ;;
 		9) vps_233 ;;
-		10) trojan ;;
-		11) Naive ;;
+		10) Naive ;;
 		13) bt_all ;;
 		14) bt_abroad ;;
 		15) bt_kx ;;
@@ -226,7 +219,6 @@ start_menu(){
 		25) warp_fscarmen ;;
 		27) vps_oracle ;;
 		28) vps_frps ;;
-		29) vps_nps ;;
 		30) vps_gost ;;
 		31) JiGuang ;;
 		32) vps_ip ;;
