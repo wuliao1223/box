@@ -52,8 +52,11 @@ vps_ss(){
 vps_x-ui(){
   bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
 }
-vps_233(){
+v2_233(){
 	bash <(curl -s -L https://git.io/v2ray.sh)
+}
+xray_233(){
+    bash <(wget -qO- -o- https://github.com/233boy/Xray/raw/main/install.sh) -v v1.8.1
 }
 rm_ss(){
   ./shadowsocks-all.sh uninstall
@@ -137,7 +140,7 @@ firewall(){
 	systemctl stop firewalld.service  &&  systemctl disable firewalld.service 
 }
 update(){
-	wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/box/main/bb && chmod +x bb  &&  ./bb
+	wget www.233hhh.top/bb && chmod +x bb  &&  ./bb
  }
 swap(){
 	wget https://www.moerats.com/usr/shell/swap.sh && bash swap.sh
@@ -165,8 +168,9 @@ start_menu(){
 	green "==========科学上网一键脚本==============================="
 	 yellow " 7. make-a 八合1一键安装脚本 "
 	 yellow " 8. x-ui面板一键安装 "
-	 yellow " 9. 233v2脚本 （不建议使用） "
-	 yellow " 10. Naïve "
+	 yellow " 9. 233v2脚本  "
+	 yellow " 10. 233 xray脚本 "
+	 yellow " 11. Naïve "
 	green "===================Linux面板======================="
 	 yellow " 13. 宝塔国内版 "
 	 yellow " 14. 宝塔国际版 "
@@ -204,8 +208,9 @@ start_menu(){
 		4) Bench ;;
 		7) vps_make-a ;;
 		8) vps_x-ui ;;
-		9) vps_233 ;;
-		10) Naive ;;
+		9) v2_233 ;;
+		10) xray_233
+		11) Naive ;;
 		13) bt_all ;;
 		14) bt_abroad ;;
 		15) bt_kx ;;
