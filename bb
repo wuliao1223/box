@@ -209,7 +209,7 @@ start_menu(){
 		7) vps_make-a ;;
 		8) vps_x-ui ;;
 		9) v2_233 ;;
-		10) xray_233
+		10) xray_233 ;;
 		11) Naive ;;
 		13) bt_all ;;
 		14) bt_abroad ;;
