@@ -95,6 +95,15 @@ warp_fscarmen(){
 
 
 # 其他工具
+realm(){
+	wget -N --no-check-certificate https://git.io/realm.sh && chmod +x realm.sh && ./realm.sh
+}
+gost(){
+	wget --no-check-certificate -O gost.sh https://raw.githubusercontent.com/KANIKIG/Multi-EasyGost/master/gost.sh && chmod +x gost.sh && ./gost.sh
+}
+iptable(){
+	wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/iptables-pf.sh && chmod +x iptables-pf.sh && bash iptables-pf.sh
+}
 vps_oracle(){
   bash <(curl -sSL https://raw.githubusercontent.com/wxfyes/Oracle/main/root.sh)
 }
@@ -134,31 +143,32 @@ start_menu(){
      blue " 本脚本支持：CentOS7+ / Debian9+ / Ubuntu16.04+"
 	 blue " 网站：https://www.233hhh.top "
      blue " 此脚本源于网络，仅仅只是汇聚脚本功能，方便大家使用而已！"
-    green "==========VPS测速========================================="
+    green "==========VPS测速 && 流媒体检测 ========================="
 	yellow " 1. 秋水Bench.sh脚本 "
 	 yellow " 2. 三网测速 "
 	 yellow " 3. VPS 回程路由 （四网测试 - 英文显示）"
 	 yellow " 4. 回程线路测速（快速）"
-	green "==========科学上网一键脚本==============================="
+	 yellow " 5. 流媒体检测脚本一 (飞速） "
+	 yellow " 6. 流媒体检测脚本二 "
+	 yellow " 7. warp_fscarmen （拯救v6小鸡）"
+	green "==========科学 && BBR 加速==============================="
 	 yellow " 8. x-ui面板一键安装 "
 	 yellow " 9. 233v2脚本  "
 	 yellow " 10. 233 xray脚本 "
-	green "===================Linux面板======================="
-	 yellow " 13. 宝塔国内版 "
-	 yellow " 14. 宝塔国际版 "
-	 yellow " 15. 宝塔开心版 7.7 "
-	 yellow " 16. 一键卸载宝塔面板 "
-	 yellow " 17. 极光面板（docker）"
-	green "===================BBR加速==============================="
-	 yellow " 20. BBR一键加速（原版）"
-	 yellow " 21. BBR一键加速（最新版/吃性能）"
-	 yellow " 22. openvz BBR一键加速 "
-	green "===============流媒体检测======================="
-	 yellow " 23. 流媒体检测脚本一 (飞速） "
-	 yellow " 24. 流媒体检测脚本二 "
-	 yellow " 25. warp_fscarmen （拯救v6小鸡）"
-	green "===== ====其他工具=========="
-	 yellow " 27. 甲骨文一键设置root密码 "
+	 yellow " 11. BBR一键加速（原版）"
+	 yellow " 12. BBR一键加速（最新版/吃性能）"
+	 yellow " 13. openvz BBR一键加速 " 
+	green "===================Linux面板============================="
+	 yellow " 14. 宝塔国内版 "
+	 yellow " 15. 宝塔国际版 "
+	 yellow " 16. 宝塔开心版 7.7 "
+	 yellow " 17. 一键卸载宝塔面板 "
+	 yellow " 18. 极光面板（docker）"
+	green "===== ====其他工具====================================="
+	 yellow " 28. realm 中专 "
+	 yellow " 29. gost 中专 "
+	 yellow " 30. iptable 中专 "
+	 yellow " 31. 甲骨文一键设置root密码 "
 	 yellow " 32. 查看本机IP "
 	 yellow " 33. DD Linux 系统 "
 	 yellow " 34. DD linux 魔改版 "
@@ -174,27 +184,29 @@ start_menu(){
 		1) Bench ;;
 		2) swspeed ;;
 		3) vps_testrace ;;
-        4) backtrace ;;
+  	        4) backtrace ;;
+		5) vps_lmt ;;
+		6) lmt ;;
+		7) warp_fscarmen ;;
 
 		8) vps_x-ui ;;
 		9) v2_233 ;;
 		10) xray_233 ;;
+		11) bbr1 ;;
+		12) bbr2 ;;
+		13) bbr_openvz ;;
 
-		13) bt_all ;;
-		14) bt_abroad ;;
-		15) bt_kx ;;
-		16) bt_uninstall ;;
-		17) JiGuang ;;
+		14) bt_all ;;
+		15) bt_abroad ;;
+		16) bt_kx ;;
+		17) bt_uninstall ;;
+		18) JiGuang ;;
 
-		20) bbr1 ;;
-		21) bbr2 ;;
-		22) bbr_openvz ;;
 
-		23) vps_lmt ;;
-		24) lmt ;;
-		25) warp_fscarmen ;;
-
-		27) vps_oracle ;;
+		28) realm ;;
+		29) gost ;;
+		30) iptable ;;
+		31) vps_oracle ;;
 		32) vps_ip ;;
 		33) vps_dd ;;
 		34) newdd ;;
