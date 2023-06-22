@@ -20,6 +20,8 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/box/
 # 赞助我
 
 # 更新日志
+2023/6/22 进一步更新完善，删除无用脚本，233脚本xray支持1.8.3
+
 2022/3/16 删除warp解锁，删除宝塔开心版，增加mtp+tls 和mtp白名单
 
 2022/1/14 更改了排版，增加一些功能，删除不需要的功能
