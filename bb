@@ -144,7 +144,7 @@ firewall(){
 	systemctl stop firewalld.service  &&  systemctl disable firewalld.service 
 }
 update(){
-	wget  -N --no-check-certificate https://www.233hhh.top/bb && chmod +x bb  &&  ./bb
+	wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/box/main/bb  && chmod 777 bb && bash bb
  }
 swap(){
 	wget   -N --no-check-certificate  https://www.moerats.com/usr/shell/swap.sh && bash swap.sh
