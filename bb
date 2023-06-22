@@ -143,6 +143,7 @@ docker(){
 firewall(){
 	systemctl stop firewalld.service  &&  systemctl disable firewalld.service 
 }
+# 更新脚本
 update(){
 	wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/box/main/bb  && chmod 777 bb && bash bb
  }
