@@ -40,10 +40,14 @@ Bench(){
 LemonBenchIntl(){
 	curl -fsL https://ilemonra.in/LemonBenchIntl | bash -s fast
 }
+#5
+backtrace(){
+    curl https://raw.githubusercontent.com/zhanghanyun/backtrace/main/install.sh -sSf | sh
+}
 # 科学上网脚本
 #7
 vps_make-a(){
-    wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
+    wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/reeceyng/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
 }
 #8
 vps_ss(){
@@ -56,7 +60,7 @@ v2_233(){
 	bash <(curl -s -L https://git.io/v2ray.sh)
 }
 xray_233(){
-    bash <(wget -qO- -o- https://github.com/233boy/Xray/raw/main/install.sh) -v v1.8.1
+    bash <(wget -qO- -o- https://github.com/233boy/Xray/raw/main/install.sh) -v v1.8.3
 }
 rm_ss(){
   ./shadowsocks-all.sh uninstall
@@ -105,7 +109,7 @@ warp_P3terx(){
   bash <(curl -fsSL git.io/warp.sh) menu
 }
 warp_fscarmen(){
-  wget -N https://cdn.jsdelivr.net/gh/fscarmen/warp/menu.sh && bash menu.sh
+  wget -N https://raw.githubusercontent.com/fscarmen/warp/main/menu.sh && bash menu.sh 
 }
 
 
@@ -140,10 +144,10 @@ firewall(){
 	systemctl stop firewalld.service  &&  systemctl disable firewalld.service 
 }
 update(){
-	wget www.233hhh.top/bb && chmod +x bb  &&  ./bb
+	wget  -N --no-check-certificate https://www.233hhh.top/bb && chmod +x bb  &&  ./bb
  }
 swap(){
-	wget https://www.moerats.com/usr/shell/swap.sh && bash swap.sh
+	wget   -N --no-check-certificate  https://www.moerats.com/usr/shell/swap.sh && bash swap.sh
 }
 newdd(){
 	wget -N --no-check-certificate  https://raw.githubusercontent.com/wuliao1223/newdd/main/newdd.sh && bash newdd.sh
@@ -162,21 +166,20 @@ start_menu(){
      blue " 此脚本源于网络，仅仅只是汇聚脚本功能，方便大家使用而已！"
     green "==========VPS测速========================================="
          yellow " 1. VPS 三网纯测速 "
-	 yellow " 2. 三网测速 "
-	 yellow " 3. VPS 回程路由 （四网测试 - 英文显示）"
-	 yellow " 4. 秋水Bench.sh脚本 "
+		 yellow " 2. 秋水Bench.sh脚本 "
+	 yellow " 3. 三网测速 "
+	 yellow " 4. VPS 回程路由 （四网测试 - 英文显示）"
+	 yellow " 5. 回程线路测速（快速）"
 	green "==========科学上网一键脚本==============================="
 	 yellow " 7. make-a 八合1一键安装脚本 "
 	 yellow " 8. x-ui面板一键安装 "
 	 yellow " 9. 233v2脚本  "
 	 yellow " 10. 233 xray脚本 "
-	 yellow " 11. Naïve "
 	green "===================Linux面板======================="
 	 yellow " 13. 宝塔国内版 "
 	 yellow " 14. 宝塔国际版 "
 	 yellow " 15. 宝塔开心版 7.7 "
 	 yellow " 16. 一键卸载宝塔面板 "
-	 yellow " 17. 安装小皮面板 "
 	green "===================BBR加速==============================="
 	 yellow " 20. BBR一键加速（稳定版）"
 	 yellow " 21. BBR一键加速（最新版）"
@@ -184,7 +187,7 @@ start_menu(){
 	green "===============流媒体检测======================="
 	 yellow " 23. 流媒体检测脚本一 (飞速） "
 	 yellow " 24. 流媒体检测脚本二 "
-	 yellow " 25. warp_fscarmen (美国可用) "
+	 yellow " 25. warp_fscarmen （拯救v6小鸡）"
 	green "===== ====其他工具（KVM架构VPS通用）=========="
 	 yellow " 27. 甲骨文一键设置root密码 "
 	 yellow " 28. Frp内网穿透一键安装 "
@@ -203,19 +206,18 @@ start_menu(){
     read -p "请输入数字:" num
     case "$num" in
     		1) vps_superspeed ;;
-		2) swspeed ;;
-		3) vps_testrace ;;
-		4) Bench ;;
+		2) Bench ;;
+		3) swspeed ;;
+		4) vps_testrace ;;
+        5) backtrace ;;
 		7) vps_make-a ;;
 		8) vps_x-ui ;;
 		9) v2_233 ;;
 		10) xray_233 ;;
-		11) Naive ;;
 		13) bt_all ;;
 		14) bt_abroad ;;
 		15) bt_kx ;;
 		16) bt_uninstall ;;
-		17) xpmb ;;
 		20) bbr1 ;;
 		21) bbr2 ;;
 		22) bbr_openvz ;;
