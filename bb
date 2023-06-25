@@ -50,11 +50,12 @@ xray_233(){
 
 
 
-# 宝塔面板
-bt_all(){
-   if [ -f /usr/bin/curl ];then curl -sSO https://download.bt.cn/install/install_panel.sh;else wget -O install_panel.sh https://download.bt.cn/install/install_panel.sh;fi;bash install_panel.sh ed8484bec
+bt_1(){
+   curl -sSO https://raw.githubusercontent.com/8838/btpanel-v7.7.0/main/install/install_panel.sh && bash install_panel.sh
 }
-
+bt_2(){
+   curl -sSO https://raw.githubusercontent.com/ztkink/bthappy/main/one_key_happy.sh && bash one_key_happy.sh
+}
 # 国际版
 bt_abroad(){
 	curl -sSO http://www.aapanel.com/script/new_install_en.sh && bash new_install_en.sh forum
@@ -62,9 +63,7 @@ bt_abroad(){
 bt_uninstall(){
 	wget http://download.bt.cn/install/bt-uninstall.sh && sh bt-uninstall.sh
 }
-bt_kx(){
-	bash <(curl -sL https://git.io/JDng7)
-}
+
 JiGuang(){
 	bash <(curl -fsSL https://raw.githubusercontent.com/Aurora-Admin-Panel/deploy/main/install.sh)
 }
@@ -159,9 +158,9 @@ start_menu(){
 	 yellow " 12. BBR一键加速（最新版/吃性能）"
 	 yellow " 13. openvz BBR一键加速 " 
 	green "===================Linux面板============================="
-	 yellow " 14. 宝塔国内版 "
-	 yellow " 15. 宝塔国际版 "
-	 yellow " 16. 宝塔开心版 7.7 "
+	 yellow " 14. 宝塔国内7.7 "
+	 yellow " 15. 宝塔7.7破解 "
+	 yellow " 16. 宝塔国际版 "
 	 yellow " 17. 一键卸载宝塔面板 "
 	 yellow " 18. 极光面板（docker）"
 	green "===== ====其他工具====================================="
@@ -196,9 +195,9 @@ start_menu(){
 		12) bbr2 ;;
 		13) bbr_openvz ;;
 
-		14) bt_all ;;
-		15) bt_abroad ;;
-		16) bt_kx ;;
+		14) bt_1 ;;
+		15) bt_2 ;;
+		16) bt_abroad ;;
 		17) bt_uninstall ;;
 		18) JiGuang ;;
 
