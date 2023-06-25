@@ -17,7 +17,7 @@ red(){
 # vps性能测试
 #1
 Bench(){
-	wget -qO- bench.sh | bash
+	curl -Lso- bench.sh | bash
 }
 #2
 swspeed(){
@@ -142,7 +142,7 @@ start_menu(){
 	green "=========================================================="
      blue " 本脚本支持：CentOS7+ / Debian9+ / Ubuntu16.04+"
 	 blue " 网站：https://www.233hhh.top "
-     blue " 此脚本源于网络，仅仅只是汇聚脚本功能，方便大家使用而已！"
+     blue " 以下脚本源于网络，仅仅只是汇聚脚本功能，方便大家使用而已！"
     green "==========VPS测速 && 流媒体检测 ========================="
 	yellow " 1. 秋水Bench.sh脚本 "
 	 yellow " 2. 三网测速 "
