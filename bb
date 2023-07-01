@@ -17,7 +17,7 @@ red(){
 # vps性能测试
 #1
 Bench(){
-	curl -Lso- bench.sh | bash
+	curl https://raw.githubusercontent.com/wuliao1223/box/main/bench.sh -sSf | sh
 }
 #2
 swspeed(){
@@ -143,7 +143,7 @@ start_menu(){
 	 blue " 网站：https://www.233hhh.top "
      blue " 以下脚本源于网络，仅仅只是汇聚脚本功能，方便大家使用而已！"
     green "==========VPS测速 && 流媒体检测 ========================="
-	yellow " 1. 秋水Bench.sh脚本 "
+	yellow " 1. 秋水Bench.sh修改版 "
 	 yellow " 2. 三网测速 "
 	 yellow " 3. VPS 回程路由 （四网测试 - 英文显示）"
 	 yellow " 4. 回程线路测速（快速）"
@@ -154,8 +154,8 @@ start_menu(){
 	 yellow " 8. x-ui面板一键安装 "
 	 yellow " 9. 233v2脚本  "
 	 yellow " 10. 233 xray脚本 "
-	 yellow " 11. BBR一键加速（原版）"
-	 yellow " 12. BBR一键加速（最新版/吃性能）"
+	 yellow " 11. BBR一键加速（最新版/吃性能）"
+	 yellow " 12. BBR一键加速（原版）"
 	 yellow " 13. openvz BBR一键加速 " 
 	green "===================Linux面板============================="
 	 yellow " 14. 宝塔国内7.7 "
@@ -191,8 +191,8 @@ start_menu(){
 		8) vps_x-ui ;;
 		9) v2_233 ;;
 		10) xray_233 ;;
-		11) bbr1 ;;
-		12) bbr2 ;;
+		11) bbr2 ;;		
+		12) bbr1 ;;
 		13) bbr_openvz ;;
 
 		14) bt_1 ;;
