@@ -17,7 +17,7 @@ red(){
 # vps性能测试
 #1
 Bench(){
-	curl https://raw.githubusercontent.com/wuliao1223/box/main/bench.sh -sSf | sh
+	curl -sSO https://raw.githubusercontent.com/wuliao1223/box/main/bench.sh  && bash bench.sh
 }
 #2
 swspeed(){
