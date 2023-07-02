@@ -5,7 +5,7 @@
 # Copyright (C) 2015 - 2023 Teddysun <i@teddysun.com>
 # Thanks: LookBack <admin@dwhd.org>
 # URL: https://teddysun.com/444.html
-# 
+# https://github.com/teddysun/across/blob/master/bench.sh
 #
 trap _exit INT QUIT TERM
 
