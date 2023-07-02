@@ -69,10 +69,10 @@ JiGuang(){
 }
 
 # BBR 加速
-bbr1(){
+bbr2(){
    wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 }
-bbr2(){
+bbr1(){
   wget -N --no-check-certificate "https://raw.githubusercontent.com/ylx2016/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 }
 bbr_openvz(){
@@ -143,7 +143,7 @@ start_menu(){
 	 blue " 网站：https://www.233hhh.top "
      blue " 以下脚本源于网络，仅仅只是汇聚脚本功能，方便大家使用而已！"
     green "==========VPS测速 && 流媒体检测 ========================="
-	yellow " 1. Bench.sh 重排版 "
+	 yellow " 1. Bench.sh 重排版 "
 	 yellow " 2. 三网测速 "
 	 yellow " 3. VPS 回程路由 （四网测试 - 英文显示）"
 	 yellow " 4. 回程线路测速（快速）"
@@ -191,8 +191,8 @@ start_menu(){
 		8) vps_x-ui ;;
 		9) v2_233 ;;
 		10) xray_233 ;;
-		11) bbr2 ;;		
-		12) bbr1 ;;
+		11) bbr1 ;;		
+		12) bbr2 ;;
 		13) bbr_openvz ;;
 
 		14) bt_1 ;;
