@@ -231,6 +231,7 @@ print_intro() {
     echo "-------------------- A Bench.sh Script By Teddysun -------------------"
     echo " Version            : $(_green v2023-06-10)"
     echo " Usage              : $(_red "wget -qO- bench.sh | bash")"
+    echo " Nottion            : $(_green "bench重排版")"
 }
 
 # Get System information
