@@ -143,7 +143,7 @@ start_menu(){
 	 blue " 网站：https://www.233hhh.top "
      blue " 以下脚本源于网络，仅仅只是汇聚脚本功能，方便大家使用而已！"
     green "==========VPS测速 && 流媒体检测 ========================="
-	yellow " 1. 秋水Bench.sh修改版 "
+	yellow " 1. Bench.sh 重排版 "
 	 yellow " 2. 三网测速 "
 	 yellow " 3. VPS 回程路由 （四网测试 - 英文显示）"
 	 yellow " 4. 回程线路测速（快速）"
