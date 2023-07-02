@@ -5,7 +5,7 @@
 # Copyright (C) 2015 - 2023 Teddysun <i@teddysun.com>
 # Thanks: LookBack <admin@dwhd.org>
 # URL: https://teddysun.com/444.html
-# https://github.com/teddysun/across/blob/master/bench.sh
+# 
 #
 trap _exit INT QUIT TERM
 
@@ -71,20 +71,19 @@ speed_test() {
 
 speed() {
     speed_test '' 'Speedtest.net'
+    speed_test '32155' 'Hongkong, CN'
     speed_test '24447' 'Shanghai, CN'
     speed_test '26352' 'Nanjing, CN'
     speed_test '27594' 'Guangzhou, CN'
-    speed_test '32155' 'Hongkong, CN'
     speed_test '21569' 'Tokyo, JP'
     speed_test '7311'  'Singapore, SG'
+    speed_test '6527'  'Seoul, KR'
     speed_test '21541' 'Los Angeles, US'
     speed_test '43860' 'Dallas, US'
     speed_test '40879' 'Montreal, CA'
     speed_test '24215' 'Paris, FR'
     speed_test '28922' 'Amsterdam, NL'
-    speed_test '6527'  'Seoul, KR'
-    
-    
+     
 }
 
 io_test() {
