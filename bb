@@ -129,9 +129,7 @@ update(){
 swap(){
 	wget   -N --no-check-certificate  https://www.moerats.com/usr/shell/swap.sh && bash swap.sh
 }
-newdd(){
-	wget -N --no-check-certificate  https://raw.githubusercontent.com/wuliao1223/newdd/main/newdd.sh && bash newdd.sh
-}
+
 ChangeMirrors(){
 	bash <(curl -sSL https://gitee.com/SuperManito/LinuxMirrors/raw/main/ChangeMirrors.sh)
 }
@@ -170,7 +168,6 @@ start_menu(){
 	 yellow " 31. 甲骨文一键设置root密码 "
 	 yellow " 32. 查看本机IP "
 	 yellow " 33. DD Linux 系统 "
-	 yellow " 34. DD linux 魔改版 "
 	 yellow " 35. 安装docker "
 	 yellow " 36. 关闭Centos7防火墙 "
 	 yellow " 37. 一键添加/删除Swap虚拟内存 "
@@ -208,7 +205,6 @@ start_menu(){
 		31) vps_oracle ;;
 		32) vps_ip ;;
 		33) vps_dd ;;
-		34) newdd ;;
 		35) docker ;;
 		36) firewall ;;
 		37) swap ;;
