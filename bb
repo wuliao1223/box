@@ -17,7 +17,7 @@ red(){
 # vps性能测试
 #1
 Bench(){
-	bash <(curl -Lso- h bit.ly/233bench)
+	curl -sSO https://raw.githubusercontent.com/wuliao1223/box/main/bench.sh  && bash bench.sh
 }
 #2
 swspeed(){
@@ -129,7 +129,9 @@ update(){
 swap(){
 	wget   -N --no-check-certificate  https://www.moerats.com/usr/shell/swap.sh && bash swap.sh
 }
-
+newdd(){
+	wget -N --no-check-certificate  https://raw.githubusercontent.com/wuliao1223/newdd/main/newdd.sh && bash newdd.sh
+}
 ChangeMirrors(){
 	bash <(curl -sSL https://gitee.com/SuperManito/LinuxMirrors/raw/main/ChangeMirrors.sh)
 }
@@ -141,7 +143,7 @@ start_menu(){
 	 blue " 网站：https://www.233hhh.top "
      blue " 以下脚本源于网络，仅仅只是汇聚脚本功能，方便大家使用而已！"
     green "==========VPS测速 && 流媒体检测 ========================="
-	 yellow " 1. Bench.sh 重排版 "
+	yellow " 1. 秋水Bench.sh修改版 "
 	 yellow " 2. 三网测速 "
 	 yellow " 3. VPS 回程路由 （四网测试 - 英文显示）"
 	 yellow " 4. 回程线路测速（快速）"
