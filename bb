@@ -149,7 +149,7 @@ start_menu(){
 	 yellow " 4. 回程线路测速（快速）"
 	 yellow " 5. 流媒体检测脚本一 (飞速） "
 	 yellow " 6. 流媒体检测脚本二 "
-	 yellow " 7. warp_go（拯救v6小鸡）"
+	 yellow " 7. warp_go "
 	green "==========科学 && BBR 加速==============================="
 	 yellow " 8. x-ui面板一键安装 "
 	 yellow " 9. 233v2脚本  "
