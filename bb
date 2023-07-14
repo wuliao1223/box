@@ -89,7 +89,7 @@ lmt(){
 }
 
 warp_fscarmen(){
-  wget -N https://raw.githubusercontent.com/fscarmen/warp/main/menu.sh && bash menu.sh 
+  bash <(curl -sSL https://raw.githubusercontent.com/fscarmen/warp_unlock/main/unlock.sh)
 }
 
 
