@@ -85,7 +85,7 @@ vps_lmt(){
   bash <(curl -Ls unlock.moe)
 }
 lmt(){
-	wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/box/main/lmt  && chmod 777 lmt && bash lmt
+	bash <(curl -L -s https://raw.githubusercontent.com/lmc999/RegionRestrictionCheck/main/check.sh)
 }
 
 warp_fscarmen(){
