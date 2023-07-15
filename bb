@@ -88,8 +88,8 @@ lmt(){
 	bash <(curl -L -s https://raw.githubusercontent.com/lmc999/RegionRestrictionCheck/main/check.sh)
 }
 
-warp_go(){
-  wget -N https://raw.githubusercontent.com/fscarmen/warp/main/warp-go.sh && bash warp-go.sh
+warp(){
+  wget -N https://raw.githubusercontent.com/fscarmen/warp/main/menu.sh && bash menu.sh
 }
 
 
@@ -149,7 +149,7 @@ start_menu(){
 	 yellow " 4. 回程线路测速（快速）"
 	 yellow " 5. 流媒体检测脚本一 (飞速） "
 	 yellow " 6. 流媒体检测脚本二 "
-	 yellow " 7. warp_go "
+	 yellow " 7. Warp "
 	green "==========科学 && BBR 加速==============================="
 	 yellow " 8. x-ui面板一键安装 "
 	 yellow " 9. 233v2脚本  "
@@ -185,7 +185,7 @@ start_menu(){
   	        4) backtrace ;;
 		5) vps_lmt ;;
 		6) lmt ;;
-		7) warp_go ;;
+		7) warp ;;
 
 		8) vps_x-ui ;;
 		9) v2_233 ;;
