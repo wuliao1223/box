@@ -25,7 +25,7 @@ swspeed(){
 }
 #3
 vps_testrace(){
-	wget -O huichong.sh https://raw.githubusercontent.com/wxfyes/bt/master/huichong.sh && bash huichong.sh
+	wget https://raw.githubusercontent.com/vpsxb/testrace/main/testrace.sh -O testrace.sh && bash testrace.sh  
 }
 
 #4
