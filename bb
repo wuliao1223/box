@@ -145,7 +145,7 @@ start_menu(){
     green "==========VPS测速 && 流媒体检测 ========================="
 	yellow " 1. 秋水Bench.sh修改版 "
 	 yellow " 2. 三网测速 "
-	 yellow " 3. VPS 回程路由 （四网测试 - 英文显示）"
+	 yellow " 3. VPS 回程路由 （TCP|ICM|IPV6回程测试）"
 	 yellow " 4. 回程线路测速（快速）"
 	 yellow " 5. 流媒体检测脚本一 (飞速） "
 	 yellow " 6. 流媒体检测脚本二 "
