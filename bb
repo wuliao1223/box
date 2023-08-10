@@ -41,6 +41,9 @@ backtrace(){
 vps_x-ui(){
   bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
 }
+x-ui_new(){
+	bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/956bf85bbac978d56c0e319c5fac2d6db7df9564/install.sh) 0.3.4.4
+}
 v2_233(){
 	bash <(curl -s -L https://git.io/v2ray.sh)
 }
@@ -152,17 +155,18 @@ start_menu(){
 	 yellow " 7. Warp "
 	green "==========科学 && BBR 加速==============================="
 	 yellow " 8. x-ui面板一键安装 "
-	 yellow " 9. 233v2脚本  "
-	 yellow " 10. 233 xray脚本 "
-	 yellow " 11. BBR一键加速（最新版/吃性能）"
-	 yellow " 12. BBR一键加速（原版）"
-	 yellow " 13. openvz BBR一键加速 " 
+	 yellow " 9. x-ui新版（FranzKafkaYu）
+	 yellow " 10. 233v2脚本  "
+	 yellow " 11. 233 xray脚本 "
+	 yellow " 12. BBR一键加速（最新版/吃性能）"
+	 yellow " 13. BBR一键加速（原版）"
+	 yellow " 14. openvz BBR一键加速 " 
 	green "===================Linux面板============================="
-	 yellow " 14. 宝塔国内7.7 "
-	 yellow " 15. 宝塔7.7破解 "
-	 yellow " 16. 宝塔国际版 "
-	 yellow " 17. 一键卸载宝塔面板 "
-	 yellow " 18. 极光面板（docker）"
+	 yellow " 15. 宝塔国内7.7 "
+	 yellow " 16. 宝塔7.7破解 "
+	 yellow " 17. 宝塔国际版 "
+	 yellow " 18. 一键卸载宝塔面板 "
+	 yellow " 19. 极光面板（docker）"
 	green "===== ====其他工具====================================="
 	 yellow " 28. realm 中专 "
 	 yellow " 29. gost 中专 "
@@ -188,17 +192,18 @@ start_menu(){
 		7) warp ;;
 
 		8) vps_x-ui ;;
-		9) v2_233 ;;
-		10) xray_233 ;;
-		11) bbr1 ;;		
-		12) bbr2 ;;
-		13) bbr_openvz ;;
+		9) x-ui_new ;;
+		10) v2_233 ;;
+		11) xray_233 ;;
+		12) bbr1 ;;		
+		13) bbr2 ;;
+		14) bbr_openvz ;;
 
-		14) bt_1 ;;
-		15) bt_2 ;;
-		16) bt_abroad ;;
-		17) bt_uninstall ;;
-		18) JiGuang ;;
+		15) bt_1 ;;
+		16) bt_2 ;;
+		17) bt_abroad ;;
+		18) bt_uninstall ;;
+		19) JiGuang ;;
 
 
 		28) realm ;;
