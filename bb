@@ -155,7 +155,7 @@ start_menu(){
 	 yellow " 7. Warp "
 	green "==========科学 && BBR 加速==============================="
 	 yellow " 8. x-ui面板一键安装 "
-	 yellow " 9. x-ui新版（FranzKafkaYu）
+	 yellow " 9. x-ui新版（FranzKafkaYu）"
 	 yellow " 10. 233v2脚本  "
 	 yellow " 11. 233 xray脚本 "
 	 yellow " 12. BBR一键加速（最新版/吃性能）"
