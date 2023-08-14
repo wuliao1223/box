@@ -44,8 +44,8 @@ vps_x-ui(){
 x-ui_new(){
 	bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/956bf85bbac978d56c0e319c5fac2d6db7df9564/install.sh) 0.3.4.4
 }
-v2_233(){
-	bash <(curl -s -L https://git.io/v2ray.sh)
+233v2(){
+	bash <(wget -qO- -o- https://git.io/v2ray.sh)
 }
 xray_233(){
     bash <(wget -qO- -o- https://github.com/233boy/Xray/raw/main/install.sh) -v v1.8.3
@@ -176,7 +176,8 @@ start_menu(){
 	 yellow " 35. 安装docker "
 	 yellow " 36. 关闭Centos7防火墙 "
 	 yellow " 37. 一键添加/删除Swap虚拟内存 "
-	 yellow " 38. 一键换国内源 "	 
+	 yellow " 38. 一键换国内源 "
+	 yellow " 39. 233v2旧版本 "
 	 yellow " 66. 更新脚本 "
         red " 0. 退出脚本 "
     echo
@@ -213,6 +214,7 @@ start_menu(){
 		36) firewall ;;
 		37) swap ;;
 		38) ChangeMirrors ;;
+		39) 233v2 ;;
 		66) update ;;
 		0) exit 0 ;;
 		*)
