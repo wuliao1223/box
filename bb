@@ -223,6 +223,6 @@ start_menu(){
 	sleep 2s
 	start_menu
 	;;
-    esac
+    esac 
 } 
 start_menu
