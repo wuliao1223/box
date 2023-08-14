@@ -186,7 +186,7 @@ start_menu(){
 		1) Bench ;;
 		2) swspeed ;;
 		3) vps_testrace ;;
-  	    4) backtrace ;;
+		4) backtrace ;;
 		5) vps_lmt ;;
 		6) lmt ;;
 		7) warp ;;
@@ -210,7 +210,7 @@ start_menu(){
 		30) iptable ;;
 		31) vps_oracle ;;
 		32) vps_ip ;;
-		33)	vps_dd ;;
+		33) vps_dd ;;
 		35) docker ;;
 		36) firewall ;;
 		37) swap ;;
