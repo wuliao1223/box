@@ -13,6 +13,38 @@ red(){
 }
 
 
+if [[ -f /etc/redhat-release ]]; then
+    release="centos"
+    systemPackage="yum"
+    systempwd="/usr/lib/systemd/system/"
+elif cat /etc/issue | grep -Eqi "debian"; then
+    release="debian"
+    systemPackage="apt-get"
+    systempwd="/lib/systemd/system/"
+elif cat /etc/issue | grep -Eqi "ubuntu"; then
+    release="ubuntu"
+    systemPackage="apt-get"
+    systempwd="/lib/systemd/system/"
+elif cat /etc/issue | grep -Eqi "centos|red hat|redhat"; then
+    release="centos"
+    systemPackage="yum"
+    systempwd="/usr/lib/systemd/system/"
+elif cat /proc/version | grep -Eqi "debian"; then
+    release="debian"
+    systemPackage="apt-get"
+    systempwd="/lib/systemd/system/"
+elif cat /proc/version | grep -Eqi "ubuntu"; then
+    release="ubuntu"
+    systemPackage="apt-get"
+    systempwd="/lib/systemd/system/"
+elif cat /proc/version | grep -Eqi "centos|red hat|redhat"; then
+    release="centos"
+    systemPackage="yum"
+    systempwd="/usr/lib/systemd/system/"
+fi
+
+$systemPackage -y install wget curl
+
 
 # vps性能测试
 #1
@@ -223,6 +255,7 @@ start_menu(){
 	sleep 2s
 	start_menu
 	;;
-    esac 
-} 
+    esac
+}
+
 start_menu
