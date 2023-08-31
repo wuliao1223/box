@@ -47,7 +47,7 @@ x-ui_new(){
 	wget https://github.com/233boy/v2ray/archive/old.tar.gz -O v2ray-old.tar.gz;tar -zxvf v2ray-old.tar.gz;cd v2ray-old;chmod +x i*;./i* local
 }
 xray_233(){
-    bash <(wget -qO- -o- https://github.com/233boy/Xray/raw/main/install.sh) -v v1.8.3
+    bash <(wget -qO- -o- https://github.com/233boy/Xray/raw/main/install.sh)
 }
 
 
