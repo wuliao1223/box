@@ -142,7 +142,7 @@ start_menu(){
     clear
 	green "=========================================================="
      blue " 本脚本支持：CentOS7+ / Debian9+ / Ubuntu16.04+"
-	 blue " Blog：https://www.233hhh.top "
+	 blue " Blog https://www.233hhh.top "
      blue " 以下脚本源于网络，仅仅只是汇聚脚本功能，方便大家使用而已！"
     green "==========VPS测速 && 流媒体检测 ========================="
 	 yellow " 1. 秋水Bench.sh修改版 "
