@@ -2,7 +2,8 @@
 
 # 脚本功能演示
 
-![Linux工具包](https://user-images.githubusercontent.com/59786070/147936381-8a7ab098-65aa-4b32-a48e-a5fb96966cd6.png)
+![image](https://github.com/wuliao1223/box/assets/59786070/958d05e5-6307-413f-aa78-114416c5aaac)
+
 
 # 使用方法
 ```go
