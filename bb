@@ -49,7 +49,9 @@ x-ui_new(){
 xray_233(){
     bash <(wget -qO- -o- https://github.com/233boy/Xray/raw/main/install.sh)
 }
-
+baheyi(){
+	wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/reeceyng/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
+}
 
 
 bt_1(){
@@ -159,6 +161,7 @@ start_menu(){
 	 yellow " 11. BBR一键加速（新版）"
 	 yellow " 12. BBR一键加速（原版）"
 	 yellow " 13. openvz BBR一键加速 " 
+	 yellow " 14. v2-agent 八合一 "
 	green "===== ====其他工具====================================="
 	 yellow " 15. realm 中专 "
 	 yellow " 16. gost 中专 "
@@ -190,6 +193,7 @@ start_menu(){
 		11) bbr1 ;;		
 		12) bbr2 ;;
 		13) bbr_openvz ;;
+		14) baheyi ;;
 
 		15) realm ;;
 		16) gost ;;
