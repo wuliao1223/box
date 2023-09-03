@@ -2,7 +2,8 @@
 
 # 脚本功能演示
 
-![image](https://github.com/wuliao1223/box/assets/59786070/958d05e5-6307-413f-aa78-114416c5aaac)
+![image](https://github.com/wuliao1223/box/assets/59786070/4facf7b1-099d-4961-a9ad-deb23484880f)
+
 
 
 # 使用方法
