@@ -53,10 +53,11 @@ baheyi(){
 	wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/reeceyng/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
 }
 
-
+#宝塔7.7原版
 bt_1(){
    curl -sSO https://raw.githubusercontent.com/8838/btpanel-v7.7.0/main/install/install_panel.sh && bash install_panel.sh
 }
+#宝塔7.7版本一键破解
 bt_2(){
    curl -sSO https://raw.githubusercontent.com/ztkink/bthappy/main/one_key_happy.sh && bash one_key_happy.sh
 }
@@ -67,7 +68,7 @@ bt_abroad(){
 bt_uninstall(){
 	wget http://download.bt.cn/install/bt-uninstall.sh && sh bt-uninstall.sh
 }
-
+#极光面板 端口8000
 JiGuang(){
 	bash <(curl -fsSL https://raw.githubusercontent.com/Aurora-Admin-Panel/deploy/main/install.sh)
 }
@@ -174,6 +175,7 @@ start_menu(){
 	 yellow " 23. 一键添加/删除Swap虚拟内存 "
 	 yellow " 24. 一键换国内源 "
 	 yellow " 25. 233v2旧版本 "
+	 yellow " 26. 极光面板 "
 	 red " 66. 更新脚本 "
          red " 0. 退出脚本 "
     echo
@@ -206,6 +208,7 @@ start_menu(){
 		23) swap ;;
 		24) ChangeMirrors ;;
 		25) 233v2 ;;
+		26) JiGuang ;;
 		66) update ;;
 		0) exit 0 ;;
 		*)
