@@ -164,18 +164,18 @@ start_menu(){
 	 yellow " 13. openvz BBR一键加速 " 
 	 yellow " 14. v2-agent 八合一 "
 	green "===== ====其他工具====================================="
-	 yellow " 15. realm 中专 "
-	 yellow " 16. gost 中专 "
-	 yellow " 17. iptable 中专 "
-	 yellow " 18. 甲骨文一键设置root密码 "
-	 yellow " 19. 查看本机IP "
-	 yellow " 20. DD Linux 系统 "
-	 yellow " 21. 安装docker "
-	 yellow " 22. 关闭Centos7防火墙 "
-	 yellow " 23. 一键添加/删除Swap虚拟内存 "
-	 yellow " 24. 一键换国内源 "
-	 yellow " 25. 233v2旧版本 "
-	 yellow " 26. 极光面板 "
+	 yellow " 15. 极光面板 "
+	 yellow " 16. realm 中专 "
+	 yellow " 17. gost 中专 "
+	 yellow " 18. iptable 中专 "
+	 yellow " 19. 甲骨文一键设置root密码 "
+	 yellow " 20. 查看本机IP "
+	 yellow " 21. DD Linux 系统 "
+	 yellow " 22. 安装docker "
+	 yellow " 23. 关闭Centos7防火墙 "
+	 yellow " 24. 一键添加/删除Swap虚拟内存 "
+	 yellow " 25. 一键换国内源 "
+	 yellow " 26. 233v2旧版本 "
 	 red " 66. 更新脚本 "
          red " 0. 退出脚本 "
     echo
@@ -197,18 +197,18 @@ start_menu(){
 		13) bbr_openvz ;;
 		14) baheyi ;;
 
-		15) realm ;;
-		16) gost ;;
-		17) iptable ;;
-		18) vps_oracle ;;
-		19) vps_ip ;;
-		20) vps_dd ;;
-		21) docker ;;
-		22) firewall ;;
-		23) swap ;;
-		24) ChangeMirrors ;;
-		25) 233v2 ;;
-		26) JiGuang ;;
+		15) JiGuang ;;
+		16) realm ;;
+		17) gost ;;
+		18) iptable ;;
+		19) vps_oracle ;;
+		20) vps_ip ;;
+		21) vps_dd ;;
+		22) docker ;;
+		23) firewall ;;
+		24) swap ;;
+		25) ChangeMirrors ;;
+		26) 233v2 ;;
 		66) update ;;
 		0) exit 0 ;;
 		*)
