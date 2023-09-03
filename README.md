@@ -46,6 +46,6 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/box/
 
 [秋水](https://github.com/teddysun/across/blob/master/bench.sh)
 
-
+以及其他脚本维护者（太多，没有列举了）
 
 
