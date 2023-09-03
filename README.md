@@ -21,7 +21,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/box/
 # 赞助我
 
 # 更新日志
-2023/9/3 删除linux面板
+2023/9/3 删除linux面板，关于此部分的代码并没有删除，只是把相关选项删除了。可以点击代码自行查看
 
 2023/8/31 233脚本支持 xray 内核 1.84
 
