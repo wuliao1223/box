@@ -156,7 +156,7 @@ start_menu(){
 	 yellow " 8. x-ui面板一键安装 "
 	 yellow " 9. x-ui新版（FranzKafkaYu）"
 	 yellow " 10. 233 xray脚本 "
-	 yellow " 11. BBR一键加速（最新版/吃性能）"
+	 yellow " 11. BBR一键加速（新版）"
 	 yellow " 12. BBR一键加速（原版）"
 	 yellow " 13. openvz BBR一键加速 " 
 	green "===== ====其他工具====================================="
