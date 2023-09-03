@@ -20,6 +20,8 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/box/
 # 赞助我
 
 # 更新日志
+2023/9/3 删除linux面板
+
 2023/8/31 233脚本支持 xray 内核 1.84
 
 2023/7/2 新增修改顺序的bench脚本，感谢秋水的的脚本
