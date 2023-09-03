@@ -160,17 +160,17 @@ start_menu(){
 	 yellow " 12. BBR一键加速（原版）"
 	 yellow " 13. openvz BBR一键加速 " 
 	green "===== ====其他工具====================================="
-	 yellow " 18. realm 中专 "
-	 yellow " 19. gost 中专 "
-	 yellow " 20. iptable 中专 "
-	 yellow " 21. 甲骨文一键设置root密码 "
-	 yellow " 22. 查看本机IP "
-	 yellow " 23. DD Linux 系统 "
-	 yellow " 25. 安装docker "
-	 yellow " 26. 关闭Centos7防火墙 "
-	 yellow " 27. 一键添加/删除Swap虚拟内存 "
-	 yellow " 28. 一键换国内源 "
-	 yellow " 29. 233v2旧版本 "
+	 yellow " 15. realm 中专 "
+	 yellow " 16. gost 中专 "
+	 yellow " 17. iptable 中专 "
+	 yellow " 18. 甲骨文一键设置root密码 "
+	 yellow " 19. 查看本机IP "
+	 yellow " 20. DD Linux 系统 "
+	 yellow " 21. 安装docker "
+	 yellow " 22. 关闭Centos7防火墙 "
+	 yellow " 23. 一键添加/删除Swap虚拟内存 "
+	 yellow " 24. 一键换国内源 "
+	 yellow " 25. 233v2旧版本 "
 	 yellow " 66. 更新脚本 "
         red " 0. 退出脚本 "
     echo
@@ -191,17 +191,17 @@ start_menu(){
 		12) bbr2 ;;
 		13) bbr_openvz ;;
 
-		18) realm ;;
-		19) gost ;;
-		20) iptable ;;
-		21) vps_oracle ;;
-		22) vps_ip ;;
-		23) vps_dd ;;
-		25) docker ;;
-		26) firewall ;;
-		27) swap ;;
-		28) ChangeMirrors ;;
-		29) 233v2 ;;
+		15) realm ;;
+		16) gost ;;
+		17) iptable ;;
+		18) vps_oracle ;;
+		19) vps_ip ;;
+		20) vps_dd ;;
+		21) docker ;;
+		22) firewall ;;
+		23) swap ;;
+		24) ChangeMirrors ;;
+		25) 233v2 ;;
 		66) update ;;
 		0) exit 0 ;;
 		*)
