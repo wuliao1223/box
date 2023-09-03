@@ -52,7 +52,7 @@ xray_233(){
 baheyi(){
 	wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/reeceyng/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
 }
-
+# Linux 面板部分：
 #宝塔7.7原版
 bt_1(){
    curl -sSO https://raw.githubusercontent.com/8838/btpanel-v7.7.0/main/install/install_panel.sh && bash install_panel.sh
