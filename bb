@@ -77,7 +77,7 @@ JiGuang(){
 bbr2(){
    wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 }
-bbr1(){
+bbr(){
   wget -N --no-check-certificate "https://raw.githubusercontent.com/ylx2016/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 }
 bbr_openvz(){
@@ -160,8 +160,8 @@ start_menu(){
 	 yellow " 9. x-ui 新版（FranzKafkaYu）"
 	 yellow " 10. 233 xray脚本 "
 	 yellow " 11. BBR一键加速（新版）"
-	 yellow " 12. BBR一键加速（原版）"
-	 yellow " 13. openvz BBR一键加速 " 
+	 yellow " 12. openvz BBR一键加速 " 
+	 yellow " 13. 233v2旧版本 "
 	 yellow " 14. v2-agent 八合一 "
 	green "===== ====其他工具====================================="
 	 yellow " 15. 极光面板 "
@@ -175,7 +175,6 @@ start_menu(){
 	 yellow " 23. 关闭Centos7防火墙 "
 	 yellow " 24. 一键添加/删除Swap虚拟内存 "
 	 yellow " 25. 一键换国内源 "
-	 yellow " 26. 233v2旧版本 "
 	 red " 66. 更新脚本 "
          red " 0. 退出脚本 "
     echo
@@ -192,9 +191,9 @@ start_menu(){
 		8) vps_x-ui ;;
 		9) x-ui_new ;;
 		10) xray_233 ;;
-		11) bbr1 ;;		
-		12) bbr2 ;;
-		13) bbr_openvz ;;
+		11) bbr ;;		
+		12) bbr_openvz ;;
+		13) 233v2 ;;
 		14) baheyi ;;
 
 		15) JiGuang ;;
@@ -208,7 +207,6 @@ start_menu(){
 		23) firewall ;;
 		24) swap ;;
 		25) ChangeMirrors ;;
-		26) 233v2 ;;
 		66) update ;;
 		0) exit 0 ;;
 		*)
