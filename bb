@@ -94,7 +94,7 @@ lmt(){
 }
 
 warp(){
-  wget -N https://raw.githubusercontent.com/fscarmen/warp/main/menu.sh && bash menu.sh
+  bash <(curl -fsSL git.io/warp.sh) menu  
 }
 
 
