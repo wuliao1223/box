@@ -229,7 +229,7 @@ print_intro() {
     echo "-------------------- A Bench.sh Script By Teddysun -------------------"
     echo " Version            : $(_green v2023-06-10)"
     echo " Usage              : $(_red "bash <(curl -Lso- h bit.ly/233bench)")"
-    echo " Nottion            : $(_green "bench重排版")"
+    echo " Nottion            : $(_green "bench修改版")"
 }
 
 # Get System information
