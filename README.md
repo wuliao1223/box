@@ -14,9 +14,10 @@ apt update && apt install curl nano sudo -y
 yum update -y && yum install wget nano sudo -y
 ```
 主命令
-
-
-```go
+```sh
+bash <(curl -s -L bit.ly/233hhh)
+```
+```sh
 wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/box/main/bb  && chmod 777 bb && bash bb
 ```
 # 赞助我
