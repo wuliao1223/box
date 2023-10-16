@@ -86,10 +86,10 @@ bbr_openvz(){
 
 # 流媒体
 
-vps_lmt(){
+lmt(){
 	bash <(curl -Ls unlock.moe)
 }
-lmt(){
+lmt2(){
 	bash <(curl -L -s check.unlock.media)
 }
 
@@ -184,8 +184,8 @@ start_menu(){
 		2) swspeed ;;
 		3) vps_testrace ;;
 		4) backtrace ;;
-		5) vps_lmt ;;
-		6) lmt ;;
+		5) lmt ;;
+		6) lmt2 ;;
 		7) warp ;;
 
 		8) vps_x-ui ;;
