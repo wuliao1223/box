@@ -163,7 +163,7 @@ start_menu(){
 	 yellow " 12. openvz BBR一键加速 " 
 	 yellow " 13. 233v2旧版本 "
 	 yellow " 14. v2-agent 八合一 "
-	green "===== ====其他工具====================================="
+	green "=========其他工具====================================="
 	 yellow " 15. 极光面板 "
 	 yellow " 16. realm 中专 "
 	 yellow " 17. gost 中专 "
