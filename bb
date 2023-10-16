@@ -87,10 +87,10 @@ bbr_openvz(){
 # 流媒体
 
 vps_lmt(){
-  bash <(curl -L -s check.unlock.media)
+	bash <(curl -Ls unlock.moe)
 }
 lmt(){
-	bash <(curl -L -s https://raw.githubusercontent.com/lmc999/RegionRestrictionCheck/main/check.sh)
+	bash <(curl -L -s check.unlock.media)
 }
 
 warp(){
