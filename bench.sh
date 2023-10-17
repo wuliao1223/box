@@ -77,9 +77,9 @@ speed() {
     speed_test '7311'  'Singapore, SG'
     speed_test '6527'  'Seoul, KR'
     speed_test '21541' 'Los Angeles, US'
-    speed_test '40879' 'Montreal, CA'
-    speed_test '24215' 'Paris, FR'
-    speed_test '28922' 'Amsterdam, NL'
+    # speed_test '40879' 'Montreal, CA'
+    # speed_test '24215' 'Paris, FR'
+    # speed_test '28922' 'Amsterdam, NL'
      
 }
 
