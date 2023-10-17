@@ -2,7 +2,8 @@
 
 # 脚本功能演示
 
-![image](https://github.com/wuliao1223/box/assets/59786070/4facf7b1-099d-4961-a9ad-deb23484880f)
+![Snipaste_2023-10-17_20-36-03](https://github.com/wuliao1223/box/assets/59786070/30adfe72-e029-4ac0-84ca-2708c78109b5)
+
 
 
 
