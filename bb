@@ -176,7 +176,7 @@ start_menu(){
 	 yellow " 24. 一键添加/删除Swap虚拟内存 "
 	 yellow " 25. 一键换国内源 "
 	 red    " 66. 更新脚本 "
-  red    " 0. 退出脚本 "
+    red    " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
     case "$num" in
