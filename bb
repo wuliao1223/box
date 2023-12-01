@@ -37,7 +37,7 @@ backtrace(){
 # 科学上网脚本
 
 
-vps_x-ui(){
+x-ui(){
   bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
 }
 x-ui_new(){
@@ -188,7 +188,7 @@ start_menu(){
 		6) lmt2 ;;
 		7) warp ;;
 
-		8) vps_x-ui ;;
+		8) x-ui ;;
 		9) x-ui_new ;;
 		10) xray_233 ;;
 		11) bbr ;;		
