@@ -151,26 +151,19 @@ start_menu(){
 	 yellow " 1. 秋水Bench.sh修改版 "
 	 yellow " 2. 三网测速 "
 	 yellow " 3. VPS 回程路由 （TCP|ICM|IPV6回程测试）"
-#	 yellow " 4. 回程线路测速（快速）"
-	 yellow " 5. 流媒体检测脚本一 (飞速） "
-	 yellow " 6. 流媒体检测脚本二 "
-	 yellow " 7. Warp "
+	 yellow " 4. 流媒体检测脚本一 (飞速） "
+	 yellow " 5. 流媒体检测脚本二 "
+	 yellow " 6. Warp "
 	green "==========科学 && BBR 加速==============================="
 	 yellow " 8. x-ui "
 	 yellow " 9. x-ui 新版（FranzKafkaYu）"
 	 yellow " 10. 233 xray脚本 "
 	 yellow " 11. BBR一键加速（新版）"
 	 yellow " 12. openvz BBR一键加速 " 
-#	 yellow " 13. 233v2旧版本 "
 #	 yellow " 14. v2-agent 八合一 "
 	green "=========其他工具====================================="
-#	 yellow " 15. 极光面板 "
 	 yellow " 16. realm 中专 "
 	 yellow " 17. gost 中专 "
-#	 yellow " 18. iptable 中专 "
-#	 yellow " 19. 甲骨文一键设置root密码 "
-#	 yellow " 20. 查看本机IP "
-#	 yellow " 21. DD Linux 系统 "
 	 yellow " 22. 安装docker "
 	 yellow " 23. 一键关闭Centos7防火墙 "
 	 yellow " 24. 一键添加/删除Swap虚拟内存 "
@@ -183,30 +176,23 @@ start_menu(){
 		1) Bench ;;
 		2) swspeed ;;
 		3) vps_testrace ;;
-		4) backtrace ;;
-		5) lmt ;;
-		6) lmt2 ;;
-		7) warp ;;
+		4) lmt ;;
+		5) lmt2 ;;
+		6) warp ;;
 
 		8) x-ui ;;
 		9) x-ui_new ;;
 		10) xray_233 ;;
 		11) bbr ;;		
 		12) bbr_openvz ;;
-		13) 233v2 ;;
 		14) baheyi ;;
 
-		15) JiGuang ;;
 		16) realm ;;
 		17) gost ;;
-		18) iptable ;;
-		19) vps_oracle ;;
-		20) vps_ip ;;
-		21) vps_dd ;;
-		22) docker ;;
-		23) firewall ;;
-		24) swap ;;
-		25) ChangeMirrors ;;
+		18) docker ;;
+		19) firewall ;;
+		20) swap ;;
+		21) ChangeMirrors ;;
 		66) update ;;
 		0) exit 0 ;;
 		*)
