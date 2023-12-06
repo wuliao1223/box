@@ -169,7 +169,7 @@ start_menu(){
 	 yellow " 17. gost 中专 "
 #	 yellow " 18. iptable 中专 "
 #	 yellow " 19. 甲骨文一键设置root密码 "
-	 yellow " 20. 查看本机IP "
+#	 yellow " 20. 查看本机IP "
 #	 yellow " 21. DD Linux 系统 "
 	 yellow " 22. 安装docker "
 	 yellow " 23. 一键关闭Centos7防火墙 "
