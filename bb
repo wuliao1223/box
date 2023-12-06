@@ -125,7 +125,7 @@ start_menu(){
 	 blue " 博客： https://www.233hhh.top "
      blue " 以下脚本均源于网络，希望大家喜欢！"
     green "========== VPS测速 && 流媒体检测 "
-	 yellow " 1. 秋水 Bench.sh 修改版 "
+	 yellow " 1. 秋水 Bench 修改版 "
 	 yellow " 2. 三网测速 "
 	 yellow " 3. VPS 回程路由（TCP|ICMP|IPV6）"
 	 yellow " 4. 流媒体检测脚本一  "
