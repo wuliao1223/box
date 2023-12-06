@@ -27,11 +27,6 @@ vps_testrace(){
 	wget https://raw.githubusercontent.com/vpsxb/testrace/main/testrace.sh -O testrace.sh && bash testrace.sh  
 }
 
-#4
-backtrace(){
-    curl https://raw.githubusercontent.com/zhanghanyun/backtrace/main/install.sh -sSf | sh
-}
-#6
 
 
 # 科学上网脚本
@@ -43,9 +38,7 @@ x-ui(){
 x-ui_new(){
 	bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/master/install.sh)
 }
-233v2(){
-	wget https://github.com/233boy/v2ray/archive/old.tar.gz -O v2ray-old.tar.gz;tar -zxvf v2ray-old.tar.gz;cd v2ray-old;chmod +x i*;./i* local
-}
+
 xray_233(){
     bash <(wget -qO- -o- https://github.com/233boy/Xray/raw/main/install.sh)
 }
@@ -68,10 +61,7 @@ bt_abroad(){
 bt_uninstall(){
 	wget http://download.bt.cn/install/bt-uninstall.sh && sh bt-uninstall.sh
 }
-#极光面板 端口8000
-JiGuang(){
-	bash <(curl -fsSL https://raw.githubusercontent.com/Aurora-Admin-Panel/deploy/main/install.sh)
-}
+
 
 # BBR 加速
 bbr2(){
@@ -105,22 +95,11 @@ realm(){
 gost(){
 	wget --no-check-certificate -O gost.sh https://raw.githubusercontent.com/KANIKIG/Multi-EasyGost/master/gost.sh && chmod +x gost.sh && ./gost.sh
 }
-iptable(){
-	wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/iptables-pf.sh && chmod +x iptables-pf.sh && bash iptables-pf.sh
-}
-vps_oracle(){
-  bash <(curl -sSL https://raw.githubusercontent.com/wxfyes/Oracle/main/root.sh)
-}
 
-vps_ehco(){
-  bash <(curl -fsSL https://git.io/ehco.sh)
-}
 vps_ip(){
   curl ip.p3terx.com
 }
-vps_dd(){
-	  bash <(curl -sL https://git.io/JDLe5)
-}
+
 docker(){
 	curl -fsSL https://get.docker.com -o get-docker.sh && sh get-docker.sh && sudo systemctl start docker
 }
@@ -134,9 +113,7 @@ update(){
 swap(){
 	wget   -N --no-check-certificate  https://www.moerats.com/usr/shell/swap.sh && bash swap.sh
 }
-newdd(){
-	wget -N --no-check-certificate  https://raw.githubusercontent.com/wuliao1223/newdd/main/newdd.sh && bash newdd.sh
-}
+
 ChangeMirrors(){
 	bash <(curl -sSL https://gitee.com/SuperManito/LinuxMirrors/raw/main/ChangeMirrors.sh)
 }
