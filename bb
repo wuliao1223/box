@@ -153,7 +153,7 @@ start_menu(){
 	 yellow " 3. VPS 回程路由 （TCP|ICM|IPV6回程测试）"
 	 #yellow " 4. 回程线路测速（快速）"
 	 yellow " 5. 流媒体检测脚本一 (飞速） "
-	 #yellow " 6. 流媒体检测脚本二 "
+	 yellow " 6. 流媒体检测脚本二 "
 	 yellow " 7. Warp "
 	green "==========科学 && BBR 加速==============================="
 	 yellow " 8. x-ui "
