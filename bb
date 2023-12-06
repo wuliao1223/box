@@ -42,7 +42,7 @@ x-ui_new(){
 xray_233(){
     bash <(wget -qO- -o- https://github.com/233boy/Xray/raw/main/install.sh)
 }
-baheyi(){
+v2_agent(){
 	wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/reeceyng/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
 }
 # Linux 面板部分：
@@ -163,7 +163,7 @@ start_menu(){
 		10) xray_233 ;;
 		11) bbr ;;		
 		12) bbr_openvz ;;
-		13) baheyi ;;
+		13) v2_agent ;;
 
 		15) realm ;;
 		16) gost ;;
