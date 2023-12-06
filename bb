@@ -131,7 +131,7 @@ start_menu(){
 	 yellow " 4. 流媒体检测脚本一  "
 	 yellow " 5. 流媒体检测脚本二 "
 	 yellow " 6. Warp "
-	green "========== 科学 && BBR 加速 "
+	green "========== 科学 && BBR  "
 	 yellow " 8. x-ui "
 	 yellow " 9. x-ui new（FranzKafkaYu）"
 	 yellow " 10. 233 xray "
