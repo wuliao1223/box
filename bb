@@ -164,12 +164,12 @@ start_menu(){
 		12) bbr_openvz ;;
 		13) baheyi ;;
 
-		16) realm ;;
-		17) gost ;;
-		18) docker ;;
-		19) firewall ;;
-		20) swap ;;
-		21) ChangeMirrors ;;
+		15) realm ;;
+		16) gost ;;
+		17) docker ;;
+		18) firewall ;;
+		19) swap ;;
+		20) ChangeMirrors ;;
 		66) update ;;
 		0) exit 0 ;;
 		*)
