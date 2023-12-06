@@ -145,6 +145,7 @@ start_menu(){
 	 yellow " 18. 一键关闭Centos7防火墙 "
 	 yellow " 19. 一键添加/删除Swap虚拟内存 "
 	 yellow " 20. 一键换国内源 "
+
 	 red    " 66. 更新脚本 "
  	 red    " 0. 退出脚本 "
     echo
