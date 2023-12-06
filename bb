@@ -125,19 +125,19 @@ start_menu(){
 	 blue " 博客： https://www.233hhh.top "
      blue " 以下脚本均源于网络，希望大家喜欢！"
     green "==========VPS测速 && 流媒体检测"
-	 yellow " 1. 秋水Bench.sh修改版 "
+	 yellow " 1. 秋水 Bench.sh 修改版 "
 	 yellow " 2. 三网测速 "
 	 yellow " 3. VPS 回程路由（TCP|ICMP|IPV6）"
-	 yellow " 4. 流媒体检测脚本一 (飞速） "
+	 yellow " 4. 流媒体检测脚本一  "
 	 yellow " 5. 流媒体检测脚本二 "
 	 yellow " 6. Warp "
 	green "==========科学 && BBR 加速"
 	 yellow " 8. x-ui "
 	 yellow " 9. x-ui new（FranzKafkaYu）"
-	 yellow " 10. 233 xray脚本 "
-	 yellow " 11. BBR一键加速"
-	 yellow " 12. openvz BBR一键加速 " 
-#	 yellow " 14. v2-agent 八合一 "
+	 yellow " 10. 233 xray "
+	 yellow " 11. BBR "
+	 yellow " 12. ovz BBR  " 
+#	 yellow " 13. v2-agent 八合一 "
 	green "=========其他工具"
 	 yellow " 16. realm 中专 "
 	 yellow " 17. gost 中专 "
@@ -162,7 +162,7 @@ start_menu(){
 		10) xray_233 ;;
 		11) bbr ;;		
 		12) bbr_openvz ;;
-		14) baheyi ;;
+		13) baheyi ;;
 
 		16) realm ;;
 		17) gost ;;
