@@ -75,12 +75,11 @@ bbr_openvz(){
 }
 
 # 流媒体
-
 lmt(){
-	bash <(curl -Ls unlock.moe)
+	bash <(curl -L -s check.unlock.media)
 }
 lmt2(){
-	bash <(curl -L -s check.unlock.media)
+	bash <(curl -Ls unlock.moe)
 }
 
 warp(){
