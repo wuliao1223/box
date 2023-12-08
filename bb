@@ -114,7 +114,7 @@ swap(){
 }
 
 ChangeMirrors(){
-	bash <(curl -sSL https://gitee.com/SuperManito/LinuxMirrors/raw/main/ChangeMirrors.sh)
+	sed -i "s@http://\(deb\|security\).debian.org@https://mirrors.tuna.tsinghua.edu.cn@g" /etc/apt/sources.list
 }
 
 start_menu(){
@@ -144,7 +144,7 @@ start_menu(){
 	 yellow " 17. 安装docker "
 	 yellow " 18. 一键关闭Centos7防火墙 "
 	 yellow " 19. 一键添加/删除Swap虚拟内存 "
-	 yellow " 20. 一键换国内源 "
+	 yellow " 20. 一键换清华源 "
 
 	 red    " 66. 更新脚本 "
  	 red    " 0. 退出脚本 "
