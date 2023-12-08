@@ -46,7 +46,7 @@ v2_agent(){
 	wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/reeceyng/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
 }
 v2_old(){
-wget https://github.com/233boy/v2ray/archive/old.tar.gz -O v2ray-old.tar.gz;tar -zxvf v2ray-old.tar.gz;cd v2ray-old;chmod +x i*;./i* local
+	wget https://github.com/233boy/v2ray/archive/old.tar.gz -O v2ray-old.tar.gz;tar -zxvf v2ray-old.tar.gz;cd v2ray-old;chmod +x i*;./i* local
 }
 # Linux 面板部分：
 #宝塔7.7原版
