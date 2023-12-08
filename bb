@@ -45,6 +45,9 @@ xray_233(){
 v2_agent(){
 	wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/reeceyng/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
 }
+v2_old(){
+wget https://github.com/233boy/v2ray/archive/old.tar.gz -O v2ray-old.tar.gz;tar -zxvf v2ray-old.tar.gz;cd v2ray-old;chmod +x i*;./i* local
+}
 # Linux 面板部分：
 #宝塔7.7原版
 bt_1(){
@@ -138,6 +141,7 @@ start_menu(){
 	 yellow " 11. BBR "
 	 yellow " 12. ovz BBR  " 
 	 yellow " 13. v2-agent 八合一 "
+	 yellow " 14. v2-old  "
 	green "========= 其他工具 "
 	 yellow " 15. realm 中专 "
 	 yellow " 16. gost 中专 "
@@ -164,6 +168,7 @@ start_menu(){
 		11) bbr ;;		
 		12) bbr_openvz ;;
 		13) v2_agent ;;
+		14) v2_old ;;
 
 		15) realm ;;
 		16) gost ;;
