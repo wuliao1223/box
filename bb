@@ -26,7 +26,7 @@ swspeed(){
 vps_testrace(){
 	wget https://raw.githubusercontent.com/vpsxb/testrace/main/testrace.sh -O testrace.sh && bash testrace.sh  
 }
-
+LemonBench（）{wget -qO- http://ilemonra.in/LemonBenchIntl | bash -s fast}
 
 
 # 科学上网脚本
@@ -78,10 +78,10 @@ bbr_openvz(){
 }
 
 # 流媒体
-lmt(){
+lmt2(){
 	bash <(curl -L -s check.unlock.media)
 }
-lmt2(){
+lmt(){
 	bash <(curl -Ls unlock.moe)
 }
 
@@ -156,11 +156,12 @@ start_menu(){
     read -p "请输入数字:" num
     case "$num" in
 		1) Bench ;;
-		2) swspeed ;;
-		3) vps_testrace ;;
-		4) lmt ;;
-		5) lmt2 ;;
-		6) warp ;;
+		2) LemonBench ;;
+		3) swspeed ;;
+		4) vps_testrace ;;
+		5) lmt ;;
+		6) lmt2 ;;
+		7) warp ;;
 
 		8) x-ui ;;
 		9) x-ui_new ;;
