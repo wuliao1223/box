@@ -30,6 +30,18 @@ LemonBench(){
 wget -qO- http://ilemonra.in/LemonBenchIntl | bash -s fast
 }
 
+# 流媒体
+lmt(){
+	bash <(curl -L -s check.unlock.media)
+}
+lmt2(){
+	bash <(curl -Ls unlock.moe)
+}
+
+warp(){
+  wget -N https://gitlab.com/fscarmen/warp/-/raw/main/menu.sh && bash menu.sh
+}
+
 
 # 科学上网脚本
 
@@ -79,17 +91,6 @@ bbr_openvz(){
   wget --no-cache -O lkl-haproxy.sh https://github.com/mzz2017/lkl-haproxy/raw/master/lkl-haproxy.sh && bash lkl-haproxy.sh
 }
 
-# 流媒体
-lmt2(){
-	bash <(curl -L -s check.unlock.media)
-}
-lmt(){
-	bash <(curl -Ls unlock.moe)
-}
-
-warp(){
-  wget -N https://gitlab.com/fscarmen/warp/-/raw/main/menu.sh && bash menu.sh
-}
 
 
 # 其他工具
@@ -131,12 +132,11 @@ start_menu(){
      blue " 以下脚本均源于网络，希望大家喜欢！"
     green "========== VPS测速 && 流媒体检测 "
 	 yellow " 1. 秋水 Bench 修改版 "
-	 yellow " 2. LemonBench "
-	 yellow " 3. 三网测速 "
-	 yellow " 4. VPS 回程路由（TCP|ICMP|IPV6）"
-	 yellow " 5. 流媒体检测脚本一  "
-	 yellow " 6. 流媒体检测脚本二 "
-	 yellow " 7. Warp "
+	 yellow " 2. 三网测速 "
+	 yellow " 3. VPS 回程路由（TCP|ICMP|IPV6）"
+	 yellow " 4. 流媒体检测脚本一  "
+	 yellow " 5. 流媒体检测脚本二 "
+	 yellow " 6. Warp "
 	green "========== 科学 && BBR  "
 	 yellow " 8. x-ui "
 	 yellow " 9. x-ui new（FranzKafkaYu）"
@@ -159,12 +159,11 @@ start_menu(){
     read -p "请输入数字:" num
     case "$num" in
 		1) Bench ;;
-		2) LemonBench ;;
-		3) swspeed ;;
-		4) vps_testrace ;;
-		5) lmt ;;
-		6) lmt2 ;;
-		7) warp ;;
+		2) swspeed ;;
+		3) vps_testrace ;;
+		1) lmt ;;
+		5) lmt2 ;;
+		6) warp ;;
 
 		8) x-ui ;;
 		9) x-ui_new ;;
