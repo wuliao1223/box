@@ -26,7 +26,7 @@ swspeed(){
 vps_testrace(){
 	wget https://raw.githubusercontent.com/vpsxb/testrace/main/testrace.sh -O testrace.sh && bash testrace.sh  
 }
-LemonBench（）{ wget -qO- http://ilemonra.in/LemonBenchIntl | bash -s fast }
+LemonBench(){wget -qO- http://ilemonra.in/LemonBenchIntl | bash -s fast}
 
 
 # 科学上网脚本
