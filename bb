@@ -127,7 +127,6 @@ start_menu(){
     clear
 	green "==========================================="
      blue " 本脚本支持：CentOS7+ / Debian9+ / Ubuntu16.04+"
-	 blue " 博客： https://www.233hhh.top "
 	 blue " 脚本： bash <(curl -s -L bit.ly/233hhh) "
      blue " 以下脚本均源于网络，希望大家喜欢！"
     green "========== VPS测速 && 流媒体检测 "
