@@ -160,7 +160,7 @@ start_menu(){
 		1) Bench ;;
 		2) swspeed ;;
 		3) vps_testrace ;;
-		1) lmt ;;
+		4) lmt ;;
 		5) lmt2 ;;
 		6) warp ;;
 
