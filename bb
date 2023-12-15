@@ -142,8 +142,8 @@ start_menu(){
 	 yellow " 10. 233 xray "
 	 yellow " 11. BBR "
 	 yellow " 12. ovz BBR  " 
-	 yellow " 13. v2-agent 八合一 "
-	 yellow " 14. v2-old  "
+	#  yellow " 13. v2-agent 八合一 "
+	#  yellow " 14. v2-old  "
 	green "========= 其他工具 "
 	 yellow " 15. realm 中专 "
 	 yellow " 16. gost 中专 "
@@ -169,8 +169,8 @@ start_menu(){
 		10) xray_233 ;;
 		11) bbr ;;		
 		12) bbr_openvz ;;
-		13) v2_agent ;;
-		14) v2_old ;;
+		# 13) v2_agent ;;
+		# 14) v2_old ;;
 
 		15) realm ;;
 		16) gost ;;
