@@ -55,12 +55,6 @@ x-ui_new(){
 xray_233(){
     bash <(wget -qO- -o- https://github.com/233boy/Xray/raw/main/install.sh)
 }
-v2_agent(){
-	wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/reeceyng/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
-}
-v2_old(){
-	wget https://github.com/233boy/v2ray/archive/old.tar.gz -O v2ray-old.tar.gz;tar -zxvf v2ray-old.tar.gz;cd v2ray-old;chmod +x i*;./i* local
-}
 
 
 # BBR 加速
@@ -121,12 +115,11 @@ start_menu(){
 	 yellow " 6. Warp "
 	green "========== 科学 && BBR  "
 	 yellow " 8. x-ui "
-	 yellow " 9. x-ui new（FranzKafkaYu）"
+	 yellow " 9. x-ui new "
 	 yellow " 10. 233 xray "
 	 yellow " 11. BBR "
 	 yellow " 12. ovz BBR  " 
-	#  yellow " 13. v2-agent 八合一 "
-	#  yellow " 14. v2-old  "
+
 	green "========= 其他工具 "
 	 yellow " 15. realm 中专 "
 	 yellow " 16. gost 中专 "
@@ -153,8 +146,6 @@ start_menu(){
 		10) xray_233 ;;
 		11) bbr ;;		
 		12) bbr_openvz ;;
-		# 13) v2_agent ;;
-		# 14) v2_old ;;
 
 		15) realm ;;
 		16) gost ;;
