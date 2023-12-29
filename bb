@@ -107,7 +107,7 @@ start_menu(){
 	 blue " 脚本： bash <(curl -s -L bit.ly/233hhh) "
      blue " 以下脚本均源于网络，希望大家喜欢！"
 
-    green "========== VPS测速 && 流媒体检测 "
+    green "========== VPS测速 && 流媒体检测 ========="
 	 yellow " 1. Bench 修改 "
 	 yellow " 2. 三网测速 "
 	 yellow " 3. VPS 回程路由 "
@@ -115,14 +115,14 @@ start_menu(){
 	 yellow " 5. 流媒体检测脚本二 "
 	 yellow " 6. Warp "
 
-	green "========== 科学 && BBR  "
+	green "========== 科学 && BBR ========="
 	 yellow " 8. x-ui "
 	 yellow " 9. x-ui new "
 	 yellow " 10. 233 xray "
 	 yellow " 11. BBR "
 	 yellow " 12. ovz BBR  " 
 
-	green "========= 其他工具 "
+	green "========= 其他工具 ========="
 	 yellow " 15. realm 中专 "
 	 yellow " 16. gost 中专 "
 	 yellow " 17. 安装docker "
