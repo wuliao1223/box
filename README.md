@@ -1,9 +1,7 @@
 这是一个非常方便的Linux工具包，相信你会喜欢上它
 
 # 脚本功能演示
-
-![box](htps://github.com/wuliao1223/box/assets/59786070/0957db8d-52e6-45c3-b986-7e6fede73a23)
-
+![image](https://github.com/wuliao1223/box/assets/59786070/6c071bf3-4c7a-4660-abfd-998a408af991)
 
 
 # 使用方法
