@@ -24,6 +24,8 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/box/
 # 赞助我
 
 # 更新日志
+2023/12/29 将无用脚本剪切到 lose 文件里保存
+
 2023/12/7 删除失效脚本
 
 2023/9/3 删除宝塔面板，关于此部分的代码并没有删除，只是把相关选项删除了。可以点击代码自行查看
@@ -43,6 +45,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/box/
 2022/10/17 完善了一些功能
 
 2022/10/22 使用更快的流媒体检测脚本
+
 
 # 感谢列表
 感谢他们的贡献，让脚本得到进一步完善
