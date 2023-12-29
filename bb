@@ -45,7 +45,6 @@ warp(){
 
 # 科学上网脚本
 
-
 x-ui(){
   bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
 }
@@ -62,22 +61,6 @@ v2_agent(){
 v2_old(){
 	wget https://github.com/233boy/v2ray/archive/old.tar.gz -O v2ray-old.tar.gz;tar -zxvf v2ray-old.tar.gz;cd v2ray-old;chmod +x i*;./i* local
 }
-# Linux 面板部分：
-#宝塔7.7原版
-bt_1(){
-   curl -sSO https://raw.githubusercontent.com/8838/btpanel-v7.7.0/main/install/install_panel.sh && bash install_panel.sh
-}
-#宝塔7.7版本一键破解
-bt_2(){
-   curl -sSO https://raw.githubusercontent.com/ztkink/bthappy/main/one_key_happy.sh && bash one_key_happy.sh
-}
-# 国际版
-bt_abroad(){
-	curl -sSO http://www.aapanel.com/script/new_install_en.sh && bash new_install_en.sh forum
-}
-bt_uninstall(){
-	wget http://download.bt.cn/install/bt-uninstall.sh && sh bt-uninstall.sh
-}
 
 
 # BBR 加速
@@ -92,7 +75,6 @@ bbr_openvz(){
 }
 
 
-
 # 其他工具
 realm(){
 	wget -N --no-check-certificate https://git.io/realm.sh && chmod +x realm.sh && ./realm.sh
@@ -100,11 +82,6 @@ realm(){
 gost(){
 	wget --no-check-certificate -O gost.sh https://raw.githubusercontent.com/KANIKIG/Multi-EasyGost/master/gost.sh && chmod +x gost.sh && ./gost.sh
 }
-
-vps_ip(){
-  curl ip.p3terx.com
-}
-
 docker(){
 	curl -fsSL https://get.docker.com -o get-docker.sh && sh get-docker.sh && sudo systemctl start docker
 }
