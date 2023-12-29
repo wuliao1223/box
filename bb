@@ -125,6 +125,9 @@ ChangeMirrors(){
 soga(){
 	wget -N https://raw.githubusercontent.com/vaxilu/soga/master/install.sh && bash install.sh
 }
+XrayR(){
+	bash <(curl -Ls https://raw.githubusercontent.com/XrayR-project/XrayR-release/master/install.sh)
+}
 # ==================================================面板===========================================================#
 start_menu(){
     clear
@@ -155,6 +158,7 @@ start_menu(){
 	 yellow " 19. 一键添加/删除Swap虚拟内存 "
 	 yellow " 20. 一键换清华源 "
 	 yellow " 21. 安装 soga "
+	 yellow " 22. 安装 XrayR "
 	 red    " 66. 更新脚本 "
  	 red    " 0. 退出脚本 "
     echo
@@ -182,6 +186,7 @@ start_menu(){
 		19) swap ;;
 		20) ChangeMirrors ;;
 		21) soga ;;
+		22) XrayR ;;
 		66) update ;;
 		0) exit 0 ;;
 		*)
