@@ -12,7 +12,7 @@ red(){
     echo -e "\033[31m\033[01m$1\033[0m"
 }
 
-
+# ==================================================各种脚本===========================================================#
 # vps性能测试
 #1
 Bench(){
@@ -122,7 +122,10 @@ swap(){
 ChangeMirrors(){
 	sed -i "s@http://\(deb\|security\).debian.org@https://mirrors.tuna.tsinghua.edu.cn@g" /etc/apt/sources.list
 }
-
+soga(){
+	wget -N https://raw.githubusercontent.com/vaxilu/soga/master/install.sh && bash install.sh
+}
+# ==================================================面板===========================================================#
 start_menu(){
     clear
 	green "==========================================="
@@ -151,7 +154,7 @@ start_menu(){
 	 yellow " 18. 一键关闭Centos7防火墙 "
 	 yellow " 19. 一键添加/删除Swap虚拟内存 "
 	 yellow " 20. 一键换清华源 "
-
+	 yellow " 21. 安装 soga "
 	 red    " 66. 更新脚本 "
  	 red    " 0. 退出脚本 "
     echo
@@ -178,6 +181,7 @@ start_menu(){
 		18) firewall ;;
 		19) swap ;;
 		20) ChangeMirrors ;;
+		21) soga ;;
 		66) update ;;
 		0) exit 0 ;;
 		*)
