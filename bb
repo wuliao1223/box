@@ -1,31 +1,31 @@
 #!/bin/bash
 # ==================================================颜色=========================================================== #
 blue(){
-    echo -e "\033[34m\033[01m$1\033[0m"
+  echo -e "\033[34m\033[01m$1\033[0m"
 }
 green(){
-    echo -e "\033[32m\033[01m$1\033[0m"
+  echo -e "\033[32m\033[01m$1\033[0m"
 }
 yellow(){
-    echo -e "\033[33m\033[01m$1\033[0m"
+  echo -e "\033[33m\033[01m$1\033[0m"
 }
 red(){
-    echo -e "\033[31m\033[01m$1\033[0m"
+  echo -e "\033[31m\033[01m$1\033[0m"
 }
 
 # ==================================================各种脚本=========================================================== #
 # vps性能测试
 #1
 Bench(){
-	bash <(curl -s -L bit.ly/233bench)
+  bash <(curl -s -L bit.ly/233bench)
 }
 #2
 swspeed(){
-	bash <(curl -Lso- https://git.io/Jlkmw)
+  bash <(curl -Lso- https://git.io/Jlkmw)
 }
 #3
 vps_testrace(){
-	wget https://raw.githubusercontent.com/vpsxb/testrace/main/testrace.sh -O testrace.sh && bash testrace.sh  
+  wget https://raw.githubusercontent.com/vpsxb/testrace/main/testrace.sh -O testrace.sh && bash testrace.sh  
 }
 LemonBench(){
   wget -qO- http://ilemonra.in/LemonBenchIntl | bash -s fast
@@ -33,10 +33,10 @@ LemonBench(){
 
 # 流媒体
 lmt(){
-	bash <(curl -L -s check.unlock.media)
+  bash <(curl -L -s check.unlock.media)
 }
 lmt2(){
-	bash <(curl -Ls unlock.moe)
+  bash <(curl -Ls unlock.moe)
 }
 
 warp(){
@@ -45,18 +45,16 @@ warp(){
 
 
 # 科学上网脚本
-
 x-ui(){
   bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
 }
 x-ui_new(){
-	bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/master/install.sh)
+  bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/master/install.sh)
 }
 
 xray_233(){
   bash <(wget -qO- -o- https://github.com/233boy/Xray/raw/main/install.sh)
 }
-
 
 # BBR 加速
 bbr(){
@@ -68,30 +66,30 @@ bbr_openvz(){
 
 # 其他工具
 realm(){
-	wget -N --no-check-certificate https://git.io/realm.sh && chmod +x realm.sh && ./realm.sh
+  wget -N --no-check-certificate https://git.io/realm.sh && chmod +x realm.sh && ./realm.sh
 }
 gost(){
-	wget --no-check-certificate -O gost.sh https://raw.githubusercontent.com/KANIKIG/Multi-EasyGost/master/gost.sh && chmod +x gost.sh && ./gost.sh
+  wget --no-check-certificate -O gost.sh https://raw.githubusercontent.com/KANIKIG/Multi-EasyGost/master/gost.sh && chmod +x gost.sh && ./gost.sh
 }
 docker(){
-	curl -fsSL https://get.docker.com -o get-docker.sh && sh get-docker.sh && sudo systemctl start docker
+  curl -fsSL https://get.docker.com -o get-docker.sh && sh get-docker.sh && sudo systemctl start docker
 }
 firewall(){
-	systemctl stop firewalld.service  &&  systemctl disable firewalld.service 
+  systemctl stop firewalld.service  &&  systemctl disable firewalld.service 
 }
 
 swap(){
-	wget   -N --no-check-certificate  https://www.moerats.com/usr/shell/swap.sh && bash swap.sh
+  wget -N --no-check-certificate  https://www.moerats.com/usr/shell/swap.sh && bash swap.sh
 }
 
 ChangeMirrors(){
-	sed -i "s@http://\(deb\|security\).debian.org@https://mirrors.tuna.tsinghua.edu.cn@g" /etc/apt/sources.list
+  sed -i "s@http://\(deb\|security\).debian.org@https://mirrors.tuna.tsinghua.edu.cn@g" /etc/apt/sources.list
 }
 soga(){
-	wget -N https://raw.githubusercontent.com/vaxilu/soga/master/install.sh && bash install.sh
+  wget -N https://raw.githubusercontent.com/vaxilu/soga/master/install.sh && bash install.sh
 }
 XrayR(){
-	bash <(curl -Ls https://raw.githubusercontent.com/XrayR-project/XrayR-release/master/install.sh)
+  bash <(curl -Ls https://raw.githubusercontent.com/XrayR-project/XrayR-release/master/install.sh)
 }
 
 #更新脚本
