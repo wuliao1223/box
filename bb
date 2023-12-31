@@ -133,6 +133,8 @@ start_menu(){
     echo
     read -p "请输入数字:" num
     case "$num" in
+
+		# VPS测速 && 流媒体检测
 		1) Bench ;;
 		2) swspeed ;;
 		3) vps_testrace ;;
@@ -140,12 +142,14 @@ start_menu(){
 		5) lmt2 ;;
 		6) warp ;;
 
+		#  科学 && BBR
 		8) x-ui ;;
 		9) x-ui_new ;;
 		10) xray_233 ;;
 		11) bbr ;;
 		12) bbr_openvz ;;
 
+		# 其他工具
 		15) realm ;;
 		16) gost ;;
 		17) docker ;;
