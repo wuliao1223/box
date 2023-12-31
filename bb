@@ -28,7 +28,7 @@ vps_testrace(){
 	wget https://raw.githubusercontent.com/vpsxb/testrace/main/testrace.sh -O testrace.sh && bash testrace.sh  
 }
 LemonBench(){
-wget -qO- http://ilemonra.in/LemonBenchIntl | bash -s fast
+  wget -qO- http://ilemonra.in/LemonBenchIntl | bash -s fast
 }
 
 # 流媒体
