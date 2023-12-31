@@ -159,7 +159,7 @@ start_menu(){
 		21) soga ;;
 		22) XrayR ;;
 		66) update ;;
-		0) exit 0 ;;
+		 0) exit 0 ;;
 		*)
 	clear
 	echo "请输入正确数字"
