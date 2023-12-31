@@ -54,19 +54,19 @@ x-ui_new(){
 }
 
 xray_233(){
-    bash <(wget -qO- -o- https://github.com/233boy/Xray/raw/main/install.sh)
+  bash <(wget -qO- -o- https://github.com/233boy/Xray/raw/main/install.sh)
 }
 
 
 # BBR 加速
 bbr2(){
-   wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
+  wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 }
 bbr(){
   wget -N --no-check-certificate "https://raw.githubusercontent.com/ylx2016/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 }
 bbr_openvz(){
-  wget --no-cache -O lkl-haproxy.sh https://github.com/mzz2017/lkl-haproxy/raw/master/lkl-haproxy.sh && bash lkl-haproxy.sh
+ wget --no-cache -O lkl-haproxy.sh https://github.com/mzz2017/lkl-haproxy/raw/master/lkl-haproxy.sh && bash lkl-haproxy.sh
 }
 
 
