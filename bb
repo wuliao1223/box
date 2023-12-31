@@ -157,10 +157,10 @@ start_menu(){
 		66) update ;;
 		 0) exit 0 ;;
 		*)
-	clear
-	echo "请输入正确数字"
-	sleep 2s
-	start_menu ;;
+		clear
+		echo "请输入正确数字"
+		sleep 2s
+		start_menu ;;
     esac
 }
 start_menu
