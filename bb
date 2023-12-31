@@ -38,13 +38,12 @@ lmt(){
 lmt2(){
   bash <(curl -Ls unlock.moe)
 }
-
 warp(){
   wget -N https://gitlab.com/fscarmen/warp/-/raw/main/menu.sh && bash menu.sh
 }
 
 
-# 科学上网脚本
+# 科学 && BBR
 x-ui(){
   bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
 }
@@ -55,8 +54,6 @@ x-ui_new(){
 xray_233(){
   bash <(wget -qO- -o- https://github.com/233boy/Xray/raw/main/install.sh)
 }
-
-# BBR 加速
 bbr(){
   wget -N --no-check-certificate "https://raw.githubusercontent.com/ylx2016/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 }
@@ -91,11 +88,11 @@ soga(){
 XrayR(){
   bash <(curl -Ls https://raw.githubusercontent.com/XrayR-project/XrayR-release/master/install.sh)
 }
-
 #更新脚本
 update(){
 	wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/box/main/bb  && chmod +x bb && bash bb
- }
+}
+
 # ==================================================面板=========================================================== #
 start_menu(){
     clear
