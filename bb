@@ -135,7 +135,7 @@ start_menu(){
 	 yellow " 21. 安装 soga "
 	 yellow " 22. 安装 XrayR "
 	 red    " 66. 更新脚本 "
- 	 red    " 0. 退出脚本 "
+ 	 red    "  0. 退出脚本 "
     echo
     read -p "请输入数字:" num
     case "$num" in
