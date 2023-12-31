@@ -123,7 +123,7 @@ start_menu(){
 	 yellow " 9. x-ui new "
 	 yellow " 10. 233 xray "
 	 yellow " 11. BBR "
-	 yellow " 12. ovz BBR  " 
+	 yellow " 12. ovz BBR  "
 
 	green "========= 其他工具 ========="
 	 yellow " 15. realm 中专 "
@@ -149,7 +149,7 @@ start_menu(){
 		8) x-ui ;;
 		9) x-ui_new ;;
 		10) xray_233 ;;
-		11) bbr ;;		
+		11) bbr ;;
 		12) bbr_openvz ;;
 
 		15) realm ;;
