@@ -105,16 +105,16 @@ start_menu(){
      blue " 以下脚本均源于网络，希望大家喜欢！"
 
     green "========== VPS测速 && 流媒体检测 ========="
-	 yellow "  1. Bench 修改 "
-	 yellow "  2. 三网测速 "
-	 yellow "  3. VPS 回程路由 "
-	 yellow "  4. 流媒体检测脚本一  "
-	 yellow "  5. 流媒体检测脚本二 "
-	 yellow "  6. Warp "
+	 yellow " 1. Bench 修改 "
+	 yellow " 2. 三网测速 "
+	 yellow " 3. VPS 回程路由 "
+	 yellow " 4. 流媒体检测脚本一  "
+	 yellow " 5. 流媒体检测脚本二 "
+	 yellow " 6. Warp "
 
 	green "========== 科学 && BBR ========="
-	 yellow "  8. x-ui "
-	 yellow "  9. x-ui new "
+	 yellow " 8. x-ui "
+	 yellow " 9. x-ui new "
 	 yellow " 10. 233 xray "
 	 yellow " 11. BBR "
 	 yellow " 12. ovz BBR  "
@@ -135,16 +135,16 @@ start_menu(){
     case "$num" in
 
 		# VPS测速 && 流媒体检测
-		 1) Bench ;;
-		 2) swspeed ;;
-		 3) vps_testrace ;;
-		 4) lmt ;;
-		 5) lmt2 ;;
-		 6) warp ;;
+		1) Bench ;;
+		2) swspeed ;;
+		3) vps_testrace ;;
+		4) lmt ;;
+		5) lmt2 ;;
+		6) warp ;;
 
 		#  科学 && BBR
-		 8) x-ui ;;
-		 9) x-ui_new ;;
+		8) x-ui ;;
+		9) x-ui_new ;;
 		10) xray_233 ;;
 		11) bbr ;;
 		12) bbr_openvz ;;
