@@ -1,26 +1,26 @@
 # Linux 面板部分：
 #宝塔7.7原版
 bt_1(){
-   curl -sSO https://raw.githubusercontent.com/8838/btpanel-v7.7.0/main/install/install_panel.sh && bash install_panel.sh
+  curl -sSO https://raw.githubusercontent.com/8838/btpanel-v7.7.0/main/install/install_panel.sh && bash install_panel.sh
 }
 #宝塔7.7版本一键破解
 bt_2(){
-   curl -sSO https://raw.githubusercontent.com/ztkink/bthappy/main/one_key_happy.sh && bash one_key_happy.sh
+  curl -sSO https://raw.githubusercontent.com/ztkink/bthappy/main/one_key_happy.sh && bash one_key_happy.sh
 }
 # 国际版
 bt_abroad(){
 	curl -sSO http://www.aapanel.com/script/new_install_en.sh && bash new_install_en.sh forum
 }
 bt_uninstall(){
-	wget http://download.bt.cn/install/bt-uninstall.sh && sh bt-uninstall.sh
+  wget http://download.bt.cn/install/bt-uninstall.sh && sh bt-uninstall.sh
 }
 vps_ip(){
   curl ip.p3terx.com
 }
 
 v2_agent(){
-	wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/reeceyng/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
+  wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/reeceyng/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
 }
 v2_old(){
-	wget https://github.com/233boy/v2ray/archive/old.tar.gz -O v2ray-old.tar.gz;tar -zxvf v2ray-old.tar.gz;cd v2ray-old;chmod +x i*;./i* local
+  wget https://github.com/233boy/v2ray/archive/old.tar.gz -O v2ray-old.tar.gz;tar -zxvf v2ray-old.tar.gz;cd v2ray-old;chmod +x i*;./i* local
 }
