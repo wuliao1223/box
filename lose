@@ -9,7 +9,7 @@ bt_2(){
 }
 # 国际版
 bt_abroad(){
-	curl -sSO http://www.aapanel.com/script/new_install_en.sh && bash new_install_en.sh forum
+  curl -sSO http://www.aapanel.com/script/new_install_en.sh && bash new_install_en.sh forum
 }
 bt_uninstall(){
   wget http://download.bt.cn/install/bt-uninstall.sh && sh bt-uninstall.sh
