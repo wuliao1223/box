@@ -60,7 +60,9 @@ bbr(){
 bbr_openvz(){
  wget --no-cache -O lkl-haproxy.sh https://github.com/mzz2017/lkl-haproxy/raw/master/lkl-haproxy.sh && bash lkl-haproxy.sh
 }
-
+hy2(){
+	wget -N --no-check-certificate https://raw.githubusercontent.com/Misaka-blog/hysteria-install/main/hy2/hysteria.sh && bash hysteria.sh
+}
 # 其他工具
 realm(){
   wget -N --no-check-certificate https://git.io/realm.sh && chmod +x realm.sh && ./realm.sh
@@ -114,7 +116,7 @@ start_menu(){
 	 yellow " 10. 233 xray "
 	 yellow " 11. BBR "
 	 yellow " 12. ovz BBR  "
-
+	 yellow " 13. HY2  "
 	green "========= 其他工具 ========="
 	 yellow " 15. realm 中专 "
 	 yellow " 16. gost 中专 "
@@ -144,6 +146,7 @@ start_menu(){
 		10) xray_233 ;;
 		11) bbr ;;
 		12) bbr_openvz ;;
+		13) hy2 ;;
 
 		# 其他工具
 		15) realm ;;
