@@ -161,7 +161,7 @@ start_menu(){
 		*)
 		clear
 		echo "请输入正确数字"
-		sleep 2s
+		sleep 1s
 		start_menu ;;
 	esac
 }
