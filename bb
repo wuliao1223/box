@@ -61,7 +61,7 @@ bbr_openvz(){
  wget --no-cache -O lkl-haproxy.sh https://github.com/mzz2017/lkl-haproxy/raw/master/lkl-haproxy.sh && bash lkl-haproxy.sh
 }
 hy2(){
-	wget -N --no-check-certificate https://raw.githubusercontent.com/Misaka-blog/hysteria-install/main/hy2/hysteria.sh && bash hysteria.sh
+  wget -N --no-check-certificate https://raw.githubusercontent.com/Misaka-blog/hysteria-install/main/hy2/hysteria.sh && bash hysteria.sh
 }
 # 其他工具
 realm(){
@@ -76,11 +76,9 @@ docker(){
 firewall(){
   systemctl stop firewalld.service  &&  systemctl disable firewalld.service 
 }
-
 swap(){
   wget -N --no-check-certificate  https://www.moerats.com/usr/shell/swap.sh && bash swap.sh
 }
-
 ChangeMirrors(){
   sed -i "s@http://\(deb\|security\).debian.org@https://mirrors.tuna.tsinghua.edu.cn@g" /etc/apt/sources.list
 }
