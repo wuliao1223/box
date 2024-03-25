@@ -88,6 +88,9 @@ soga(){
 XrayR(){
   bash <(curl -Ls https://raw.githubusercontent.com/XrayR-project/XrayR-release/master/install.sh)
 }
+BBR(){
+	wget -N --no-check-certificate "https://gist.github.com/zeruns/a0ec603f20d1b86de6a774a8ba27588f/raw/4f9957ae23f5efb2bb7c57a198ae2cffebfb1c56/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
+}
 update(){
   wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/box/main/bb  && chmod +x bb && bash bb
 }
@@ -125,6 +128,7 @@ start_menu(){
 	 yellow " 20. 一键换清华源 "
 	 yellow " 21. 安装 soga "
 	 yellow " 22. 安装 XrayR "
+	 yellow " 23. 原版BBR "
 	 red    " 66. 更新脚本 "
  	 red    "  0. 退出脚本 "
     echo
@@ -156,6 +160,7 @@ start_menu(){
 		20) ChangeMirrors ;;
 		21) soga ;;
 		22) XrayR ;;
+		23) BBR ;;
 		66) update ;;
 		 0) exit 0 ;;
 		*)
