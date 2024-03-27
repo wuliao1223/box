@@ -76,18 +76,7 @@ docker(){
 firewall(){
   systemctl stop firewalld.service  &&  systemctl disable firewalld.service 
 }
-swap(){
-  wget -N --no-check-certificate  https://www.moerats.com/usr/shell/swap.sh && bash swap.sh
-}
-ChangeMirrors(){
-  sed -i "s@http://\(deb\|security\).debian.org@https://mirrors.tuna.tsinghua.edu.cn@g" /etc/apt/sources.list
-}
-soga(){
-  wget -N https://raw.githubusercontent.com/vaxilu/soga/master/install.sh && bash install.sh
-}
-XrayR(){
-  bash <(curl -Ls https://raw.githubusercontent.com/XrayR-project/XrayR-release/master/install.sh)
-}
+
 bbr2(){
   wget -N --no-check-certificate "https://raw.githubusercontent.com/ylx2016/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 }
@@ -124,11 +113,7 @@ start_menu(){
 	 yellow " 16. gost 中专 "
 	 yellow " 17. 安装docker "
 	 yellow " 18. 一键关闭Centos7防火墙 "
-	 yellow " 19. 一键添加/删除Swap虚拟内存 "
-	 yellow " 20. 一键换清华源 "
-	 yellow " 21. 安装 soga "
-	 yellow " 22. 安装 XrayR "
-	 yellow " 23. bbr2 "
+	 yellow " 19. bbr2 "
 	 red    " 66. 更新脚本 "
  	 red    "  0. 退出脚本 "
     echo
@@ -156,11 +141,7 @@ start_menu(){
 		16) gost ;;
 		17) docker ;;
 		18) firewall ;;
-		19) swap ;;
-		20) ChangeMirrors ;;
-		21) soga ;;
-		22) XrayR ;;
-		23) bbr2 ;;
+		19) bbr2 ;;
 		66) update ;;
 		 0) exit 0 ;;
 		*)
