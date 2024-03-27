@@ -24,3 +24,24 @@ v2_agent(){
 v2_old(){
   wget https://github.com/233boy/v2ray/archive/old.tar.gz -O v2ray-old.tar.gz;tar -zxvf v2ray-old.tar.gz;cd v2ray-old;chmod +x i*;./i* local
 }
+
+	 yellow " 19. 一键添加/删除Swap虚拟内存 "
+	 yellow " 20. 一键换清华源 "
+	 yellow " 21. 安装 soga "
+	 yellow " 22. 安装 XrayR "
+		19) swap ;;
+		20) ChangeMirrors ;;
+		21) soga ;;
+		22) XrayR ;;
+swap(){
+  wget -N --no-check-certificate  https://www.moerats.com/usr/shell/swap.sh && bash swap.sh
+}
+ChangeMirrors(){
+  sed -i "s@http://\(deb\|security\).debian.org@https://mirrors.tuna.tsinghua.edu.cn@g" /etc/apt/sources.list
+}
+soga(){
+  wget -N https://raw.githubusercontent.com/vaxilu/soga/master/install.sh && bash install.sh
+}
+XrayR(){
+  bash <(curl -Ls https://raw.githubusercontent.com/XrayR-project/XrayR-release/master/install.sh)
+}
