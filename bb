@@ -88,10 +88,8 @@ update(){
 start_menu(){
     clear
      green "==========================================="
-     blue " 本脚本支持：CentOS7+ / Debian9+ / Ubuntu16.04+"
      blue " 脚本： bash <(curl -s -L bit.ly/233hhh) "
-     blue " 以下脚本均源于网络，希望大家喜欢！"
-
+     blue " www.233hhh.top "
      green "========== VPS测速 && 流媒体检测 ========="
 	 yellow " 1. Bench 修改 "
 	 yellow " 2. 三网测速 "
@@ -99,7 +97,6 @@ start_menu(){
 	 yellow " 4. 流媒体检测脚本一  "
 	 yellow " 5. 流媒体检测脚本二 "
 	 yellow " 6. Warp "
-
     green "========== 科学 && BBR ========="
 	 yellow " 8. x-ui "
 	 yellow " 9. x-ui new "
@@ -107,7 +104,6 @@ start_menu(){
 	 yellow " 11. BBR "
 	 yellow " 12. ovz BBR  "
 	 yellow " 13. HY2  "
-   
     green "========= 其他工具 ========="
 	 yellow " 15. realm 中专 "
 	 yellow " 16. gost 中专 "
