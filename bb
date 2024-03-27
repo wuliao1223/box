@@ -128,7 +128,7 @@ start_menu(){
 	 yellow " 20. 一键换清华源 "
 	 yellow " 21. 安装 soga "
 	 yellow " 22. 安装 XrayR "
-	 yellow " 23. BBR2 "
+	 yellow " 23. bbr2 "
 	 red    " 66. 更新脚本 "
  	 red    "  0. 退出脚本 "
     echo
