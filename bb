@@ -91,7 +91,7 @@ start_menu(){
      blue " 脚本： bash <(curl -s -L bit.ly/233hhh) "
      blue " 博客： https://www.233hhh.top "
      green "========== VPS测速 && 流媒体检测 ========="
-	 yellow " 1. Bench 修改 "
+	 yellow " 1. Bench  "
 	 yellow " 2. 三网测速 "
 	 yellow " 3. VPS 回程路由 "
 	 yellow " 4. 流媒体检测脚本一  "
