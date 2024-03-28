@@ -30,7 +30,9 @@ vps_testrace(){
 LemonBench(){
   wget -qO- http://ilemonra.in/LemonBenchIntl | bash -s fast
 }
-
+ecs(){
+  curl -L https://gitlab.com/spiritysdx/za/-/raw/main/ecs.sh -o ecs.sh && chmod +x ecs.sh && bash ecs.sh
+}
 # 流媒体
 lmt(){
   bash <(curl -L -s check.unlock.media)
@@ -93,6 +95,7 @@ start_menu(){
 	 yellow " 4. 流媒体检测 一  "
 	 yellow " 5. 流媒体检测 二 "
 	 yellow " 6. Warp "
+	 yellow " 7. 融合怪测评脚本 "
     green "========== 科学 && BBR ========="
 	 yellow " 10. BBR "
 	 yellow " 11. BBR 2 "
@@ -118,6 +121,7 @@ start_menu(){
 		4) lmt ;;
 		5) lmt2 ;;
 		6) warp ;;
+		7) ecs ;;
 
 		#  科学 && BBR
 		10) bbr ;;
