@@ -45,3 +45,13 @@ soga(){
 XrayR(){
   bash <(curl -Ls https://raw.githubusercontent.com/XrayR-project/XrayR-release/master/install.sh)
 }
+	 yellow " 8. x-ui "
+	 yellow " 9. x-ui new "
+		8) x-ui ;;
+		9) x-ui_new ;;
+x-ui(){
+  bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
+}
+x-ui_new(){
+  bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/master/install.sh)
+}
