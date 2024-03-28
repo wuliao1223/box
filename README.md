@@ -22,6 +22,8 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/box/
 # 赞助我
 
 # 更新日志
+2024/3/28 删除使用频率低的脚本
+
 2023/12/29 将无用脚本剪切到 lose 文件里保存
 
 2023/12/7 删除失效脚本
