@@ -44,12 +44,6 @@ warp(){
 
 
 # 科学 && BBR
-x-ui(){
-  bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
-}
-x-ui_new(){
-  bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/master/install.sh)
-}
 
 xray_233(){
   bash <(wget -qO- -o- https://github.com/233boy/Xray/raw/main/install.sh)
@@ -98,8 +92,7 @@ start_menu(){
 	 yellow " 5. 流媒体检测脚本二 "
 	 yellow " 6. Warp "
     green "========== 科学 && BBR ========="
-	 yellow " 8. x-ui "
-	 yellow " 9. x-ui new "
+
 	 yellow " 10. 233 xray "
 	 yellow " 11. BBR "
 	 yellow " 12. ovz BBR  "
@@ -125,8 +118,7 @@ start_menu(){
 		6) warp ;;
 
 		#  科学 && BBR
-		8) x-ui ;;
-		9) x-ui_new ;;
+
 		10) xray_233 ;;
 		11) bbr ;;
 		12) bbr_openvz ;;
