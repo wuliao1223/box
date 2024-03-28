@@ -103,7 +103,7 @@ start_menu(){
 	 yellow " 15. realm 中专 "
 	 yellow " 16. gost 中专 "
 	 yellow " 17. 安装 docker "
-	 yellow " 18. 一键关闭Centos7防火墙 "
+	 yellow " 18. 一键关闭 Centos7 防火墙 "
 	 red    " 66. 更新脚本 "
  	 red    "  0. 退出脚本 "
     echo
