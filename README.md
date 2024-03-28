@@ -10,7 +10,7 @@
 apt update && apt install curl nano sudo -y
 ```
 ```go
-yum update -y && yum install wget nano sudo -y
+yum install wget nano sudo -y
 ```
 主命令
 ```sh
