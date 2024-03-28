@@ -48,7 +48,7 @@ warp(){
 xray_233(){
   bash <(wget -qO- -o- https://github.com/233boy/Xray/raw/main/install.sh)
 }
-hy2(){
+hysteria2(){
   wget -N --no-check-certificate https://raw.githubusercontent.com/Misaka-blog/hysteria-install/main/hy2/hysteria.sh && bash hysteria.sh
 }
 bbr(){
@@ -95,7 +95,7 @@ start_menu(){
 	 yellow " 6. Warp "
     green "========== 科学 && BBR ========="
 	 yellow " 10. 233 xray "
-	 yellow " 11. HY2  "
+	 yellow " 11. hysteria 2  "
 	 yellow " 12. BBR "
 	 yellow " 13. BBR2 "
 	 yellow " 14. OVZ BBR  "
@@ -121,7 +121,7 @@ start_menu(){
 		#  科学 && BBR
 
 		10) xray_233 ;;
-		11) hy2 ;;
+		11) hysteria2 ;;
 		12) bbr ;;
 		13) bbr2 ;;
 		14) bbr_openvz ;;
