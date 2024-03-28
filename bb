@@ -101,10 +101,10 @@ start_menu(){
 	 yellow " 14. hysteria 2  "
 
     green "========= 其他工具 ========="
-	 yellow " 15. realm 中专 "
-	 yellow " 16. gost 中专 "
-	 yellow " 17. 安装 docker "
-	 yellow " 18. 一键关闭 Centos7 防火墙 "
+	 yellow " 20. realm 中专 "
+	 yellow " 21. gost 中专 "
+	 yellow " 22. 安装 docker "
+	 yellow " 23. 一键关闭 Centos7 防火墙 "
 	 red    " 66. 更新脚本 "
  	 red    "  0. 退出脚本 "
     echo
@@ -127,10 +127,10 @@ start_menu(){
 		14) hysteria2 ;;
 
 		# 其他工具
-		15) realm ;;
-		16) gost ;;
-		17) docker ;;
-		18) firewall ;;
+		20) realm ;;
+		21) gost ;;
+		22) docker ;;
+		23) firewall ;;
 		66) update ;;
 		 0) exit 0 ;;
 		*)
