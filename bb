@@ -97,7 +97,7 @@ start_menu(){
 	 yellow " 10. 233 xray "
 	 yellow " 11. hysteria 2  "
 	 yellow " 12. BBR "
-	 yellow " 13. BBR2 "
+	 yellow " 13. BBR 2 "
 	 yellow " 14. OVZ BBR  "
     green "========= 其他工具 ========="
 	 yellow " 15. realm 中专 "
