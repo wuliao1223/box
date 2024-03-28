@@ -7,7 +7,7 @@
 
 # 使用方法
 ```go
-apt update && apt install curl nano sudo -y
+apt update -y && apt install curl nano sudo -y
 ```
 ```go
 yum install wget nano sudo -y
