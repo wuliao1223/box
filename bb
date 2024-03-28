@@ -94,11 +94,12 @@ start_menu(){
 	 yellow " 5. 流媒体检测 二 "
 	 yellow " 6. Warp "
     green "========== 科学 && BBR ========="
-	 yellow " 10. 233 xray "
-	 yellow " 11. hysteria 2  "
-	 yellow " 12. BBR "
-	 yellow " 13. BBR 2 "
-	 yellow " 14. OVZ BBR  "
+	 yellow " 10. BBR "
+	 yellow " 11. BBR 2 "
+	 yellow " 12. OVZ BBR  "
+	 yellow " 13. 233 xray "
+	 yellow " 14. hysteria 2  "
+
     green "========= 其他工具 ========="
 	 yellow " 15. realm 中专 "
 	 yellow " 16. gost 中专 "
@@ -119,12 +120,11 @@ start_menu(){
 		6) warp ;;
 
 		#  科学 && BBR
-
-		10) xray_233 ;;
-		11) hysteria2 ;;
-		12) bbr ;;
-		13) bbr2 ;;
-		14) bbr_openvz ;;
+		10) bbr ;;
+		11) bbr2 ;;
+		12) bbr_openvz ;;
+		13) xray_233 ;;
+		14) hysteria2 ;;
 
 		# 其他工具
 		15) realm ;;
