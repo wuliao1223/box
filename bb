@@ -33,6 +33,7 @@ LemonBench(){
 ecs(){
   curl -L https://gitlab.com/spiritysdx/za/-/raw/main/ecs.sh -o ecs.sh && chmod +x ecs.sh && bash ecs.sh
 }
+
 # 流媒体
 lmt(){
   bash <(curl -L -s check.unlock.media)
@@ -76,8 +77,6 @@ docker(){
 firewall(){
   systemctl stop firewalld.service  &&  systemctl disable firewalld.service 
 }
-
-
 update(){
   wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/box/main/bb  && chmod +x bb && bash bb
 }
@@ -102,7 +101,6 @@ start_menu(){
 	 yellow " 12. OVZ BBR  "
 	 yellow " 13. 233 xray "
 	 yellow " 14. hysteria 2  "
-
     green "========= 其他工具 ========="
 	 yellow " 20. realm 中专 "
 	 yellow " 21. gost 中专 "
