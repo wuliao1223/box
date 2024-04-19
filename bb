@@ -113,7 +113,6 @@ start_menu(){
     echo
     read -p "请输入数字:" num
     case "$num" in
-
 		# VPS测速 && 流媒体检测
 		1) Bench ;;
 		2) swspeed ;;
@@ -122,14 +121,12 @@ start_menu(){
 		5) lmt2 ;;
 		6) warp ;;
 		7) ecs ;;
-
 		#  科学 && BBR
 		10) bbr ;;
 		11) bbr2 ;;
 		12) bbr_openvz ;;
 		13) xray_233 ;;
 		14) hysteria2 ;;
-
 		# 其他工具
 		20) realm ;;
 		21) gost ;;
