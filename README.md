@@ -3,7 +3,8 @@
 # 脚本功能演示
 ![image](https://github.com/wuliao1223/box/assets/59786070/cd4c9a73-69a5-41b2-aac1-f959d2111482)
 
-
+# 个人博客
+[个人博客]（https://www.233hhh.top)
 
 # 使用方法
 ```go
@@ -19,7 +20,6 @@ bash <(curl -s -L bit.ly/233hhh)
 ```sh
 wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/box/main/bb  && chmod +x bb && bash bb
 ```
-# 赞助我
 
 # 更新日志
 2024/3/28 删除使用频率低的脚本
