@@ -4,7 +4,7 @@
 ![image](https://github.com/wuliao1223/box/assets/59786070/cd4c9a73-69a5-41b2-aac1-f959d2111482)
 
 # 个人博客
-.[个人博客]（https://www.233hhh.top)
+[个人博客](https://www.233hhh.top)
 
 # 使用方法
 ```go
