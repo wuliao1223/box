@@ -89,12 +89,12 @@ start_menu(){
      blue " 博客： https://www.233hhh.top "
      green "======= VPS测速 && 流媒体检测 ========="
 	 yellow " 1. Bench  "
-	
+	 yellow " 2. 融合怪测评脚本 "
 	 yellow " 3. VPS 回程路由 "
 	 yellow " 4. 流媒体检测 一  "
 	 yellow " 5. 流媒体检测 二 "
 	 yellow " 6. Warp "
-	 yellow " 7. 融合怪测评脚本 "
+	 
     green "========== 科学 && BBR ========="
 	 yellow " 10. BBR "
 	 yellow " 11. BBR 2 "
@@ -113,12 +113,12 @@ start_menu(){
     case "$num" in
 		# VPS测速 && 流媒体检测
 		1) Bench ;;
-		
+		2) ecs ;;
 		3) vps_testrace ;;
 		4) lmt ;;
 		5) lmt2 ;;
 		6) warp ;;
-		7) ecs ;;
+		
 		#  科学 && BBR
 		10) bbr ;;
 		11) bbr2 ;;
