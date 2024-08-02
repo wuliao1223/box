@@ -89,7 +89,7 @@ start_menu(){
      blue " 博客： https://www.233hhh.top "
      green "======= VPS测速 && 流媒体检测 ========="
 	 yellow " 1. Bench  "
-	 yellow " 2. 三网测速 "
+	
 	 yellow " 3. VPS 回程路由 "
 	 yellow " 4. 流媒体检测 一  "
 	 yellow " 5. 流媒体检测 二 "
@@ -113,7 +113,7 @@ start_menu(){
     case "$num" in
 		# VPS测速 && 流媒体检测
 		1) Bench ;;
-		2) swspeed ;;
+		
 		3) vps_testrace ;;
 		4) lmt ;;
 		5) lmt2 ;;
