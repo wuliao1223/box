@@ -20,8 +20,8 @@ Bench(){
   bash <(curl -s -L bit.ly/233bench)
 }
 #2
-swspeed(){
-  bash <(curl -Lso- https://git.io/Jlkmw)
+ecs(){
+  curl -L https://gitlab.com/spiritysdx/za/-/raw/main/ecs.sh -o ecs.sh && chmod +x ecs.sh && bash ecs.sh
 }
 #3
 vps_testrace(){
@@ -30,9 +30,7 @@ vps_testrace(){
 LemonBench(){
   wget -qO- http://ilemonra.in/LemonBenchIntl | bash -s fast
 }
-ecs(){
-  curl -L https://gitlab.com/spiritysdx/za/-/raw/main/ecs.sh -o ecs.sh && chmod +x ecs.sh && bash ecs.sh
-}
+
 
 # 流媒体
 lmt(){
