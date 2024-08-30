@@ -67,7 +67,7 @@ realm(){
   wget -N --no-check-certificate https://git.io/realm.sh && chmod +x realm.sh && ./realm.sh
 }
 gost(){
-  wget --no-check-certificate -O gost.sh https://raw.githubusercontent.com/KANIKIG/Multi-EasyGost/master/gost.sh && chmod +x gost.sh && ./gost.sh
+  wget --no-check-certificate -O gost https://raw.githubusercontent.com/KANIKIG/Multi-EasyGost/master/gost.sh && chmod +x gost && ./gost
 }
 docker(){
   curl -fsSL https://get.docker.com -o get-docker.sh && sh get-docker.sh && sudo systemctl start docker
