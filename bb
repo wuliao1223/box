@@ -61,7 +61,9 @@ bbr2(){
 bbr_openvz(){
  wget --no-cache -O lkl-haproxy.sh https://github.com/mzz2017/lkl-haproxy/raw/master/lkl-haproxy.sh && bash lkl-haproxy.sh
 }
-
+x_ui(){
+	bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/master/install.sh)
+}
 # 其他工具
 realm(){
   wget -N --no-check-certificate https://git.io/realm.sh && chmod +x realm.sh && ./realm.sh
@@ -99,6 +101,7 @@ start_menu(){
 	 yellow " 12. bbr_openvz "
 	 yellow " 13. 233 xray "
 	 yellow " 14. hysteria 2  "
+	 yellow " 15. x_ui "
     green "========= 其他工具 ========="
 	 yellow " 20. realm 中专 "
 	 yellow " 21. gost 中专 "
@@ -123,6 +126,7 @@ start_menu(){
 		12) bbr_openvz ;;
 		13) xray_233 ;;
 		14) hysteria2 ;;
+		15) x_ui ;;
 		# 其他工具
 		20) realm ;;
 		21) gost ;;
