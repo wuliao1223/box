@@ -98,7 +98,7 @@ start_menu(){
     green "========== 科学 && BBR ========="
 #	 yellow " 10. bbr "
 	 yellow " 11. bbr 2 "
-	 yellow " 12. bbr_openvz "
+#	 yellow " 12. bbr_openvz "
 	 yellow " 13. 233 xray "
 	 yellow " 14. hysteria 2  "
 	 yellow " 15. x_ui "
@@ -123,7 +123,7 @@ start_menu(){
 		#  科学 && BBR
 #		10) bbr ;;
 		11) bbr2 ;;
-		12) bbr_openvz ;;
+#		12) bbr_openvz ;;
 		13) xray_233 ;;
 		14) hysteria2 ;;
 		15) x_ui ;;
