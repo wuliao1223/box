@@ -96,7 +96,7 @@ start_menu(){
 	 yellow " 6. warp "
 	 
     green "========== 科学 && BBR ========="
-	 yellow " 10. bbr "
+#	 yellow " 10. bbr "
 	 yellow " 11. bbr 2 "
 	 yellow " 12. bbr_openvz "
 	 yellow " 13. 233 xray "
@@ -121,7 +121,7 @@ start_menu(){
 		6) warp ;;
 		
 		#  科学 && BBR
-		10) bbr ;;
+#		10) bbr ;;
 		11) bbr2 ;;
 		12) bbr_openvz ;;
 		13) xray_233 ;;
