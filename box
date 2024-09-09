@@ -85,7 +85,7 @@ update(){
 start_menu(){
     clear
      green "========================================="
-     blue " 脚本： wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/box/main/box  && chmod +x box && bash box "
+     blue " 脚本： bash <(curl -s -L bit.ly/myboxs) "
      blue " 博客： https://www.233hhh.top "
      green "======= VPS测速 && 流媒体检测 ========="
 	 yellow " 1. bench  "
