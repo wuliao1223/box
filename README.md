@@ -13,12 +13,12 @@ apt update -y && apt install curl nano sudo -y
 ```go
 yum install wget nano sudo -y
 ```
-主命令
+
 ```sh
-bash <(curl -s -L bit.ly/233hhh)
+bash <(curl -s -L bit.ly/myboxs)
 ```
 ```sh
-wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/box/main/bb  && chmod +x bb && bash bb
+wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/box/main/box  && chmod +x box && bash box
 ```
 
 # 更新日志
