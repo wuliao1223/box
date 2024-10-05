@@ -15,10 +15,10 @@ yum install wget nano sudo -y
 ```
 
 ```sh
-bash <(curl -s -L bit.ly/myboxs)
+bash <(curl -s -L bit.ly/233hhh)
 ```
 ```sh
-wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/box/main/box  && chmod +x box && bash box
+wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/box/main/bb  && chmod +x bb && bash bb
 ```
 
 # 更新日志
