@@ -78,7 +78,7 @@ firewall(){
   systemctl stop firewalld.service  &&  systemctl disable firewalld.service 
 }
 update(){
-  wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/box/main/box  && chmod +x box && bash box
+  wget -N --no-check-certificate https://raw.githubusercontent.com/wuliao1223/box/main/bb  && chmod +x bb && bash bb
 }
 
 # ====================== 面板 =========================== #
