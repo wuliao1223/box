@@ -85,7 +85,7 @@ update(){
 start_menu(){
     clear
      green "========================================="
-     blue " 脚本： bash <(curl -s -L bit.ly/myboxs) "
+     blue " 脚本： bash <(curl -s -L bit.ly/233hhh) "
      blue " 博客： https://www.233hhh.top "
      green "======= VPS测速 && 流媒体检测 ========="
 	 yellow " 1. bench  "
