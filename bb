@@ -17,7 +17,7 @@ blue(){
 # vps性能测试
 #1
 Bench(){
-  bash <(curl -s -L bit.ly/233bench)
+  wget -qO- bench.sh | bash
 }
 #2
 ecs(){
