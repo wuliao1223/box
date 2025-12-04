@@ -49,6 +49,9 @@ warp(){
 xray_233(){
   bash <(wget -qO- -o- https://github.com/233boy/Xray/raw/main/install.sh)
 }
+reality(){
+	bash <(curl -L https://github.com/crazypeace/xray-vless-reality/raw/main/install.sh)
+}
 hysteria2(){
   wget -N --no-check-certificate https://raw.githubusercontent.com/Misaka-blog/hysteria-install/main/hy2/hysteria.sh && bash hysteria.sh
 }
@@ -99,7 +102,7 @@ start_menu(){
 #	 yellow " 10. bbr "
 	 yellow " 11. bbr 2 "
 #	 yellow " 12. bbr_openvz "
-	 yellow " 13. 233 xray "
+	 yellow " 13. reality "
 	 yellow " 14. hysteria 2  "
 	 yellow " 15. x_ui "
     green "========= 其他工具 ========="
@@ -124,7 +127,7 @@ start_menu(){
 #		10) bbr ;;
 		11) bbr2 ;;
 #		12) bbr_openvz ;;
-		13) xray_233 ;;
+		13) reality ;;
 		14) hysteria2 ;;
 		15) x_ui ;;
 		# 其他工具
