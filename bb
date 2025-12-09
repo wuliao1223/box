@@ -30,7 +30,9 @@ vps_testrace(){
 LemonBench(){
   wget -qO- https://raw.githubusercontent.com/LemonBench/LemonBench/main/LemonBench.sh | bash -s -- --fast
 }
-
+IPQuality(){
+	bash <(curl -sL IP.Check.Place)
+}
 
 # 流媒体
 lmt(){
@@ -97,6 +99,7 @@ start_menu(){
 	 yellow " 4. 流媒体检测 一  "
 	 yellow " 5. 流媒体检测 二 "
 	 yellow " 6. warp "
+	 yellow " 7. IPQuality "
 	 
     green "========== 科学 && BBR ========="
 #	 yellow " 10. bbr "
@@ -122,6 +125,7 @@ start_menu(){
 		4) lmt ;;
 		5) lmt2 ;;
 		6) warp ;;
+		7) IPQuality ;;
 		
 		#  科学 && BBR
 #		10) bbr ;;
